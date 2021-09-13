@@ -1,2 +1,1 @@
-# stepik_auto_test
-домашние задания к курсу
+автотесты для test.tl-fin.ru
