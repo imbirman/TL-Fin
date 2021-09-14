@@ -51,7 +51,7 @@ public class LoginMainPage extends PageObject {
     }
 
     public List<WebElementFacade> getRows(){ // Получение списка строк элементов таблицы
-//        WebElementFacade table = find(tableElement);
+        WebElementFacade table = find(tableElement).waitUntilVisible();
         List<WebElementFacade> rows = findAll(By.xpath("//tr"));
         rows.remove(0);
         rows.remove(1);
