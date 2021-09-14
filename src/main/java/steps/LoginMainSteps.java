@@ -65,5 +65,9 @@ public class LoginMainSteps{
         Assertions.assertThat(page.getDisplayedSidebar()).isTrue();
     }
 
+    @Step
+    public void check_number_elements_table(){
+        Assertions.assertThat(page.getRows().size()).isEqualTo(10);
+    }
 
 }

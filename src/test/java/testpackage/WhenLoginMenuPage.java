@@ -77,4 +77,15 @@ public class WhenLoginMenuPage extends LoginMainPage {
         steps.check_enabled_sidebar();
     }
 
+    @Test
+    @Title("Проверка количества элементов таблицы по умолчанию")
+    public void checkNumberRows(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.check_number_elements_table();
+    }
+
 }
