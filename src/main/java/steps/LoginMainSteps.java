@@ -2,6 +2,7 @@ package steps;
 
 import net.thucydides.core.annotations.Step;
 
+import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
 import pages.LoginMainPage;
@@ -58,6 +59,11 @@ public class LoginMainSteps{
     public void check_login_bank_menu(){
         Assertions.assertThat(page.getLoginMenu()).isEqualTo("psb-test▼");
     } // Проверка логина банка после входа
+
+    @Step
+    public void check_enabled_sidebar(){
+        Assertions.assertThat(page.getDisplayedSidebar()).isTrue();
+    }
 
 
 }

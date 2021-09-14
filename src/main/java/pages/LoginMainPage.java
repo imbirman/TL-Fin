@@ -14,6 +14,7 @@ public class LoginMainPage extends PageObject {
     private By curatorName = By.id("curator_name");
     private By loginMenu = By.xpath("//span[@class='drop-down']");
     protected By buttonToggleMenu = By.id("toogleCardMenu");
+    private By sidebar = By.xpath("//div[@class='flat-tab']");
 
     public void clickButton(By button){ // Клик по кнопке
         find(button).click();
@@ -39,6 +40,10 @@ public class LoginMainPage extends PageObject {
         WebElementFacade login;
         login = find(loginMenu).waitUntilVisible();
         return login.getText();
+    }
+
+    public boolean getDisplayedSidebar(){ // Возвращает отображается ли меню таблицы
+        return find(sidebar).isEnabled();
     }
 
 }

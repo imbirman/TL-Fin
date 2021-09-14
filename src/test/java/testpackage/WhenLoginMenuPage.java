@@ -65,4 +65,16 @@ public class WhenLoginMenuPage extends LoginMainPage {
         steps.check_login_bank_menu();
     }
 
+    @Test
+    @Title("Проверка скрытия меню таблицы")
+    public void checkDisabledSidebar(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(buttonToggleMenu);
+        steps.check_enabled_sidebar();
+    }
+
 }
