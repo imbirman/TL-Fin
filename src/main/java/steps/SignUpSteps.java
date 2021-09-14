@@ -12,7 +12,7 @@ public class SignUpSteps {
         page.open();
     }
 
-    @Step// в скобках описание шага
+    @Step
     public void type_email(String mail){
         page.typeEmail(mail);
     }
