@@ -63,7 +63,7 @@ public class LoginMainSteps{
     @Step
     public void check_enabled_sidebar(){
         Assertions.assertThat(page.getDisplayedSidebar()).isTrue();
-    }
+    } // Проверка скрытия меню таблицы
 
     @Step
     public void check_number_elements_table(){
