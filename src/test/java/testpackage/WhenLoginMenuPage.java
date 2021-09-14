@@ -21,7 +21,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
 
     @Test
     @Title("Проверка корректного входа админа")
-    public void checkErrorEmptyLogin(){
+    public void checkCorrectLoginAdmin(){
 
         steps.open_login_main_page();
         steps.type_email("s.kosobutskiy");
