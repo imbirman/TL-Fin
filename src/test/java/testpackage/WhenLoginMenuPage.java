@@ -24,8 +24,8 @@ public class WhenLoginMenuPage extends LoginMainPage {
     public void checkErrorEmptyLogin(){
 
         steps.open_login_main_page();
-        steps.type_email("");
-        steps.type_password("123");
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
         steps.click_button(signInButton);
         steps.check_login_admin();
         steps.check_login_admin_menu();
