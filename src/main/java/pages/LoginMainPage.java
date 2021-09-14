@@ -13,10 +13,11 @@ public class LoginMainPage extends PageObject {
     protected By signInButton = By.xpath("//input[@type='submit']");
     private By curatorName = By.id("curator_name");
     private By loginMenu = By.xpath("//span[@class='drop-down']");
+    protected By buttonToggleMenu = By.id("toogleCardMenu");
 
-    public void clickButton(By button){
+    public void clickButton(By button){ // Клик по кнопке
         find(button).click();
-    } // Клик по кнопке
+    }
 
     public LoginMainPage typeEmail(String email){ // Поиск поля емейла и ввод значения
         find(loginField).sendKeys(email);
@@ -28,13 +29,13 @@ public class LoginMainPage extends PageObject {
         return this;
     }
 
-    public String getCuratorName(){
+    public String getCuratorName(){ // Получение имени пользователя (для админа и агента)
         WebElementFacade name;
         name = find(curatorName).waitUntilVisible();
         return name.getText();
     }
 
-    public String getLoginMenu(){
+    public String getLoginMenu(){ // Получение логина пользователя при успешном входе
         WebElementFacade login;
         login = find(loginMenu).waitUntilVisible();
         return login.getText();
