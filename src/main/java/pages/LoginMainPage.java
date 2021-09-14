@@ -4,6 +4,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
@@ -50,8 +51,8 @@ public class LoginMainPage extends PageObject {
     }
 
     public List<WebElementFacade> getRows(){ // Получение списка строк элементов таблицы
-        WebElementFacade table = find(tableElement);
-        List<WebElementFacade> rows = table.find(By.xpath("//tr"));
+//        WebElementFacade table = find(tableElement);
+        List<WebElementFacade> rows = findAll(By.xpath("//tr"));
         rows.remove(0);
         rows.remove(1);
         return rows;

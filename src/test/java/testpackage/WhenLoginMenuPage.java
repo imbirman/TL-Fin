@@ -2,6 +2,7 @@ package testpackage;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
 import org.junit.Test;
@@ -20,6 +21,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     WebDriver driver;
 
     @Test
+    @Pending
     @Title("Проверка корректного входа админа")
     public void checkCorrectLoginAdmin(){
 
@@ -32,6 +34,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка корректного входа агента")
     public void checkCorrectLoginAgent(){
 
@@ -44,6 +47,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка корректного входа клиента")
     public void checkCorrectLoginClient(){
 
@@ -55,6 +59,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка корректного входа сотрудника банка")
     public void checkCorrectLoginBank(){
 
@@ -66,6 +71,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка скрытия меню таблицы")
     public void checkDisabledSidebar(){
 
