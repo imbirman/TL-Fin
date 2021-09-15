@@ -39,7 +39,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    @Title("Проверка ошибки при создании заявки выбора типа БГ")
+    @Title("Проверка ошибки при создании заявки без выбора типа БГ")
     public void checkErrorMessageEmptyTypeBg(){
 
         steps.open_login_main_page();
@@ -67,6 +67,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(createNewCard);
         steps.click_button(getDataTender);
         steps.check_error_empty_registry_number();
-
+        steps.check_fz_tender_button();
+        steps.check_close_tender_button();
     }
 }
