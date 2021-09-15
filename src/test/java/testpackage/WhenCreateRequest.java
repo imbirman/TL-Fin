@@ -33,7 +33,40 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
         steps.set_type_bg();
+        steps.click_button(getDataTender);
 
+
+    }
+
+    @Test
+    @Title("Проверка ошибки при создании заявки выбора типа БГ")
+    public void checkErrorMessageEmptyTypeBg(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.click_button(getDataTender);
+        steps.check_error_empty_type_bg();
+
+    }
+
+    @Test
+    @Title("Проверка ошибки при создании заявки без указания реестрового номера")
+    public void checkErrorMessageEmptyRegistryNumber(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.click_button(getDataTender);
+        steps.check_error_empty_registry_number();
 
     }
 }

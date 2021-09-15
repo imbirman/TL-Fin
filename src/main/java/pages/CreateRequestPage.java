@@ -16,6 +16,9 @@ public class CreateRequestPage extends PageObject {
     private By cardRegNumber = By.id("Card_regnumber"); // Поле для воода реестрового номера
     private By radioButtonEnsuringTender = By.id("Card_bg_type_0"); // Выбор типа БГ
     protected By getDataTender = By.id("GetTenderInfoBtn"); // Кнопка "Получить данные" (получение данные для заявки из тендера)
+    private By errorMessage= By.xpath("//p[@class='errorMessage']");
+    private By createRequestCloseTenderButton = By.xpath("//a[text()='Создать заявку на БГ (закрытый тендер)']");
+    private By createRequestFz = By.xpath("//a[text()='Создать заявку на БГ по ФЗ-185, 615-ПП']");
 
     public void clickButton(By button){ // Клик по кнопке
         find(button).click();
@@ -41,6 +44,16 @@ public class CreateRequestPage extends PageObject {
         return this;
     } // Выбор типа БГ
 
+    public String getErrorMessage(){
+        return find(errorMessage).getText();
+    } // Получение текста ошибки
 
+    public boolean getVisibilityCloseTenderButton(){
+        return find(createRequestCloseTenderButton).isDisplayed();
+    } // Проверка доступности кнопки для создания заявки на БГ для закрытого тендера
+
+    public boolean getVisibilityFzTenderButton(){
+        return find(createRequestFz).isDisplayed();
+    } // Проверка доступности кнопки для создания заявки на БГ по ФЗ-185, 615-ПП
 
 }

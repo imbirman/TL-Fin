@@ -37,7 +37,7 @@ public class LoginMainSteps{
     }
     @Step
     public void check_login_admin_menu(){
-        Assertions.assertThat(page.getLoginMenu()).isEqualTo("s.kosobutskiy▼");
+        Assertions.assertThat(page.getLoginMenu()).as("Логин несоответствует введенному при входе").isEqualTo("s.kosobutskiy▼");
     } // Проверка логина админа после входа
 
     @Step
@@ -47,26 +47,22 @@ public class LoginMainSteps{
 
     @Step
     public void check_login_agent_menu(){
-        try {
-            Assertions.assertThat(page.getLoginMenu()).isEqualTo("broker-test▼");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+            Assertions.assertThat(page.getLoginMenu()).as("Логин несоответствует введенному при входе").isEqualTo("broker-test▼");
     } // Проверка логина агента после входа
 
     @Step
     public void check_login_client_menu(){
-        Assertions.assertThat(page.getLoginMenu()).isEqualTo("absolut▼");
+        Assertions.assertThat(page.getLoginMenu()).as("Логин несоответствует введенному при входе").isEqualTo("absolut▼");
     } // Проверка логина клиента после входа
 
     @Step
     public void check_login_bank_menu(){
-        Assertions.assertThat(page.getLoginMenu()).isEqualTo("psb-test▼");
+        Assertions.assertThat(page.getLoginMenu()).as("Логин несоответствует введенному при входе").isEqualTo("psb-test▼");
     } // Проверка логина банка после входа
 
     @Step
     public void check_enabled_sidebar(){
-        Assertions.assertThat(page.getDisplayedSidebar()).isTrue();
+        Assertions.assertThat(page.getDisplayedSidebar()).isFalse();
     } // Проверка скрытия меню таблицы
 
     @Step

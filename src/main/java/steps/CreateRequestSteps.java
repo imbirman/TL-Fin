@@ -1,6 +1,7 @@
 package steps;
 
 import net.thucydides.core.annotations.Step;
+import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
 import pages.CreateRequestPage;
 
@@ -38,6 +39,27 @@ public class CreateRequestSteps{
     public void set_type_bg(){
         page.setTypeBG();
     } // Выбрать тип БГ
+
+    @Step
+    public void check_error_empty_type_bg(){
+        Assertions.assertThat(page.getErrorMessage()).as("Сообщение ошибки некорректно или отсутствует").isEqualTo("Не выбран тип БГ");
+    }
+
+    @Step
+    public void check_error_empty_registry_number(){
+        Assertions.assertThat(page.getErrorMessage()).as("Сообщение ошибки некорректно или отсутствует").isEqualTo("Введен некорректный реестровый номер");
+    }
+
+    @Step
+    public void check_close_tender_button(){
+        Assertions.assertThat(page.getVisibilityCloseTenderButton()).as("Кнопка 'Создать заявку на БГ (закрытый тендер)' отсутствует").isTrue();
+    }
+
+    @Step
+    public void check_fz_tender_button(){
+        Assertions.assertThat(page.getVisibilityCloseTenderButton()).as("Кнопка 'Создать заявку на БГ по ФЗ-185, 615-ПП' отсутствует").isTrue();
+    }
+
 
 
 }

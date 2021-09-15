@@ -51,7 +51,7 @@ public class LoginMainPage extends PageObject {
     }
 
     public boolean getDisplayedSidebar(){ // Возвращает отображается ли меню таблицы
-        return find(sidebar).isEnabled();
+        return find(sidebar).isDisplayed();
     }
 
     public List<WebElementFacade> getRows(){ // Получение списка строк элементов таблицы
