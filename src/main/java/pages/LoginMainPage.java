@@ -19,6 +19,10 @@ public class LoginMainPage extends PageObject {
     protected By buttonToggleMenu = By.id("toogleCardMenu");
     private By sidebar = By.xpath("//div[@class='flat-tab']");
     private By tableElement = By.xpath("//table[@class='items']");
+    protected By selectNumberElementsTable = By.id("pageSize");
+    protected By setOption25 = By.xpath("//option[@value='25']");
+    protected By setOption50 = By.xpath("//option[@value='50']");
+    protected By setOption100 = By.xpath("//option[@value='100']");
 
     public void clickButton(By button){ // Клик по кнопке
         find(button).click();

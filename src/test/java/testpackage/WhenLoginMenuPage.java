@@ -85,13 +85,52 @@ public class WhenLoginMenuPage extends LoginMainPage {
 
     @Test
     @Title("Проверка количества элементов таблицы по умолчанию")
-    public void checkNumberRows(){
+    public void checkNumberRowsDefault(){
 
         steps.open_login_main_page();
         steps.type_email("s.kosobutskiy");
         steps.type_password("P5@Dst");
         steps.click_button(signInButton);
-        steps.check_number_elements_table();
+        steps.check_number_elements_table(10);
+    }
+
+    @Test
+    @Title("Проверка количества элементов таблицы при выборе 25")
+    public void checkNumberRows25(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(selectNumberElementsTable);
+        steps.click_button(setOption25);
+        steps.check_number_elements_table(25);
+    }
+
+    @Test
+    @Title("Проверка количества элементов таблицы при выборе 50")
+    public void checkNumberRows50(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(selectNumberElementsTable);
+        steps.click_button(setOption50);
+        steps.check_number_elements_table(50);
+    }
+
+    @Test
+    @Title("Проверка количества элементов таблицы при выборе 100")
+    public void checkNumberRows100(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(selectNumberElementsTable);
+        steps.click_button(setOption100);
+        steps.check_number_elements_table(100);
     }
 
 }

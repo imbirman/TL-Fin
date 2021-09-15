@@ -47,7 +47,11 @@ public class LoginMainSteps{
 
     @Step
     public void check_login_agent_menu(){
-        Assertions.assertThat(page.getLoginMenu()).isEqualTo("broker-test▼");
+        try {
+            Assertions.assertThat(page.getLoginMenu()).isEqualTo("broker-test▼");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     } // Проверка логина агента после входа
 
     @Step
@@ -66,8 +70,22 @@ public class LoginMainSteps{
     } // Проверка скрытия меню таблицы
 
     @Step
-    public void check_number_elements_table(){
-        Assertions.assertThat(page.getRows().size()).isEqualTo(10);
-    }
+    public void check_number_elements_table(int number){
+
+        switch (number) {
+            case 10:
+                Assertions.assertThat(page.getRows().size()).isEqualTo(10);
+                break;
+            case 25:
+                Assertions.assertThat(page.getRows().size()).isEqualTo(25);
+                break;
+            case 50:
+                Assertions.assertThat(page.getRows().size()).isEqualTo(50);
+                break;
+            case 100:
+                Assertions.assertThat(page.getRows().size()).isEqualTo(100);
+                break;
+        }
+    } // Проверка количества элементов в таблице
 
 }
