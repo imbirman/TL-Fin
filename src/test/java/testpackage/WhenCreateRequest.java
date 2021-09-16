@@ -77,23 +77,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    @Pending
-    @Title("Проверка заполненных полей при создании заявки")
-    public void checkFullFieldAtCreateRequest(){
-        steps.open_login_main_page();
-        steps.type_email("s.kosobutskiy");
-        steps.type_password("P5@Dst");
-        steps.click_button(signInButton);
-        steps.click_button(createRequestButton);
-        steps.click_button(bank);
-        steps.click_button(createNewCard);
-        steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
-        steps.click_button(getDataTender);
-
-    }
-
-    @Test
     @Title("Проверка заполнения полей по умолчанию после получения данных тендера")
     public void checkDefaultFields(){
 
@@ -112,7 +95,5 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.check_ex_guarantee_yes_rb();
         steps.check_warranty_guarantee_no_rb();
         steps.check_prepayment_guarantee_no_rb();
-
-
     }
 }
