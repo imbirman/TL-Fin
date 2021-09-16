@@ -50,6 +50,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(createRequestButton);
         steps.click_button(bank);
         steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
         steps.click_button(getDataTender);
         steps.check_error_empty_type_bg();
 
@@ -66,6 +67,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(createRequestButton);
         steps.click_button(bank);
         steps.click_button(createNewCard);
+        steps.set_type_bg();
         steps.click_button(getDataTender);
         steps.check_error_empty_registry_number();
         steps.check_fz_tender_button();
