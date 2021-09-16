@@ -19,6 +19,14 @@ public class CreateRequestPage extends PageObject {
     private By errorMessage= By.xpath("//p[@class='errorMessage']");
     private By createRequestCloseTenderButton = By.xpath("//a[text()='Создать заявку на БГ (закрытый тендер)']");
     private By createRequestFz = By.xpath("//a[text()='Создать заявку на БГ по ФЗ-185, 615-ПП']");
+    private By sourceLink = By.id("Card_link"); // Поле "Ссылка на источник"
+    private By executionGuaranteeYesRB = By.id("Card_need_exec_guarantee_0"); // radiobutton "исполнение обязательств" - да
+    private By warrantyGuaranteeNoRB = By.id("Card_need_warr_guarantee_1"); // radiobutton "Гарантия гарантийного периода" - нет
+    private By prepaymentGuaranteeNoRB = By.id("Card_need_avans_guarantee_1"); // radiobutton "Возврат аванса" - нет
+    private By sumGuarantee = By.id("Card_guarantee_sum"); // Поле "Сумма банковской гарантии"
+    private By dateBgFromChB = By.id("from_cur_date"); // Чек-бокс "Срок БГ с даты выдачи"
+
+
 
     public void clickButton(By button){ // Клик по кнопке
         find(button).click();
@@ -55,5 +63,31 @@ public class CreateRequestPage extends PageObject {
     public boolean getVisibilityFzTenderButton(){
         return find(createRequestFz).isDisplayed();
     } // Проверка доступности кнопки для создания заявки на БГ по ФЗ-185, 615-ПП
+
+    public boolean getFullSourceLink(){
+        String fullSourceLink;
+        fullSourceLink = find(sourceLink).getText();
+        return fullSourceLink.isEmpty();
+    } // Проверка, что в поле есть ссылка
+
+    public boolean getExGuaranteeYesRB(){
+        return find(executionGuaranteeYesRB).isSelected();
+    } // Проверка, что по умолчанию выбрано "Да" в блоке "Исполнение обязательств"
+
+    public boolean getWarrantyGuaranteeNoRB(){
+        return find(warrantyGuaranteeNoRB).isSelected();
+    } // Проверка, что по умолчанию выбрано "Нет" в блоке "Гарантия гарантийного периода"
+
+    public boolean getPrepaymentGuaranteeNoRB(){
+        return find(prepaymentGuaranteeNoRB).isSelected();
+    } // Проверка, что по умолчанию выбрано "Нет" в блоке "Возврат аванса"
+
+    public boolean getSumGuarantee(){
+        String sumGuarantee;
+        sumGuarantee = find(prepaymentGuaranteeNoRB).getText();
+        return sumGuarantee.isEmpty();
+    } // Проверка, что поле "Сумма банковской гарантии" заполнено
+
+
 
 }
