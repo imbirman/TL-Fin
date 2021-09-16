@@ -67,8 +67,7 @@ public class CreateRequestSteps{
     @Step
     public void check_full_source_link(){
         Assertions.assertThat(page.getFullSourceLink())
-                .as("Поле 'Ссылка на источник' не заполнена или некорректна!!!")
-                .isFalse();
+                .as("Поле 'Ссылка на источник' не заполнена или некорректна!!!").isFalse();
     }
 
     @Step
@@ -93,6 +92,30 @@ public class CreateRequestSteps{
     public void check_prepayment_guarantee_no_rb(){
         Assertions.assertThat(page.getPrepaymentGuaranteeNoRB())
                 .as("В блоке 'Возврат аванса' не выбрано значение 'Нет' по умолчанию!!!").isTrue();
+    }
+
+    @Step
+    public void check_date_bg_from(){
+        Assertions.assertThat(page.getDateBgFrom())
+                .as("Не заполнено поле 'Сумма банковской гарантии'!!!").isTrue();
+    }
+
+    @Step
+    public void check_error_message_expired(){
+        Assertions.assertThat(page.getErrorMessageExpired())
+                .as("Текст ошибки некорректен или отсутствует").isEqualTo("Необходимо заполнить поле «Срок БГ до».");
+    }
+
+    @Step
+    public void check_error_message_responsibility(){
+        Assertions.assertThat(page.getErrorMessageResponsibility())
+                .as("Текст ошибки некорректен или отсутствует").isEqualTo("Необходимо заполнить поле «Срок выполнения работ/оказания услуг».");
+    }
+
+    @Step("Ошибка: Необходимо заполнить поле «Вид контракта/договора».")
+    public void check_error_message_contract(){
+        Assertions.assertThat(page.getErrorMessageContract())
+                .as("Текст ошибки некорректен или отсутствует").isEqualTo("Необходимо заполнить поле «Вид контракта/договора».");
     }
 
 

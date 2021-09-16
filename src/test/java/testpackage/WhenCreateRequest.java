@@ -95,5 +95,60 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.check_ex_guarantee_yes_rb();
         steps.check_warranty_guarantee_no_rb();
         steps.check_prepayment_guarantee_no_rb();
+        steps.check_date_bg_from();
+    }
+
+    @Test
+    @Title("Проверка ошибки при незаполнении обязательного поля 'Срок БГ до *'")
+    public void checkRequiredFieldExpired(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_bg();
+        steps.click_button(getDataTender);
+        steps.click_button(createCard);
+        steps.check_error_message_expired();
+    }
+
+    @Test
+    @Title("Проверка ошибки при незаполнении обязательного поля 'Срок выполнения работ/оказания услуг *'")
+    public void checkRequiredFieldResponsibility(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_bg();
+        steps.click_button(getDataTender);
+        steps.click_button(createCard);
+        steps.check_error_message_responsibility();
+    }
+
+    @Test
+    @Title("Проверка ошибки при не выборе пункта обязательного блока 'Вид контракта/договора *")
+    public void checkRequiredFieldContract(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_bg();
+        steps.click_button(getDataTender);
+        steps.click_button(createCard);
+        steps.check_error_message_contract();
     }
 }
