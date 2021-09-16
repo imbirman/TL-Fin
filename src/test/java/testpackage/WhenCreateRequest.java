@@ -94,7 +94,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    @Pending
     @Title("Проверка заполнения полей по умолчанию после получения данных тендера")
     public void checkDefaultFields(){
 
