@@ -10,103 +10,103 @@ public class CreateRequestSteps{
 
     CreateRequestPage page;
 
-    @Step
+    @Step("Открытие страницы")
     public void open_login_main_page(){
         page.open();
     } // Открыть страницу сайта
 
-    @Step
+    @Step("Ввод логина")
     public void type_email(String mail){
         page.typeEmail(mail);
     } // Ввести данные логина
 
-    @Step
+    @Step("Ввод пароля")
     public void type_password(String password){
         page.typePassword(password);
     } // Ввести данные пароля
 
-    @Step
+    @Step("Нажать кнопку (0)")
     public void click_button(By button){
         page.clickButton(button);
     } // Нажать на кнопку
 
-    @Step
+    @Step("Ввод реестрового номера")
     public void type_tender_number(String tender){
         page.typeTenderNumber(tender);
     } // Ввести номер тендера для БГ
 
-    @Step
+    @Step("Выбор типа БГ")
     public void set_type_bg(){
         page.setTypeBG();
     } // Выбрать тип БГ
 
-    @Step
+    @Step("Проверка ошибки при неуказанном типе БГ")
     public void check_error_empty_type_bg(){
         Assertions.assertThat(page.getErrorMessage())
                 .as("Сообщение ошибки некорректно или отсутствует").isEqualTo("Не выбран тип БГ");
     }
 
-    @Step
+    @Step("Проверка ошибки при некорректном реестровом номере")
     public void check_error_empty_registry_number(){
         Assertions.assertThat(page.getErrorMessage())
                 .as("Сообщение ошибки некорректно или отсутствует").isEqualTo("Введен некорректный реестровый номер");
     }
 
-    @Step
+    @Step("Кнопка 'Создать заявку на БГ (закрытый тендер)' доступна при создании заявки без указания реестрового номера")
     public void check_close_tender_button(){
         Assertions.assertThat(page.getVisibilityCloseTenderButton())
                 .as("Кнопка 'Создать заявку на БГ (закрытый тендер)' отсутствует").isTrue();
     }
 
-    @Step
+    @Step("Кнопка 'Создать заявку на БГ по ФЗ-185, 615-ПП' доступна при создании заявки без указания реестрового номера")
     public void check_fz_tender_button(){
         Assertions.assertThat(page.getVisibilityFzTenderButton())
                 .as("Кнопка 'Создать заявку на БГ по ФЗ-185, 615-ПП' отсутствует").isTrue();
     }
 
-    @Step
+    @Step("Проверка на заполненность поля 'Ссылка на источник' по умолчанию")
     public void check_full_source_link(){
         Assertions.assertThat(page.getFullSourceLink())
                 .as("Поле 'Ссылка на источник' не заполнена или некорректна!!!").isFalse();
     }
 
-    @Step
+    @Step("Проверка на заполненность поля 'Сумма банковской гарантии' по умолчанию")
     public void check_sum_guarantee(){
         Assertions.assertThat(page.getSumGuarantee())
                 .as("Поле 'Сумма банковской гарантии' не заполнена!!!").isFalse();
     }
 
-    @Step
+    @Step("Проверка на выбор значения 'Да' блока 'Исполнение обязательств' по умолчанию")
     public void check_ex_guarantee_yes_rb(){
         Assertions.assertThat(page.getExGuaranteeYesRB())
                 .as("В блоке 'Исполнение обязательств' не выбрано значение 'Да' по умолчанию!!!").isTrue();
     }
 
-    @Step
+    @Step("Проверка на выбор значения 'Нет' блока 'Гарантия гарантийного периода' по умолчанию")
     public void check_warranty_guarantee_no_rb(){
         Assertions.assertThat(page.getWarrantyGuaranteeNoRB())
                 .as("В блоке 'Гарантия гарантийного периода' не выбрано значение 'Нет' по умолчанию!!!").isTrue();
     }
 
-    @Step
+    @Step("Проверка на выбор значения 'Нет' блока 'Возврат аванса' по умолчанию")
     public void check_prepayment_guarantee_no_rb(){
         Assertions.assertThat(page.getPrepaymentGuaranteeNoRB())
                 .as("В блоке 'Возврат аванса' не выбрано значение 'Нет' по умолчанию!!!").isTrue();
     }
 
-    @Step
+    @Step("Проверка на то, что чек-бокс 'Срок БГ с' проставлен по умолчанию")
     public void check_date_bg_from(){
         Assertions.assertThat(page.getDateBgFrom())
-                .as("Не заполнено поле 'Сумма банковской гарантии'!!!").isTrue();
+                .as("Не проставлен чек-бокс 'Срок БГ с'!!!").isTrue();
     }
 
-    @Step
+    @Step("Ошибка: Необходимо заполнить поле «Срок БГ до».")
     public void check_error_message_expired(){
         Assertions.assertThat(page.getErrorMessageExpired())
                 .as("Текст ошибки некорректен или отсутствует").isEqualTo("Необходимо заполнить поле «Срок БГ до».");
     }
 
-    @Step
+    @Step("Ошибка: Необходимо заполнить поле «Срок выполнения работ/оказания услуг».")
     public void check_error_message_responsibility(){
         Assertions.assertThat(page.getErrorMessageResponsibility())
                 .as("Текст ошибки некорректен или отсутствует").isEqualTo("Необходимо заполнить поле «Срок выполнения работ/оказания услуг».");

@@ -84,6 +84,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка количества элементов таблицы по умолчанию")
     public void checkNumberRowsDefault(){
 
@@ -95,6 +96,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка количества элементов таблицы при выборе 25")
     public void checkNumberRows25(){
 
@@ -108,6 +110,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка количества элементов таблицы при выборе 50")
     public void checkNumberRows50(){
 
@@ -121,6 +124,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка количества элементов таблицы при выборе 100")
     public void checkNumberRows100(){
 
