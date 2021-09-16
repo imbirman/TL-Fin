@@ -66,7 +66,9 @@ public class CreateRequestSteps{
 
     @Step
     public void check_full_source_link(){
-        Assertions.assertThat(page.getFullSourceLink()).as("Поле 'Ссылка на источник' не заполнена!!!").isFalse();
+        Assertions.assertThat(page.getFullSourceLink())
+                .as("Поле 'Ссылка на источник' не заполнена или некорректна!!!")
+                .isEqualTo("http://zakupki.gov.ru/epz/order/notice/ea44/view/common-info.html?regNumber=0158300043421000067");
     }
 
     @Step

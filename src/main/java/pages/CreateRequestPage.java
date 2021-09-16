@@ -64,10 +64,9 @@ public class CreateRequestPage extends PageObject {
         return find(createRequestFz).isDisplayed();
     } // Проверка доступности кнопки для создания заявки на БГ по ФЗ-185, 615-ПП
 
-    public boolean getFullSourceLink(){
-        String fullSourceLink;
-        fullSourceLink = find(sourceLink).getText();
-        return fullSourceLink.isEmpty();
+    public String getFullSourceLink(){
+        return find(sourceLink).getText();
+//        return find(sourceLink).getText().isEmpty();
     } // Проверка, что в поле есть ссылка
 
     public boolean getExGuaranteeYesRB(){
@@ -83,9 +82,7 @@ public class CreateRequestPage extends PageObject {
     } // Проверка, что по умолчанию выбрано "Нет" в блоке "Возврат аванса"
 
     public boolean getSumGuarantee(){
-        String sumGuarantee;
-        sumGuarantee = find(prepaymentGuaranteeNoRB).getText();
-        return sumGuarantee.isEmpty();
+        return find(prepaymentGuaranteeNoRB).getText().isEmpty();
     } // Проверка, что поле "Сумма банковской гарантии" заполнено
 
 
