@@ -133,7 +133,7 @@ public class CreateRequestSteps{
     @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Вид контракта/договора».")
     public void check_text_error_message_contract_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
-                .as("Всплывающая ошибка не содержит нужный текст").isEqualTo("Необходимо заполнить поле «Вид контракта/договора».");
+                .as("Всплывающая ошибка не содержит нужный текст").contains("Необходимо заполнить поле «Вид контракта/договора».");
     }
 
     @Step("Есть ли алерт ошибок при создании заявки")
