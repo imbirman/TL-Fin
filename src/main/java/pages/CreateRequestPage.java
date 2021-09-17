@@ -7,16 +7,17 @@ import org.openqa.selenium.By;
 @DefaultUrl("http://test.tl-fin.ru/card/index")
 public class CreateRequestPage extends PageObject {
 
-    private By loginField = By.id("LoginForm_login");
-    private By passwordField = By.id("LoginForm_password");
     protected By signInButton = By.xpath("//input[@type='submit']"); // Кнопка входа
     protected By createRequestButton = By.xpath("//li[@id='ClientListItem']"); // Кнопка меню "Создать заявку"
-    protected By bank = By.xpath("//a[@href='/client/11']"); //
-    protected By createNewCard = By.id("createNewCard"); // Кнопка "Создать заявку на БГ"
-    protected By createCard = By.xpath("//input[@name='createCardBtn']");
-    private By cardRegNumber = By.id("Card_regnumber"); // Поле для воода реестрового номера
-    private By radioButtonEnsuringTender = By.id("Card_bg_type_0"); // Выбор типа БГ
+    protected By bank = By.xpath("//a[@href='/client/11']"); // Ссылка выбора банка для создания заявки
+    protected By createNewCard = By.id("createNewCard"); // Кнопка "Создать заявку на БГ" в главном меню
+    protected By createCard = By.xpath("//input[@name='createCardBtn']"); // Кнопка "Создать заявку"
     protected By getDataTender = By.id("GetTenderInfoBtn"); // Кнопка "Получить данные" (получение данные для заявки из тендера)
+
+    private By loginField = By.id("LoginForm_login"); // Поле логина
+    private By passwordField = By.id("LoginForm_password"); // Поле пароля
+    private By cardRegNumber = By.id("Card_regnumber"); // Поле для ввода реестрового номера
+    private By radioButtonEnsuringTender = By.id("Card_bg_type_0"); // Выбор типа БГ
     private By errorMessage= By.xpath("//p[@class='errorMessage']");
     private By createRequestCloseTenderButton = By.xpath("//a[text()='Создать заявку на БГ (закрытый тендер)']");
     private By createRequestFz = By.xpath("//a[text()='Создать заявку на БГ по ФЗ-185, 615-ПП']");
@@ -29,6 +30,7 @@ public class CreateRequestPage extends PageObject {
     private By errorMessageExpired = By.id("Card_guarantee_expired_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок БГ до»."
     private By errorMessageResponsibility = By.id("Card_responsibility_to_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок выполнения работ/оказания услуг»."
     private By errorMessageContract = By.id("Card_contract_type_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Вид контракта/договора»."
+    private By errorMessageAlert = By.xpath("//div[@class='message']");
 
 
 
@@ -95,16 +97,22 @@ public class CreateRequestPage extends PageObject {
 
     public String getErrorMessageExpired(){
         return find(errorMessageExpired).getText();
-    }
+    } // Получение текста ошибки при незаполнении поля "Срок БГ до *"
 
     public String getErrorMessageResponsibility(){
         return find(errorMessageResponsibility).getText();
-    }
+    } // Получение текста ошибки при незаполнении поля "Срок выполнения работ/оказания услуг *"
 
     public String getErrorMessageContract(){
         return find(errorMessageContract).getText();
-    }
+    } // Получение текста ошибки при не выборе значения в блоке "Вид контракта/договора *"
 
+    public String getTextErrorMessageAlert(){
+        return find(errorMessageAlert).getText();
+    } // Получение текста алерта ошибок
 
+    public boolean getErrorMessageAlert(){
+        return find(errorMessageAlert).isDisplayed();
+    } // Получение наличия алерта ошибок
 
 }

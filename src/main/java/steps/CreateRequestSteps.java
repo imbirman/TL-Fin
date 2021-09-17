@@ -118,5 +118,29 @@ public class CreateRequestSteps{
                 .as("Текст ошибки некорректен или отсутствует").isEqualTo("Необходимо заполнить поле «Вид контракта/договора».");
     }
 
+    @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Срок БГ до».")
+    public void check_text_error_message_expired_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка не содержит нужный текст").contains("Необходимо заполнить поле «Срок БГ до».");
+    }
+
+    @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Срок выполнения работ/оказания услуг».")
+    public void check_text_error_message_responsibility_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка не содержит нужный текст").contains("Необходимо заполнить поле «Срок выполнения работ/оказания услуг».");
+    }
+
+    @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Вид контракта/договора».")
+    public void check_text_error_message_contract_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка не содержит нужный текст").isEqualTo("Необходимо заполнить поле «Вид контракта/договора».");
+    }
+
+    @Step("Есть ли алерт ошибок при создании заявки")
+    public void check_error_message_alert(){
+        Assertions.assertThat(page.getErrorMessageAlert())
+                .as("Текст ошибки некорректен или отсутствует").isTrue();
+    }
+
 
 }
