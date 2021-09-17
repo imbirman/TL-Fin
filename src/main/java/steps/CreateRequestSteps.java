@@ -139,7 +139,7 @@ public class CreateRequestSteps{
     @Step("Есть ли алерт ошибок при создании заявки")
     public void check_error_message_alert(){
         Assertions.assertThat(page.getErrorMessageAlert())
-                .as("Текст ошибки некорректен или отсутствует").isTrue();
+                .as("Всплывающая ошибка отсутствует").isTrue();
     }
 
 

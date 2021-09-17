@@ -108,11 +108,11 @@ public class CreateRequestPage extends PageObject {
     } // Получение текста ошибки при не выборе значения в блоке "Вид контракта/договора *"
 
     public String getTextErrorMessageAlert(){
-        return find(errorMessageAlert).getText();
+        return find(errorMessageAlert).waitUntilVisible().getText();
     } // Получение текста алерта ошибок
 
     public boolean getErrorMessageAlert(){
-        return find(errorMessageAlert).isDisplayed();
+        return find(errorMessageAlert).waitUntilVisible().isDisplayed();
     } // Получение наличия алерта ошибок
 
 }
