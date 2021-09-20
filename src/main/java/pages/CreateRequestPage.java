@@ -140,7 +140,7 @@ public class CreateRequestPage extends PageObject {
     public String getRequiredExpiredGuarantee(){
 
 
-        return find(requiredExpiredGuarantee).getValue();
+        return find(requiredExpiredGuarantee).getText();
     }
 
 }
