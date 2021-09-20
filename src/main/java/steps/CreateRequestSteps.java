@@ -163,5 +163,11 @@ public class CreateRequestSteps{
                 .as("Текст ошибки некорректен или отсутствует").isEqualTo("Не заполнено поле Сумма");
     }
 
+    @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Вид контракта/договора».")
+    public void check_text_error_message_sum_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка не содержит нужный текст").contains("Не заполнено поле Сумма");
+    }
+
 
 }

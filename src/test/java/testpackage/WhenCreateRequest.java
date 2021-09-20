@@ -157,6 +157,27 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Title("Проверка ошибки, если не заполнено поле 'Сумма' в блоке 'Исполнение обязательств'")
+    public void checkRequiredExpiredGuarantee(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_bg();
+        steps.click_button(getDataTender);
+        steps.set_required_expired_guarantee();
+        steps.set_required_responsibility_guarantee();
+        steps.click_button(requiredContractGuarantee);
+        steps.click_button(createCard);
+        steps.check_error_message_sum();
+    }
+
+    @Test
     @Pending
     @Title("Проверка наличия алерта с ошибками")
     public void checkErrorAlert(){
@@ -233,6 +254,27 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Title("Проверка текста алерта с ошибками - ошибка поля 'Сумма' в блоке 'Исполнение обязательств'")
+    public void checkErrorSumAlert(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_bg();
+        steps.click_button(getDataTender);
+        steps.set_required_expired_guarantee();
+        steps.set_required_responsibility_guarantee();
+        steps.click_button(requiredContractGuarantee);
+        steps.click_button(createCard);
+        steps.check_text_error_message_sum_alert();
+    }
+
+    @Test
     @Pending
     @Title("Проверка скрытия элементов при выборе в блоке 'Исполнение обязательств' значения 'Нет'")
     public void checkHideExGuarantee(){
@@ -251,24 +293,5 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.check_hide_ex_guarantee();
     }
 
-    @Test
-    @Title("Проверка ошибки, если не заполнено поле 'Сумма' в блоке 'Исполнение обязательств'")
-    public void checkRequiredExpiredGuarantee(){
 
-        steps.open_login_main_page();
-        steps.type_email("s.kosobutskiy");
-        steps.type_password("P5@Dst");
-        steps.click_button(signInButton);
-        steps.click_button(createRequestButton);
-        steps.click_button(bank);
-        steps.click_button(createNewCard);
-        steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
-        steps.click_button(getDataTender);
-        steps.set_required_expired_guarantee();
-        steps.set_required_responsibility_guarantee();
-        steps.click_button(requiredContractGuarantee);
-        steps.click_button(createCard);
-        steps.check_error_message_sum();
-    }
 }
