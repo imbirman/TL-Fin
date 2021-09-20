@@ -152,9 +152,15 @@ public class CreateRequestSteps{
         page.setRequiredExpiredGuarantee();
     }
 
-    @Step("Проверка значения")
-    public void check_required_expired_guarantee(){
-        Assertions.assertThat(page.getRequiredExpiredGuarantee()).isEqualTo("20.09.2021");
+    @Step("Ввод срока выполнения работ")
+    public void set_required_responsibility_guarantee(){
+        page.setRequiredResponsibilityGuarantee();
+    }
+
+    @Step("Ввод срока выполнения работ")
+    public void check_error_message_sum(){
+        Assertions.assertThat(page.getErrorMessageSum())
+                .as("Текст ошибки некорректен или отсутствует").isEqualTo("Не заполнено поле Сумма");
     }
 
 

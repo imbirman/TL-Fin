@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 @DefaultUrl("http://test.tl-fin.ru/card/index")
 public class CreateRequestPage extends PageObject {
@@ -17,6 +18,7 @@ public class CreateRequestPage extends PageObject {
     protected By createCard = By.xpath("//input[@name='createCardBtn']"); // Кнопка "Создать заявку"
     protected By getDataTender = By.id("GetTenderInfoBtn"); // Кнопка "Получить данные" (получение данные для заявки из тендера)
     protected By executionGuaranteeNoRB = By.id("Card_need_exec_guarantee_1"); // radiobutton "исполнение обязательств" - нет
+    protected By requiredContractGuarantee = By.id("Card_contract_type_0"); // radiobutton "Вид контракта/договора *" - Контракт
 
     private By loginField = By.id("LoginForm_login"); // Поле логина
     private By passwordField = By.id("LoginForm_password"); // Поле пароля
@@ -36,10 +38,11 @@ public class CreateRequestPage extends PageObject {
     private By errorMessageExpired = By.id("Card_guarantee_expired_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок БГ до»."
     private By errorMessageResponsibility = By.id("Card_responsibility_to_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок выполнения работ/оказания услуг»."
     private By errorMessageContract = By.id("Card_contract_type_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Вид контракта/договора»."
+    private By errorMessageSum = By.id("Card_exec_guarant_sum_em_"); //Сообщение об ошибке "Не заполнено поле Сумма"
     private By errorMessageAlert = By.xpath("//div[@class='message']"); // Алерт с ошибками при создании заявки и незаполнении обязательных полей
     private By requiredExpiredGuarantee = By.id("Card_guarantee_expired"); // Поле "Срок БГ до *"
     private By requiredResponsibilityGuarantee = By.id("Card_responsibility_to"); // Поле "Срок выполнения работ/оказания услуг *"
-    private By requiredContractGuarantee = By.id("Card_contract_type_0"); // radiobutton "Вид контракта/договора *" - Контракт
+
 
 
 
@@ -131,16 +134,23 @@ public class CreateRequestPage extends PageObject {
 
     public CreateRequestPage setRequiredExpiredGuarantee(){
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-
-        find(requiredExpiredGuarantee).sendKeys(dateFormat.toString());
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        Calendar calendar = new GregorianCalendar();
+        calendar.add(Calendar.MONTH, 1);
+        find(requiredExpiredGuarantee).sendKeys(dateFormat.format(calendar.getTime()));
         return this;
     }
 
-    public String getRequiredExpiredGuarantee(){
-
-
-        return find(requiredExpiredGuarantee).getText();
+    public CreateRequestPage setRequiredResponsibilityGuarantee(){
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        Calendar calendar = new GregorianCalendar();
+        calendar.add(Calendar.MONTH, 2);
+        find(requiredResponsibilityGuarantee).sendKeys(dateFormat.format(calendar.getTime()));
+        return this;
     }
+
+    public String getErrorMessageSum(){
+        return find(errorMessageSum).getText();
+    } // Получение текста ошибки, если не заполнено поле 'Сумма' в блоке 'Исполнение обязательств'
 
 }

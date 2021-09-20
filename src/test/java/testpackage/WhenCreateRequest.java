@@ -252,7 +252,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    @Title("Проверка скрытия элементов при выборе в блоке 'Исполнение обязательств' значения 'Нет'")
+    @Title("Проверка ошибки, если не заполнено поле 'Сумма' в блоке 'Исполнение обязательств'")
     public void checkRequiredExpiredGuarantee(){
 
         steps.open_login_main_page();
@@ -266,6 +266,9 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_type_bg();
         steps.click_button(getDataTender);
         steps.set_required_expired_guarantee();
-        steps.check_required_expired_guarantee();
+        steps.set_required_responsibility_guarantee();
+        steps.click_button(requiredContractGuarantee);
+        steps.click_button(createCard);
+        steps.check_error_message_sum();
     }
 }
