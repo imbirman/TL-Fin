@@ -123,10 +123,7 @@ public class CreateRequestPage extends PageObject {
     } // Получение наличия алерта ошибок
 
     public boolean hideExGuarantee(){
-
-//        if (find(card_ExecutionGuaranteeSum).isDisabled() & find(card_ExecutionGuaranteeTime).isDisabled()) return true;
-//        else return false;
-        return find(card_ExecutionGuaranteeSum).isDisabled() & find(card_ExecutionGuaranteeTime).isDisabled();
+        return find(card_ExecutionGuaranteeSum).isDisplayed() | find(card_ExecutionGuaranteeTime).isDisplayed();
     } // Проверка скрытия элементов при выборе в блоке "Исполнение обязательств" значения "Нет"
 
 }

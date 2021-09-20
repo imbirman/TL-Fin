@@ -144,7 +144,7 @@ public class CreateRequestSteps{
     @Step
     public void check_hide_ex_guarantee(){
         Assertions.assertThat(page.hideExGuarantee())
-                .as("Блок 'Исполнение обязательств' не скрыт").isTrue();
+                .as("Блок 'Исполнение обязательств' не скрыт").isFalse();
     }
 
 
