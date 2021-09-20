@@ -233,7 +233,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    @Pending
     @Title("Проверка скрытия элементов при выборе в блоке 'Исполнение обязательств' значения 'Нет'")
     public void checkHideExGuarantee(){
 
