@@ -25,7 +25,7 @@ public class CreateRequestSteps{
         page.typePassword(password);
     } // Ввести данные пароля
 
-    @Step("Нажать кнопку (0)")
+    @Step("Нажать кнопку [0]")
     public void click_button(By button){
         page.clickButton(button);
     } // Нажать на кнопку
@@ -141,7 +141,7 @@ public class CreateRequestSteps{
         Assertions.assertThat(page.getErrorMessageAlert())
                 .as("Всплывающая ошибка отсутствует").isTrue();
     }
-    @Step
+    @Step("Скрытие полей в блоке 'Исполнение обязательств'")
     public void check_hide_ex_guarantee(){
         Assertions.assertThat(page.hideExGuarantee())
                 .as("Блок 'Исполнение обязательств' не скрыт").isFalse();
