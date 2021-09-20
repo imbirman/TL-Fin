@@ -141,6 +141,11 @@ public class CreateRequestSteps{
         Assertions.assertThat(page.getErrorMessageAlert())
                 .as("Всплывающая ошибка отсутствует").isTrue();
     }
+    @Step
+    public void check_hide_ex_guarantee(){
+        Assertions.assertThat(page.hideExGuarantee())
+                .as("Блок 'Исполнение обязательств' не скрыт").isTrue();
+    }
 
 
 }

@@ -157,6 +157,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка наличия алерта с ошибками")
     public void checkErrorAlert(){
 
@@ -175,6 +176,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка текста алерта с ошибками - ошибка поля 'Срок БГ до *'")
     public void checkErrorExpiredAlert(){
 
@@ -193,6 +195,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка текста алерта с ошибками - ошибка поля 'Срок выполнения работ/оказания услуг *'")
     public void checkErrorResponsibilityAlert(){
 
@@ -211,6 +214,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка текста алерта с ошибками - ошибка поля 'Вид контракта/договора *'")
     public void checkErrorContractAlert(){
 
@@ -226,5 +230,24 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(getDataTender);
         steps.click_button(createCard);
         steps.check_text_error_message_contract_alert();
+    }
+
+    @Test
+    @Pending
+    @Title("Проверка скрытия элементов при выборе в блоке 'Исполнение обязательств' значения 'Нет'")
+    public void checkHideExGuarantee(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_bg();
+        steps.click_button(getDataTender);
+        steps.click_button(executionGuaranteeNoRB);
+        steps.check_hide_ex_guarantee();
     }
 }

@@ -13,6 +13,7 @@ public class CreateRequestPage extends PageObject {
     protected By createNewCard = By.id("createNewCard"); // Кнопка "Создать заявку на БГ" в главном меню
     protected By createCard = By.xpath("//input[@name='createCardBtn']"); // Кнопка "Создать заявку"
     protected By getDataTender = By.id("GetTenderInfoBtn"); // Кнопка "Получить данные" (получение данные для заявки из тендера)
+    protected By executionGuaranteeNoRB = By.id("Card_need_exec_guarantee_1"); // radiobutton "исполнение обязательств" - нет
 
     private By loginField = By.id("LoginForm_login"); // Поле логина
     private By passwordField = By.id("LoginForm_password"); // Поле пароля
@@ -26,17 +27,23 @@ public class CreateRequestPage extends PageObject {
     private By warrantyGuaranteeNoRB = By.id("Card_need_warr_guarantee_1"); // radiobutton "Гарантия гарантийного периода" - нет
     private By prepaymentGuaranteeNoRB = By.id("Card_need_avans_guarantee_1"); // radiobutton "Возврат аванса" - нет
     private By sumGuarantee = By.id("Card_guarantee_sum"); // Поле "Сумма банковской гарантии"
+    private By card_ExecutionGuaranteeSum = By.id("Card_exec_guarant_sum"); // Поле "Сумма" в блоке "Исполнение обязательств"
+    private By card_ExecutionGuaranteeTime = By.id("Card_exec_guarant_time"); // Поле "Срок(месяцев)" в блоке "Исполнение обязательств"
     private By dateBgFromChB = By.id("from_cur_date"); // Чек-бокс "Срок БГ с даты выдачи"
     private By errorMessageExpired = By.id("Card_guarantee_expired_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок БГ до»."
     private By errorMessageResponsibility = By.id("Card_responsibility_to_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок выполнения работ/оказания услуг»."
     private By errorMessageContract = By.id("Card_contract_type_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Вид контракта/договора»."
-    private By errorMessageAlert = By.xpath("//div[@class='message']");
+    private By errorMessageAlert = By.xpath("//div[@class='message']"); // Алерт с ошибками при создании заявки и незаполнении обязательных полей
+    private By requiredExpiredGuarantee = By.id("Card_guarantee_expired"); // Поле "Срок БГ до *"
+    private By requiredResponsibilityGuarantee = By.id("Card_responsibility_to"); // Поле "Срок выполнения работ/оказания услуг *"
+    private By requiredContractGuarantee = By.id("Card_contract_type_0"); // radiobutton "Вид контракта/договора *" - Контракт
+
 
 
 
     public void clickButton(By button){ // Клик по кнопке
         find(button).click();
-    } // Кликнуть по кнопке
+    } // Кликнуть по кнопке / выбрать radiobutton или checkbox
 
     public CreateRequestPage typeEmail(String email){ // Поиск поля емейла и ввод значения
         find(loginField).sendKeys(email);
@@ -114,5 +121,12 @@ public class CreateRequestPage extends PageObject {
     public boolean getErrorMessageAlert(){
         return find(errorMessageAlert).waitUntilVisible().isDisplayed();
     } // Получение наличия алерта ошибок
+
+    public boolean hideExGuarantee(){
+
+//        if (find(card_ExecutionGuaranteeSum).isDisabled() & find(card_ExecutionGuaranteeTime).isDisabled()) return true;
+//        else return false;
+        return find(card_ExecutionGuaranteeSum).isDisabled() & find(card_ExecutionGuaranteeTime).isDisabled();
+    } // Проверка скрытия элементов при выборе в блоке "Исполнение обязательств" значения "Нет"
 
 }
