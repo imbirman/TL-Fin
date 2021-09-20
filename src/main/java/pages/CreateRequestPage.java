@@ -4,6 +4,9 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 @DefaultUrl("http://test.tl-fin.ru/card/index")
 public class CreateRequestPage extends PageObject {
 
@@ -125,5 +128,19 @@ public class CreateRequestPage extends PageObject {
     public boolean hideExGuarantee(){
         return find(card_ExecutionGuaranteeSum).isDisplayed() | find(card_ExecutionGuaranteeTime).isDisplayed();
     } // Проверка скрытия элементов при выборе в блоке "Исполнение обязательств" значения "Нет"
+
+    public CreateRequestPage setRequiredExpiredGuarantee(){
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+
+        find(requiredExpiredGuarantee).sendKeys(dateFormat.toString());
+        return this;
+    }
+
+    public String getRequiredExpiredGuarantee(){
+
+
+        return find(requiredExpiredGuarantee).getValue();
+    }
 
 }

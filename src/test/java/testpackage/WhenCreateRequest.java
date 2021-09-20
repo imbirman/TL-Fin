@@ -233,6 +233,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Pending
     @Title("Проверка скрытия элементов при выборе в блоке 'Исполнение обязательств' значения 'Нет'")
     public void checkHideExGuarantee(){
 
@@ -248,5 +249,23 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(getDataTender);
         steps.click_button(executionGuaranteeNoRB);
         steps.check_hide_ex_guarantee();
+    }
+
+    @Test
+    @Title("Проверка скрытия элементов при выборе в блоке 'Исполнение обязательств' значения 'Нет'")
+    public void checkRequiredExpiredGuarantee(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_bg();
+        steps.click_button(getDataTender);
+        steps.set_required_expired_guarantee();
+        steps.check_required_expired_guarantee();
     }
 }

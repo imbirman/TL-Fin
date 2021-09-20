@@ -147,5 +147,15 @@ public class CreateRequestSteps{
                 .as("Блок 'Исполнение обязательств' не скрыт").isFalse();
     }
 
+    @Step("Ввод срока БГ")
+    public void set_required_expired_guarantee(){
+        page.setRequiredExpiredGuarantee();
+    }
+
+    @Step("Проверка значения")
+    public void check_required_expired_guarantee(){
+        Assertions.assertThat(page.getRequiredExpiredGuarantee()).isEqualTo("20.09.2021");
+    }
+
 
 }
