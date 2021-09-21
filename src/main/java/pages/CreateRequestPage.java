@@ -40,7 +40,7 @@ public class CreateRequestPage extends PageObject {
     private By errorMessageExpired = By.id("Card_guarantee_expired_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок БГ до»."
     private By errorMessageResponsibility = By.id("Card_responsibility_to_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок выполнения работ/оказания услуг»."
     private By errorMessageContract = By.id("Card_contract_type_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Вид контракта/договора»."
-    private By errorMessageSum = By.id("Card_exec_guarant_sum_em_"); //Сообщение об ошибке "Не заполнено поле Сумма"
+    private By errorMessageSum = By.id("Card_exec_guarant_sum_em_"); //Сообщение об ошибке "Не заполнено поле Сумма" или "Сумма должна быть числом"
     private By errorMessageAlert = By.xpath("//div[@class='message']"); // Алерт с ошибками при создании заявки и незаполнении обязательных полей
     private By requiredExpiredGuarantee = By.id("Card_guarantee_expired"); // Поле "Срок БГ до *"
     private By requiredResponsibilityGuarantee = By.id("Card_responsibility_to"); // Поле "Срок выполнения работ/оказания услуг *"
@@ -160,11 +160,15 @@ public class CreateRequestPage extends PageObject {
     public CreateRequestPage setInvalidRRequiredSum(String invalid){
         find(card_ExecutionGuaranteeSum).sendKeys(invalid);
         return this;
-    }
+    } // Ввести данные в поле "Сумма" блока "Исполнение обязательств"
 
-    public String getInvalidRRequiredSum(){
-        System.out.println(find(card_ExecutionGuaranteeSum).getValue());
-        return find(card_ExecutionGuaranteeSum).getValue();
-    }
+    public boolean isVisibleBoxSelectBank(){
+        try {
+            find(boxToSelectBank).waitUntilVisible();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return find(boxToSelectBank).isDisplayed();
+    } // Проверка на продолжение создания заявки
 
 }

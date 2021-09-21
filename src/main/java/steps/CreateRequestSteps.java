@@ -157,13 +157,13 @@ public class CreateRequestSteps{
         page.setRequiredResponsibilityGuarantee();
     }
 
-    @Step("Ввод срока выполнения работ")
+    @Step("Ошибка: Не заполнено поле Сумма")
     public void check_error_message_sum(){
         Assertions.assertThat(page.getErrorMessageSum())
                 .as("Текст ошибки некорректен или отсутствует").isEqualTo("Не заполнено поле Сумма");
     }
 
-    @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Вид контракта/договора».")
+    @Step("Всплывающая ошибка содержит в себе: Не заполнено поле Сумма")
     public void check_text_error_message_sum_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
                 .as("Всплывающая ошибка не содержит нужный текст").contains("Не заполнено поле Сумма");
@@ -176,8 +176,20 @@ public class CreateRequestSteps{
 
     @Step("Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
     public void check_invalid_text_required_sum(){
-        Assertions.assertThat(page.getInvalidRRequiredSum())
-                .as("Можно ввести текст в поле 'Сумма' в блоке 'Исполнение обязательств'").isEqualTo("");
+        Assertions.assertThat(page.getErrorMessageSum())
+                .as("Текст ошибки некорректен или отсутствует").isEqualTo("Сумма должна быть числом");
+    }
+
+    @Step("Всплывающая ошибка содержит в себе: Сумма должна быть числом")
+    public void check_invalid_error_message_sum_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка не содержит нужный текст").contains("Сумма должна быть числом");
+    }
+
+    @Step("Всплывающая ошибка содержит в себе: Сумма должна быть числом")
+    public void check_switch_expired_guarantee(){
+        Assertions.assertThat(page.isVisibleBoxSelectBank())
+                .as("Ошибка в логике работы скрытия полей в блоке 'Исполнение обязательств'").isTrue();
     }
 
 
