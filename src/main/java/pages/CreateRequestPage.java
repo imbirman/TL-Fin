@@ -21,6 +21,12 @@ public class CreateRequestPage extends PageObject {
     protected By requiredContractGuarantee = By.id("Card_contract_type_0"); // radiobutton "Вид контракта/договора *" - Контракт
     protected By bankToSelect = By.id("bank_18"); // чек-бокс выбора тестового банка
     protected By submitSelectBank = By.id("selectBanksBtn");// Кнопка подтверждения выбора тестового банка
+    protected By paperFormatBg = By.id("CardToBank_18_format_bg_0"); // radiobutton - бумажный формат БГ
+    protected By electronicFormatBg = By.id("CardToBank_18_format_bg_1"); // radiobutton - электронный формат БГ
+    protected By deliveryYes = By.id("CardToBank_18_need_delivery_0");
+    protected By deliveryNo = By.id("CardToBank_18_need_delivery_1");
+
+
 
     private By loginField = By.id("LoginForm_login"); // Поле логина
     private By passwordField = By.id("LoginForm_password"); // Поле пароля
@@ -45,6 +51,9 @@ public class CreateRequestPage extends PageObject {
     private By requiredExpiredGuarantee = By.id("Card_guarantee_expired"); // Поле "Срок БГ до *"
     private By requiredResponsibilityGuarantee = By.id("Card_responsibility_to"); // Поле "Срок выполнения работ/оказания услуг *"
     private By boxToSelectBank = By.id("colorbox"); // окно для выбора тестового банка при создании заявки
+    private By selectFormatBg = By.id("format_bg_for_18"); // Блок с выбором формата БГ
+    private By deliveryOriginal = By.id("BankParams_18"); // Блок с выбором доставки
+    private By minimumTariff = By.id("BankDeliveryParams_18");
 
 
 
@@ -170,5 +179,17 @@ public class CreateRequestPage extends PageObject {
         }
         return find(boxToSelectBank).isDisplayed();
     } // Проверка на продолжение создания заявки
+
+    public boolean isVisibleBoxFormatBg(){
+        return find(selectFormatBg).isDisplayed();
+    } // Проверка появления блока с выбором формата БГ
+
+    public boolean isVisibleDeliveryOriginal(){
+        return find(deliveryOriginal).isDisplayed();
+    } // Проверка появления блока с выбором формата БГ
+
+    public boolean isVisibleMinimumTariff(){
+        return find(minimumTariff).isDisplayed();
+    } // Проверка появления текста минимального тарифа доставки
 
 }

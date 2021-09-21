@@ -121,19 +121,19 @@ public class CreateRequestSteps{
     @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Срок БГ до».")
     public void check_text_error_message_expired_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
-                .as("Всплывающая ошибка не содержит нужный текст").contains("Необходимо заполнить поле «Срок БГ до».");
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Необходимо заполнить поле «Срок БГ до».");
     }
 
     @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Срок выполнения работ/оказания услуг».")
     public void check_text_error_message_responsibility_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
-                .as("Всплывающая ошибка не содержит нужный текст").contains("Необходимо заполнить поле «Срок выполнения работ/оказания услуг».");
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Необходимо заполнить поле «Срок выполнения работ/оказания услуг».");
     }
 
     @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Вид контракта/договора».")
     public void check_text_error_message_contract_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
-                .as("Всплывающая ошибка не содержит нужный текст").contains("Необходимо заполнить поле «Вид контракта/договора».");
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Необходимо заполнить поле «Вид контракта/договора».");
     }
 
     @Step("Есть ли алерт ошибок при создании заявки")
@@ -166,7 +166,7 @@ public class CreateRequestSteps{
     @Step("Всплывающая ошибка содержит в себе: Не заполнено поле Сумма")
     public void check_text_error_message_sum_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
-                .as("Всплывающая ошибка не содержит нужный текст").contains("Не заполнено поле Сумма");
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Не заполнено поле Сумма");
     }
 
     @Step("Ввести значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
@@ -183,13 +183,43 @@ public class CreateRequestSteps{
     @Step("Всплывающая ошибка содержит в себе: Сумма должна быть числом")
     public void check_invalid_error_message_sum_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
-                .as("Всплывающая ошибка не содержит нужный текст").contains("Сумма должна быть числом");
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Сумма должна быть числом");
     }
 
     @Step("Проверка продолжения создания заявки при отключении исполнения обязательств")
     public void check_switch_expired_guarantee(){
         Assertions.assertThat(page.isVisibleBoxSelectBank())
                 .as("Ошибка в логике работы скрытия полей в блоке 'Исполнение обязательств'").isTrue();
+    }
+
+    @Step("Всплывающая ошибка содержит в себе: Не заполнено поле Сумма")
+    public void check_text_error_message_format_bg_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Необходимо отметить, требуется ли бумажная БГ");
+    }
+
+    @Step("Проверка появления блока с выбором формата БГ")
+    public void check_select_format_bg(){
+        Assertions.assertThat(page.isVisibleBoxFormatBg())
+                .as("Не отобразился блок с выбором формата БГ").isTrue();
+    }
+
+    @Step("Проверка появления блока с выбором доставки оригинала")
+    public void check_select_delivery_original(){
+        Assertions.assertThat(page.isVisibleDeliveryOriginal())
+                .as("Не отобразился блок с выбором доставки оригинала").isTrue();
+    }
+
+    @Step("Проверка появления минимального тарифа доставки")
+    public void check_minimum_tariff_delivery(){
+        Assertions.assertThat(page.isVisibleMinimumTariff())
+                .as("Не отобразился блок с минимальным тарифом").isTrue();
+    }
+
+    @Step("Проверка появления минимального тарифа доставки")
+    public void check_hide_minimum_tariff_delivery(){
+        Assertions.assertThat(page.isVisibleMinimumTariff())
+                .as("Блок с минимальным тарифом не скрыт").isFalse();
     }
 
 
