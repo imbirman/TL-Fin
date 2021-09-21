@@ -315,6 +315,9 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.type_tender_number("0158300043421000067");
         steps.set_type_bg();
         steps.click_button(getDataTender);
+        steps.set_required_expired_guarantee();
+        steps.set_required_responsibility_guarantee();
+        steps.click_button(requiredContractGuarantee);
         steps.set_invalid_text_required_sum();
         steps.click_button(createCard);
         steps.check_invalid_text_required_sum();
