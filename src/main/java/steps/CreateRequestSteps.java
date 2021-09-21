@@ -186,7 +186,7 @@ public class CreateRequestSteps{
                 .as("Всплывающая ошибка не содержит нужный текст").contains("Сумма должна быть числом");
     }
 
-    @Step("Всплывающая ошибка содержит в себе: Сумма должна быть числом")
+    @Step("Проверка продолжения создания заявки при отключении исполнения обязательств")
     public void check_switch_expired_guarantee(){
         Assertions.assertThat(page.isVisibleBoxSelectBank())
                 .as("Ошибка в логике работы скрытия полей в блоке 'Исполнение обязательств'").isTrue();
