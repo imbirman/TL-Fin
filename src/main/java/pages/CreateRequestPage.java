@@ -163,7 +163,8 @@ public class CreateRequestPage extends PageObject {
     }
 
     public String getInvalidRRequiredSum(){
-        return find(card_ExecutionGuaranteeSum).getText();
+        System.out.println(find(card_ExecutionGuaranteeSum).getValue());
+        return find(card_ExecutionGuaranteeSum).getValue();
     }
 
 }
