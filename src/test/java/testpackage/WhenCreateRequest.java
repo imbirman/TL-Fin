@@ -35,6 +35,10 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.type_tender_number("0158300043421000067");
         steps.set_type_bg();
         steps.click_button(getDataTender);
+        steps.set_required_expired_guarantee();
+        steps.set_required_responsibility_guarantee();
+        steps.click_button(requiredContractGuarantee);
+        steps.click_button(executionGuaranteeNoRB);
 
 
     }
@@ -74,6 +78,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.check_error_empty_registry_number();
         steps.check_fz_tender_button();
         steps.check_close_tender_button();
+        steps.click_button(createCard);
     }
 
     @Test
@@ -291,6 +296,24 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(getDataTender);
         steps.click_button(executionGuaranteeNoRB);
         steps.check_hide_ex_guarantee();
+    }
+
+    @Test
+    @Title("Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
+    public void checkInvalidRequiredSum(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_bg();
+        steps.click_button(getDataTender);
+        steps.set_invalid_text_required_sum();
+        steps.check_invalid_text_required_sum();
     }
 
 

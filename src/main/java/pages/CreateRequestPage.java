@@ -19,6 +19,8 @@ public class CreateRequestPage extends PageObject {
     protected By getDataTender = By.id("GetTenderInfoBtn"); // Кнопка "Получить данные" (получение данные для заявки из тендера)
     protected By executionGuaranteeNoRB = By.id("Card_need_exec_guarantee_1"); // radiobutton "исполнение обязательств" - нет
     protected By requiredContractGuarantee = By.id("Card_contract_type_0"); // radiobutton "Вид контракта/договора *" - Контракт
+    protected By bankToSelect = By.id("bank_18"); // чек-бокс выбора тестового банка
+    protected By submitSelectBank = By.id("selectBanksBtn");// Кнопка подтверждения выбора тестового банка
 
     private By loginField = By.id("LoginForm_login"); // Поле логина
     private By passwordField = By.id("LoginForm_password"); // Поле пароля
@@ -42,6 +44,8 @@ public class CreateRequestPage extends PageObject {
     private By errorMessageAlert = By.xpath("//div[@class='message']"); // Алерт с ошибками при создании заявки и незаполнении обязательных полей
     private By requiredExpiredGuarantee = By.id("Card_guarantee_expired"); // Поле "Срок БГ до *"
     private By requiredResponsibilityGuarantee = By.id("Card_responsibility_to"); // Поле "Срок выполнения работ/оказания услуг *"
+    private By boxToSelectBank = By.id("colorbox"); // окно для выбора тестового банка при создании заявки
+
 
 
 
@@ -139,7 +143,7 @@ public class CreateRequestPage extends PageObject {
         calendar.add(Calendar.MONTH, 1);
         find(requiredExpiredGuarantee).sendKeys(dateFormat.format(calendar.getTime()));
         return this;
-    }
+    } // Ввести срок БГ до
 
     public CreateRequestPage setRequiredResponsibilityGuarantee(){
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
@@ -147,10 +151,19 @@ public class CreateRequestPage extends PageObject {
         calendar.add(Calendar.MONTH, 2);
         find(requiredResponsibilityGuarantee).sendKeys(dateFormat.format(calendar.getTime()));
         return this;
-    }
+    } // Ввести срок выполнения работ
 
     public String getErrorMessageSum(){
         return find(errorMessageSum).getText();
     } // Получение текста ошибки, если не заполнено поле 'Сумма' в блоке 'Исполнение обязательств'
+
+    public CreateRequestPage setInvalidRRequiredSum(String invalid){
+        find(card_ExecutionGuaranteeSum).sendKeys(invalid);
+        return this;
+    }
+
+    public String getInvalidRRequiredSum(){
+        return find(card_ExecutionGuaranteeSum).getText();
+    }
 
 }

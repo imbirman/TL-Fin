@@ -169,5 +169,16 @@ public class CreateRequestSteps{
                 .as("Всплывающая ошибка не содержит нужный текст").contains("Не заполнено поле Сумма");
     }
 
+    @Step("Ввести значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
+    public void set_invalid_text_required_sum(){
+        page.setInvalidRRequiredSum("test123/*");
+    }
+
+    @Step("Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
+    public void check_invalid_text_required_sum(){
+        Assertions.assertThat(page.getInvalidRRequiredSum())
+                .as("Можно ввести текст в поле 'Сумма' в блоке 'Исполнение обязательств'").isEqualTo("");
+    }
+
 
 }
