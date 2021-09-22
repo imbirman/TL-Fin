@@ -216,7 +216,7 @@ public class CreateRequestSteps{
                 .as("Не отобразился блок с минимальным тарифом").isTrue();
     }
 
-    @Step("Проверка появления минимального тарифа доставки")
+    @Step("Проверка скрытия минимального тарифа доставки")
     public void check_hide_minimum_tariff_delivery(){
         Assertions.assertThat(page.isVisibleMinimumTariff())
                 .as("Блок с минимальным тарифом не скрыт").isFalse();

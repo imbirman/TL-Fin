@@ -39,6 +39,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.click_button(requiredContractGuarantee);
         steps.click_button(executionGuaranteeNoRB);
+        steps.click_button(createCard);
         steps.click_button(bankToSelect);
 //        steps.click_button(submitSelectBank);
 
@@ -363,6 +364,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(requiredContractGuarantee);
         steps.set_invalid_text_required_sum();
         steps.click_button(executionGuaranteeNoRB);
+        steps.click_button(createCard);
         steps.check_switch_expired_guarantee();
     }
 
@@ -384,6 +386,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.click_button(requiredContractGuarantee);
         steps.click_button(executionGuaranteeNoRB);
+        steps.click_button(createCard);
         steps.click_button(bankToSelect);
         steps.click_button(submitSelectBank);
         steps.check_text_error_message_format_bg_alert();
@@ -407,6 +410,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.click_button(requiredContractGuarantee);
         steps.click_button(executionGuaranteeNoRB);
+        steps.click_button(createCard);
         steps.click_button(bankToSelect);
         steps.click_button(submitSelectBank);
         steps.check_select_format_bg();
@@ -430,6 +434,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.click_button(requiredContractGuarantee);
         steps.click_button(executionGuaranteeNoRB);
+        steps.click_button(createCard);
         steps.click_button(bankToSelect);
         steps.click_button(submitSelectBank);
         steps.click_button(paperFormatBg);
@@ -454,6 +459,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.click_button(requiredContractGuarantee);
         steps.click_button(executionGuaranteeNoRB);
+        steps.click_button(createCard);
         steps.click_button(bankToSelect);
         steps.click_button(submitSelectBank);
         steps.click_button(paperFormatBg);
@@ -462,7 +468,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    @Title("Проверка отображения минимального тарифа доставки")
+    @Title("Проверка скрытия минимального тарифа доставки")
     public void checkHideMinimumTariffDelivery(){
 
         steps.open_login_main_page();
@@ -479,6 +485,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.click_button(requiredContractGuarantee);
         steps.click_button(executionGuaranteeNoRB);
+        steps.click_button(createCard);
         steps.click_button(bankToSelect);
         steps.click_button(submitSelectBank);
         steps.click_button(paperFormatBg);
