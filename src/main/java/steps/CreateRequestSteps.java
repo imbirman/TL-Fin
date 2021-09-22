@@ -171,7 +171,7 @@ public class CreateRequestSteps{
 
     @Step("Ввести значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
     public void set_invalid_text_required_sum(){
-        page.setInvalidRRequiredSum("test123/*");
+        page.setInvalidRRequiredSum("tes0t/*");
     }
 
     @Step("Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'")

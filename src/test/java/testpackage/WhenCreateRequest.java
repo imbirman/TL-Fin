@@ -412,7 +412,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(executionGuaranteeNoRB);
         steps.click_button(createCard);
         steps.click_button(bankToSelect);
-        steps.click_button(submitSelectBank);
         steps.check_select_format_bg();
     }
 
@@ -436,7 +435,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(executionGuaranteeNoRB);
         steps.click_button(createCard);
         steps.click_button(bankToSelect);
-        steps.click_button(submitSelectBank);
         steps.click_button(paperFormatBg);
         steps.check_select_delivery_original();
     }
@@ -461,7 +459,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(executionGuaranteeNoRB);
         steps.click_button(createCard);
         steps.click_button(bankToSelect);
-        steps.click_button(submitSelectBank);
         steps.click_button(paperFormatBg);
         steps.click_button(deliveryYes);
         steps.check_minimum_tariff_delivery();
@@ -487,7 +484,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(executionGuaranteeNoRB);
         steps.click_button(createCard);
         steps.click_button(bankToSelect);
-        steps.click_button(submitSelectBank);
         steps.click_button(paperFormatBg);
         steps.click_button(deliveryYes);
         steps.click_button(electronicFormatBg);
