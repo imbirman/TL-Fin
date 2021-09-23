@@ -21,7 +21,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     WebDriver driver;
 
     @Test
-    @Pending
     @Title("Проверка создания заявки (Контракт)")
     public void checkCreateRequest(){
 
