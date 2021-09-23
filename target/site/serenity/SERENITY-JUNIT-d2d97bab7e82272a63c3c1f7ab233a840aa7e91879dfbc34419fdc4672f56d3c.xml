@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="testpackage.WhenCreateRequest" skipped="0" tests="1" time="21.01" timestamp="2021-09-23 10:05:44"><testcase classname="testpackage.WhenCreateRequest" name="Проверка скрытия минимального тарифа доставки"><failure message="[Блок с минимальным тарифом не скрыт] expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;" type="org.junit.ComparisonFailure">[Блок с минимальным тарифом не скрыт] expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;</failure><system-err>[Блок с минимальным тарифом не скрыт] expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;&#13;
+steps.CreateRequestSteps.check_hide_minimum_tariff_delivery(CreateRequestSteps.java:222)&#13;
+testpackage.WhenCreateRequest.checkHideMinimumTariffDelivery(WhenCreateRequest.java:494)&#13;
+</system-err></testcase></testsuite>

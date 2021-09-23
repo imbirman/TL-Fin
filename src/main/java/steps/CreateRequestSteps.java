@@ -231,8 +231,9 @@ public class CreateRequestSteps{
 
     @Step("Проверка поля 'Сумма банковской гарантии' на сохранение значения после создания заявки")
     public void check_is_equal_sum_guarantee(){
-        Assertions.assertThat(page.getExecutionGuaranteeSum())
+        Assertions.assertThat(page.getSumGuarantee())
                 .as("Значение поля 'Сумма банковской гарантии' не соответствует тому, которое было при создании заявки").isEqualTo(CreateRequestPage.valueSumGuarantee);
+
     }
 
     @Step("Проверка выбора значения 'Да' в блоке 'Исполнение обязательств' после создания заявки")

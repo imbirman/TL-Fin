@@ -1,0 +1,1743 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="en">
+
+	<!-- blueprint CSS framework -->
+	<link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" />
+	<![endif]-->
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/main.css?v=20210621">
+	<link rel="stylesheet" type="text/css" href="/css/grid.css?v=20200629">
+	<link rel="stylesheet" type="text/css" href="/css/form.css?_t=20210713">
+				        	<link rel="stylesheet" type="text/css" href="/assets/c979a4ec/select2.css">
+<link rel="stylesheet" type="text/css" href="/assets/ca3e1e76/jui/css/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/assets/a2e8242f/fileuploader.css">
+<link rel="stylesheet" type="text/css" href="/css/jui2/viewCard.css?_t=20200715_2">
+<script type="text/javascript" src="/assets/ca3e1e76/jquery.js"></script>
+<script type="text/javascript" src="/assets/ca3e1e76/jquery.yiiactiveform.js"></script>
+<script type="text/javascript" src="/assets/ca3e1e76/jui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/colorbox/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/js/colorbox/i18n/jquery.colorbox-ru.js"></script>
+<script type="text/javascript" src="/js/es6-promise.min.js"></script>
+<script type="text/javascript" src="/js/CardParams.js?_t=20210323"></script>
+<script type="text/javascript" src="/assets/c979a4ec/select2.js"></script>
+<script type="text/javascript" src="/assets/a2e8242f/fileuploader.js"></script>
+<script type="text/javascript" src="/js/App.js?_t=20210723"></script>
+<script type="text/javascript" src="/js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="/js/inputmask.js"></script><style type="text/css">span.im-caret {
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+span.im-static {
+    color: grey;
+}
+
+div.im-colormask {
+    display: inline-block;
+    border-style: inset;
+    border-width: 2px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div.im-colormask > input {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    -webkit-appearance: caret;
+    -moz-appearance: caret;
+    appearance: caret;
+    border-style: none;
+    left: 0; /*calculated*/
+}
+
+div.im-colormask > input:focus {
+    outline: none;
+}
+
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > input::selection{
+    background: none;
+}
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > div {
+    color: black;
+    display: inline-block;
+    width: 100px; /*calculated*/
+}</style>
+<title>TenderLand Finance - Редактирование заявки №23647</title>
+</head>
+
+<body>
+<div id="waiting_img" class="waiting_img1" style="display: none;">
+  <div class="waiting_img2"><span id="waiting">Пожалуйста, подождите</span>
+    <div id="preloader"></div>
+	<span id="cntSignedFiles"></span>
+  </div>
+</div>
+<div class="container" id="page">
+	<div id="header" style="float:left; overflow:auto;">
+		<div id="logo">
+					<a href="http://test.tl-fin.ru/" style="display:block;float:left;"><img src="/images/logo2.png"></a>
+				</div>
+        <div style="position: fixed; top: 0px; height: 110px; left: 140px; right: 0px; overflow: hidden;">
+		<div style="float:left;">
+			<div align="center" id="free_consult">
+				<span id="contact_phone">8 800 333-99-73</span><br>
+				<span id="contact_extra">Бесплатный звонок по России</span>
+			</div>
+		</div>
+            <div style="float:left;">
+                
+                        <div class="headerBlock" style="display: flex;align-content: space-around;flex-wrap: wrap;">
+                            <div style="width: 100%;font-size: 17px;color:#13171c">
+                                <div><span style="color: #989da4; width: 75px; display: inline-flex; font-size: 15px;">куратор: </span><span id="curator_name">Ярцев Денис</span></div>
+                                                                <div>
+                                    <span style="color: #989da4; width: 75px; display: inline-flex; font-size: 15px;">тел.: </span><span style="margin-right: 15px;" id="curator_phone">223232323232</span>
+                                                                    </div>
+                                                                                            </div>
+                            <h1 style="font-size: 1.2vw;width: 100%;">
+                                Редактирование заявки №23647                            </h1>
+                        </div>
+
+                    
+                            </div>
+		<div style="float:right;">
+			<div class="headerBlock">
+				<div class="support_info">
+					Техническая поддержка
+				</div>
+				<div class="support_info">
+					8 800 333-99-73
+				</div>
+							</div>
+		</div>
+				</div>
+		<br class="clear">
+	</div><!-- header -->
+	<div class="commonContent clearfix">
+	<div class="mainMenu last">
+	<div id="sidebar">
+				<div class="myProfile">
+			<div id="welcome-user">
+				<div class="drop-menu-main">
+					<span class="drop-down">s.kosobutskiy<span class="arrow">▼</span></span>
+					<div class="drop-menu-main-sub">
+						<span class="title"></span>
+						<a href="/user/1">Личная страница</a>
+						<a href="/user/ChangeCompany">Сменить компанию</a>
+						<a href="/admin">Настройки</a>						<a href="/auth/logout">Выйти</a>
+					</div>
+				</div>
+			</div>
+			<div class="typeUser">
+			брокер			</div>
+			<script>
+				$(document).ready(function () {
+					function hideallDropdowns() {
+						$(".dropped .drop-menu-main-sub").hide();
+						$(".dropped").removeClass('dropped');
+						$(".dropped .drop-menu-main-sub .title").unbind("click");
+					}
+					function showDropdown(el) {
+						var el_li;
+						if($(el).parent().hasClass('dropped')) {
+							el_li = $(el).parent().removeClass('dropped');
+							el_li.find('.drop-menu-main-sub').hide();
+						}
+						else {
+							el_li = $(el).parent().addClass('dropped');
+							el_li.find('.title').click(function () {
+								hideallDropdowns();
+							}).html($(el).html());
+							el_li.find('.drop-menu-main-sub').show();
+						}
+					}
+					$(".drop-down").click(function(){
+						showDropdown(this);
+					});
+					$(document).mouseup(function () {
+						hideallDropdowns();
+					});
+				});
+			</script>
+		</div>
+	<ul class="operations" id="yw0">
+<li id="CardListItem" class="active"><a href="/card/index">Список заявок</a>
+<ul class="sub-tab sub-tab-list">
+<li><a href="/card/index">Заявки БГ</a></li>
+<li><a href="/credit/index">Заявки на кредит</a></li>
+<li><a href="/account/list">Заявки Р/С</a></li>
+</ul>
+</li>
+<li id="BrokerListItem"><a href="/broker/1">Кабинет агента</a>
+<ul class="sub-tab">
+<li><a href="/broker/1">Кабинет агента</a></li>
+<li><a href="/broker/ReportPartner">Отчеты</a></li>
+</ul>
+</li>
+<li id="UserListItem"><a href="/user/index">Список пользователей</a>
+<ul class="sub-tab">
+<li><a href="/broker/index">Список агентов</a></li>
+<li><a href="/user/index?active=0">Активные</a></li>
+<li><a href="/user/index?active=1">Удаленные</a></li>
+<li><a class="primary" href="/user/create">Добавить сотрудника</a></li>
+<li><a class="primary" href="/register/index?type=2">Зарегистрировать брокера</a></li>
+<li><a class="primary" href="/register/index?type=1">Зарегистрировать банк</a></li>
+</ul>
+</li>
+<li id="ClientListItem"><a href="/client/index">Создать заявку</a>
+<ul class="sub-tab">
+<li><a href="/client/index?partner=2">Поиск</a></li>
+<li><a href="/client/index?partner=1">Мои клиенты</a></li>
+</ul>
+</li>
+<li id="RevizorItem"><a target="_blank" href="/site/revizor">Ревизор</a></li>
+<li id="SettingSystemItem"><a href="/admin">Настройка системы</a></li>
+<li id="SettingSystemItem"><a href="/Report/ReportList">Отчёт</a></li>
+<li id="ExitListItem"><a href="/auth/logout">Выход</a></li>
+</ul>		</div>
+</div>
+<div class="mainContent">
+	<div id="content" class="clearfix">
+						<div class="update-card ui-tabs ui-widget ui-widget-content ui-corner-all" id="mainCardsTabs">
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+<li class="ui-state-default ui-corner-top ui-state-hover ui-state-focus ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabParams" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a href="#tabParams" title="tabParams" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Параметры</a></li>
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabForm" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a href="#tabForm" title="tabForm" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Форма</a></li>
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabAnket" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a href="#tabAnket" title="tabAnket" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Анкета клиента</a></li>
+<li class="ui-state-default ui-corner-top ui-state-disabled" role="tab" tabindex="-1" aria-controls="tabDocs" aria-labelledby="ui-id-4" aria-selected="false" aria-expanded="false" aria-disabled="true"><a href="#tabDocs" title="tabDocs" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Документы</a></li>
+</ul>
+<div id="tabParams" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false" style="display: block;"><div class="clearfix">
+    <input onclick="$(&quot;#cardParamsForm&quot;).submit();" class="btn primary-btn" name="yt0" type="button" value="Сохранить изменения">    <input onclick="exitFromEditMode(23647)" class="btn primary-btn" name="yt1" type="button" value="Выйти"></div>
+<div class="scroll-container">
+    <table class="detail-table">
+        <tbody><tr>
+            <td><p class="label">Наименование компании</p>ООО "ТЛ-ФИН"</td>
+            <td><p class="label">ИНН</p>7606113630</td>
+        </tr>
+        <tr>
+
+            <td><p class="label">КПП</p>760601001</td>
+            <td><p class="label">ОГРН</p>1177627020306</td>
+        </tr>
+    </tbody></table>
+    <form id="cardParamsForm" action="/card/update/23647?openTab=tabForm" method="post">    <div class="clearfix">
+                    <div class="span-7">
+                <label for="Card_broker_manager_id" class="required">Менеджер брокера <span class="required">*</span></label><br>
+                <div class="select2-container span-7" id="s2id_Card_broker_manager_id"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span>Гусев Павел Анатольевич</span><abbr class="select2-search-choice-close" style="display:none;"></abbr>   <div><b></b></div></a><input class="select2-focusser select2-offscreen" type="text"><div class="select2-drop select2-with-searchbox" style="display:none">   <div class="select2-search">       <input type="text" autocomplete="off" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="span-7 select2-offscreen" name="Card[broker_manager_id]" id="Card_broker_manager_id" tabindex="-1">
+<option value="1" selected="selected">Гусев Павел Анатольевич</option>
+<option value="34">Гусев Павел Анатольевич</option>
+<option value="608">Tender159753</option>
+<option value="3569">Тестовый Сотрудник TlFin</option>
+<option value="6507">Петров Иван Баранович</option>
+<option value="6713">PGusev</option>
+<option value="9925">Ivanov Ivan Ivanovich</option>
+<option value="9927">Мишин Михаил Викторович</option>
+<option value="9933">Пользователь АПИ API</option>
+<option value="9938">Ярцев Денис -</option>
+<option value="9940">Агафонов Герман Батькович</option>
+<option value="9944">Мишин Михаил Викторович</option>
+<option value="9991">Бухгалтер Милый Мой</option>
+<option value="27404"></option>
+<option value="27405">Гудков Роман Андреевич</option>
+<option value="27406">Винокурова Ольга</option>
+<option value="27407">Соломенцева Елена</option>
+<option value="27408">Романова Елена</option>
+<option value="27409">Толилова Анна</option>
+<option value="27410">Бочарова Анастасия</option>
+<option value="27411">Наволочная Алена</option>
+<option value="27412">Новикова Дарья</option>
+<option value="27413">Пьянова Юлия</option>
+<option value="27459">3342 123 123</option>
+<option value="27460">Тестов Тест Тестович</option>
+</select>            </div>
+                            <div class="span-7">
+                <label for="Card_broker_id">Компания брокера</label><br>
+                <div class="select2-container span-7" id="s2id_Card_broker_id"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span>Администратор площадки ТЛ-ФИН</span><abbr class="select2-search-choice-close" style="display:none;"></abbr>   <div><b></b></div></a><input class="select2-focusser select2-offscreen" type="text"><div class="select2-drop select2-with-searchbox" style="display:none">   <div class="select2-search">       <input type="text" autocomplete="off" class="select2-input">   </div>   <ul class="select2-results">   </ul></div></div><select class="span-7 select2-offscreen" name="Card[broker_id]" id="Card_broker_id" tabindex="-1">
+<option value="1" selected="selected">Администратор площадки ТЛ-ФИН</option>
+<option value="10">ПК.РФ</option>
+<option value="12">ООО "Тендер-Альянс"</option>
+<option value="13">ООО "АЙВЕКС-Архангельск"</option>
+<option value="14">СПР-Тендер</option>
+<option value="15">ООО "Тендер-Профи"</option>
+<option value="16">ООО "Русская Компания"</option>
+<option value="17">СПР-Тендер</option>
+<option value="18">Тендерлэнд Тэст</option>
+<option value="19">Юридический Регулятор</option>
+<option value="20">Аукционы и Тендеры</option>
+<option value="21">ИП НЕСТЕРЕНКО К.Д.</option>
+<option value="22">Технология успеха</option>
+<option value="23">ООО "Тендер-Партнер" </option>
+<option value="24">ООО "Аркос"</option>
+<option value="25">Агент ПСБ</option>
+<option value="26">ООО "Тест"</option>
+<option value="27">Тестовый брокер 007</option>
+<option value="29">Крылова Юлия</option>
+<option value="30">ООО Макс Финанс</option>
+<option value="31">ООО ТЛ-ФИН</option>
+<option value="32">ООО Брокер</option>
+<option value="33">ТестБрокерПСБ</option>
+<option value="34">БрокерТестПсб</option>
+<option value="35">tender-profi</option>
+<option value="36">Контракт-М</option>
+<option value="39">Консалт ЮГ</option>
+<option value="40">MaxiTender</option>
+<option value="41">ЦБГ</option>
+<option value="42">ООО "ЦЗК"</option>
+<option value="44">ООО MaxiTender</option>
+<option value="45">ООО Москоу тайм</option>
+<option value="46">ООО "Союз"</option>
+<option value="48">ИП Овчинникова</option>
+<option value="49">ооо "Кэт групп"</option>
+<option value="50">ООО "ВиТрейдГарант"</option>
+<option value="51">ООО Победагарант</option>
+<option value="54">ООО "ФАС-групп"</option>
+<option value="55">АО "ЕЦПС"</option>
+<option value="56">ООО "АстЭК" ТЛ-Фин</option>
+<option value="57">ООО "ФИНМАНИЯ"</option>
+<option value="58">ООО «Финансовая Компания «Адепт» </option>
+<option value="59">ООО МКК "РусТендер"</option>
+<option value="60">ИП Андреев</option>
+<option value="61">ООО "Fin-garant"</option>
+<option value="62">ООО 'Трейд.Су'</option>
+<option value="63">ООО "ФСА"Нева Консалт"</option>
+<option value="64">ООО «Солид Дистрибьютор БГ»</option>
+<option value="66">ООО ФБД</option>
+<option value="67">тест  тест тест</option>
+<option value="68">test</option>
+<option value="69">test</option>
+<option value="72">Брокер ПСБтеста</option>
+<option value="73">ООО Брокер тендерлэнд</option>
+<option value="74">ИП Руденко</option>
+<option value="76">тест тест тест</option>
+<option value="77">ООО Брио Финанс</option>
+<option value="78">ООО «Би Джи Партнерс»</option>
+<option value="79">ИП Аламова</option>
+<option value="80">ZhurovaON_1234567891</option>
+<option value="81">Gung</option>
+<option value="82">ООО "Фин Сити МСК"</option>
+<option value="83">"РТС - Российское Тендерное Сопровождение"</option>
+<option value="84">Менеджер ПАО "Промсвязьбанк"</option>
+<option value="85">Brok1</option>
+<option value="87">Солид Дистрибьютор</option>
+<option value="88">Barinov_PSB</option>
+<option value="89">BarinovPSB</option>
+<option value="90">ООО Брокер</option>
+<option value="91">ООО Брокер</option>
+<option value="92">wedqwe</option>
+<option value="93">gfhnjk</option>
+<option value="94">wsedxc</option>
+<option value="95">Ямалутдинов Рустав Мунавирович</option>
+<option value="96">Альянс Консалтинг </option>
+<option value="97">"Инвестманн"</option>
+<option value="98"> ИП Семенникова Т. М.</option>
+<option value="100">БЮРО ФИНАНСОВЫХ РЕШЕНИЙ</option>
+<option value="101">ЭлДи Консалт</option>
+<option value="102">ИП Окунев Владимир Сергеевич </option>
+<option value="103">Национальная тендерная компания</option>
+<option value="104">ИП Родаева Е.Н.</option>
+<option value="106">ПрофиТендер</option>
+<option value="107">АРД-ГРУПП </option>
+<option value="108">Гарант +</option>
+<option value="109">"Единый Центр Финансовой Поддержки"</option>
+<option value="112">ООО «АСП Групп»</option>
+<option value="113">ГК "Центр Электронных Торгов"</option>
+<option value="114">ИП Буланова</option>
+<option value="115">ООО «Интегра»</option>
+<option value="116">"Экспресс Гарантии"</option>
+<option value="118">ИП Белоключевский В.В.</option>
+<option value="119">KKvadro</option>
+<option value="120">ООО "ПроБизнесГарант"</option>
+<option value="125">ООО "Легион"</option>
+<option value="126">ООО "СтройКонсул" </option>
+<option value="128">ООО ДВК ГРУПП</option>
+<option value="129">ИП Стороженко В.И.</option>
+<option value="130"> ИП Кузнецов С.Н.</option>
+<option value="131">ООО ФГ Эксперт</option>
+<option value="134">Профит Гарант</option>
+<option value="135">"БИЗНЕС ГАРАНТ"</option>
+<option value="136">ИП  ШАХРИЯРЗАДЕ</option>
+<option value="137">ИП Романов Д.В.</option>
+<option value="138">ИП Соболева Ю.Ю.</option>
+<option value="139">СФА</option>
+<option value="140">ООО "Финансовые решения"</option>
+<option value="142">ООО "Юридиан"</option>
+<option value="143">ООО "ММА Капитал"</option>
+<option value="144">ООО Лайф Ту Би</option>
+<option value="145">ООО «СТАНДАРТ БИЗНЕС ПАРТНЕР»</option>
+<option value="146">ИП "Прохорихин Игорь Николаевич"</option>
+<option value="147">ООО «СТАНДАРТ БИЗНЕС ПАРТНЕР»</option>
+<option value="148">xТитан Брокер</option>
+<option value="149">ИП Митряшкин Д.В.</option>
+<option value="150">ФК "АйКом Финанс"</option>
+<option value="151">ООО "ХоривФинанс"</option>
+<option value="152">ТендерИнвест</option>
+<option value="153">Юридическая компания «Ваше право»</option>
+<option value="154">ООО "Финансовая компания Ассоциация"</option>
+<option value="155">Finance Expert GROUP</option>
+<option value="156">ООО "ГОСТ-ТЕНДЕР"</option>
+<option value="157">FG INTEGRA</option>
+<option value="158">ООО "Гарантис".</option>
+<option value="159">Агентская группа "Профи"</option>
+<option value="160">ООО "УЦ Тендер"</option>
+<option value="161">ИП Лузгина Алина Владиславовна</option>
+<option value="162">ООО «Декор-Сервис»</option>
+<option value="163">ООО «Декор-Сервис»</option>
+<option value="164">ИП РЫСЕВ А.В.</option>
+<option value="165">ИП Азаренков</option>
+<option value="166">Кредитный Компас</option>
+<option value="168">ООО "Кэпитал Траст"</option>
+<option value="169">ООО "Волга Финанс" </option>
+<option value="171">"Consult Release"</option>
+<option value="173">ИП "Бутов Александр Анатольевич"</option>
+<option value="174">ИП "Галкин Дмитрий Эмильевич"</option>
+<option value="176">ООО "БАЙКАЛ ФИНАНС ГРУПП"</option>
+<option value="177">ООО «Инновации и технологии»</option>
+<option value="178">ООО "Партнер Финанс"</option>
+<option value="179">ИП Тупович</option>
+<option value="180">Triumph Tenders</option>
+<option value="181">ЦРБ "ИНПРОФ"</option>
+<option value="182">ИП Матушкина И.Н.</option>
+<option value="183">ИП Стасевич</option>
+<option value="184">ООО "Кассин и Партнеры"</option>
+<option value="185">ИП "Жуков Михаил Леонидович"</option>
+<option value="187">MG Finance</option>
+<option value="188">АО "Группа Фёст"</option>
+<option value="189">ИП "Пинтелеи Валентина Сергеевна"</option>
+<option value="190">ООО "КНС"</option>
+<option value="191">Аксиома</option>
+<option value="193">ООО "АстЭк"</option>
+<option value="194">ООО «Модус»</option>
+<option value="195">ИП "Хоботов Олег Евгеньевич"</option>
+<option value="196">ООО "БИКО ГРУПП"</option>
+<option value="197">ООО "Орфей"</option>
+<option value="198">ООО" Веда-Консалт"</option>
+<option value="199">ООО "Эдинком"</option>
+<option value="200">ИП Миленина У.П.</option>
+<option value="201">ИП "Антипова Марина Владимировна"</option>
+<option value="204">ООО "Центр развития бизнеса"</option>
+<option value="205">ИП "Кудлай Елена Игоревна"</option>
+<option value="206">ИП Ахмадуллина Алиса Рамилевна</option>
+<option value="207">ИП Сабирзянов</option>
+<option value="208">ИП Сабирзянов</option>
+<option value="210">"Динат"</option>
+<option value="211">ФГ "Призма"</option>
+<option value="213">Агентство по обеспечению Госзаказа </option>
+<option value="214">Агентство по обеспечению Госзаказа </option>
+<option value="215">ООО "МЕНЕДЖМЕНТ ГРУПП"</option>
+<option value="216">ИП "Рыжов Виталий Владимирович"</option>
+<option value="217">ООО "Профессиональный Партнер"</option>
+<option value="218">ИП "Хрулева Ирина Сергеевна"</option>
+<option value="222">Gostendery</option>
+<option value="223">АВИКОМ</option>
+<option value="224">ООО "Авиком"</option>
+<option value="225">ИП Колесников М.В. </option>
+<option value="227">ООО "Лекс Лэнд Консалтинг"</option>
+<option value="228">Сonsult</option>
+<option value="229">ООО "Колибрис Гарант"</option>
+<option value="230">ООО "ФинансПрофГрупп"</option>
+<option value="231">ООО "Компас"</option>
+<option value="232">Consultcrew</option>
+<option value="234">ООО "АВАНСАДА КОНСАЛТ"</option>
+<option value="235">ООО ПРОЕКТ</option>
+<option value="236">ООО "М.Л. КОНСАЛТ"</option>
+<option value="237">ИП Саморукова А.А.</option>
+<option value="238">ИП Семенникова Татьяна Михайловна</option>
+<option value="239">ООО “Дом финансовых решений”</option>
+<option value="240">ИП "Панченко Виктория Александровна"</option>
+<option value="241">ООО "ТрейдФинКонсалт"</option>
+<option value="242">ИП "Пискунов Андрей Валерьевич"</option>
+<option value="243">ИП "Комаров Кирилл Николаевич"</option>
+<option value="244">ИП Коннов Денис Иванович</option>
+<option value="245">ИП "Новик Алексей Николаевич"</option>
+<option value="246">ИП "Зайцев Кирилл Геннадьевич"</option>
+<option value="247">ИП Штельмаченко Татьяна Валерьевна</option>
+<option value="248">ООО « Проекционные технологии »</option>
+<option value="249">Компания АМ-Финанс</option>
+<option value="250">ООО «Финподдержка»</option>
+<option value="251">ИП Галкин Дмитрий Эмильевич</option>
+<option value="252">ООО "Петровский"</option>
+<option value="253">ООО ЮК «КАССИН И ПАРТНЕРЫ»</option>
+<option value="254">ИП Шошиашвили</option>
+<option value="255">ИП Галкин Дмитрий Эмильевич</option>
+<option value="256">ООО "Мельница заказоВ"</option>
+<option value="257">ИП Кузнецов Сергей Николаевич ТЛ-Фин</option>
+<option value="258">ООО МВВ Брокер ТЛ-Фин</option>
+<option value="259">ООО "Центр развития бизнеса" ТЛ-Фин</option>
+<option value="260">ИНВЕСТИЦИОННАЯ БИЗНЕС ГРУППА «ЦЕНТРИНВЕСТ»</option>
+<option value="261">ИП Попов Сергей Дмитриевич</option>
+<option value="262">ООО «Центр Развития Бизнеса»</option>
+<option value="263">ИП ЛАКЕЕВ ТИМУР ВЯЧЕСЛАВОВИЧ</option>
+<option value="264">КОПЦЕВА ТАТЬЯНА ВИКТОРОВНА </option>
+<option value="265">ИП Бурлов Константин Юрьевич</option>
+<option value="266">"Центр регионального развития"</option>
+<option value="267">ИП "Буторин Вадим Сергеевич" тл-фин</option>
+<option value="268">Контракт плюс</option>
+<option value="270">ИП Анохин М. В.</option>
+<option value="271">ИП Егорочкин А. А.</option>
+<option value="272">ООО "ОКТОПУС КОНСАЛТ"</option>
+<option value="273">B2B-Center ТЛ-Фин</option>
+<option value="274">Астра Финанс</option>
+<option value="275">ООО «Кронос»</option>
+<option value="276">ИП Цыбин Алексей Валерьевич</option>
+<option value="277">ООО "Лидер-К+"</option>
+<option value="278">ООО "Документ"</option>
+<option value="279">ООО "Консалтинговая группа "Атом"</option>
+<option value="280">ООО "Юсэт"</option>
+<option value="281">ООО "ЮК "Ваше Право"</option>
+<option value="282">ООО "ЭлДи Консалт"</option>
+<option value="285">ООО "Фрегат"</option>
+<option value="286">ООО "ФК Русфин"</option>
+<option value="287">хООО "Финансовая компания "Ассоциация"</option>
+<option value="290">ООО "Финрул Финанс"</option>
+<option value="292">ООО "Финконсалт"</option>
+<option value="293">ИП Бутова Наталья Николаевна  </option>
+<option value="295">ООО "Финанс Консалт"</option>
+<option value="298">ООО "ТендерХелп"</option>
+<option value="299">ООО "ТендерПрофи"</option>
+<option value="302">ООО МКК "Зело"</option>
+<option value="303">ООО "ФКС консалтинг"</option>
+<option value="305">ООО "РМФ-Консалтинг"</option>
+<option value="307">ООО «Приоритет»</option>
+<option value="310">ИП Бугаков Игорь Валерьевич</option>
+<option value="311">ИП Паращенко Артем Павлович</option>
+<option value="312">ООО «МФЦ МСБ»</option>
+<option value="313">ООО «МД Финанс Интернешнл»</option>
+<option value="315">ООО "МАРЭР"</option>
+<option value="317">ООО "Конкорд"</option>
+<option value="318">ООО "Консалт35"</option>
+<option value="319">ООО "Компас"</option>
+<option value="320">ООО "Каролина и Ангелина"</option>
+<option value="322">ИП Чернышевский Алексей Владимирович </option>
+<option value="323">ИП Чайко Артем Андреевич</option>
+<option value="324">ИП Хрулев Николай Александрович</option>
+<option value="325">ИП Флинта Антон Леонидович</option>
+<option value="326">ИП Ушаков Александр Сергеевич</option>
+<option value="327">ИП Тупчий Михаил Юрьевич</option>
+<option value="328">ИП Тупович Татьяна Георгиевна</option>
+<option value="329">ИП Слепчук Денис Леонидович</option>
+<option value="330">ИП Синицына Нина Гргорьевна</option>
+<option value="331">ИП Прасцова Ольга Витальевна</option>
+<option value="332">ИП Пичугин Андрей Владимирович</option>
+<option value="333">ИП Писцов Илья Владимирович</option>
+<option value="334">ИП Пенин Андрей Владимирович</option>
+<option value="335">ИП Пашкова Татьяна Александровна</option>
+<option value="338">ИП Никулин Роман Вячеславович</option>
+<option value="341">ИП Маштакова Юлия Андреевна</option>
+<option value="344">ИП Лагутин Владимир Валентинович</option>
+<option value="345">ИП Куксова Екатерина Петровна</option>
+<option value="346">ИП Красников Максим Владимирович</option>
+<option value="348">ИП Карамина Светлана Георгиевна</option>
+<option value="349">ИП Канева Ирина Александровна</option>
+<option value="350">ИП Ефремов Евгений Сергеевич</option>
+<option value="351">ИП Ерохина Наталья Николаевна</option>
+<option value="352">ИП Ермаков Юрий Игоревич</option>
+<option value="353">ИП Егорочкин Алексей Александрович</option>
+<option value="354">ИП Егоров Антон Александрович</option>
+<option value="355">ИП Доронина Юлия Сергеевна  </option>
+<option value="356">ИП Добров Андрей Владимирович</option>
+<option value="357">ИП Демидов Александр Александрович</option>
+<option value="360">ИП Вакуленко Игорь Анатольевич </option>
+<option value="361">ИП Буланова Олеся Васильевна</option>
+<option value="362">ИП Боговков Денис Евгеньевич</option>
+<option value="363">ИП Богачева Елена Евгеньевна</option>
+<option value="366">ИП Анцибор Олег Станиславович</option>
+<option value="367">ИП Андрейчук Алексей Николаевич</option>
+<option value="369">ИП Голоп Максим Анатольевич</option>
+<option value="370">ООО "Тест"</option>
+<option value="371">ООО «ДМ Финанс»</option>
+<option value="372">ООО «ГАРАНТИЯ +»</option>
+<option value="373">ООО «Гарант Инвест Капитал»</option>
+<option value="378">ООО «Бриск Торч»</option>
+<option value="381">ООО «БГ-24»</option>
+<option value="382">ООО «АС Консалтинг»</option>
+<option value="385">ИП Рябышкина Ольга Анатольевна</option>
+<option value="386">ООО "ВАШЕ ПРАВО"</option>
+<option value="387">ООО "ИнвестСтрой"</option>
+<option value="388">ООО «Банковские гарантии»</option>
+<option value="389">Копцева Т.В.</option>
+<option value="390">ИП Ермаков Юрий Игоревич</option>
+<option value="392">ООО "ВАШ БАНКОВСКИЙ ГАРАНТ"</option>
+<option value="393">ООО "ВАШ БАНКОВСКИЙ ГАРАНТ"</option>
+<option value="394">ООО «Калибр»</option>
+<option value="395">ООО "Форум закупок 44"</option>
+<option value="397">ООО "АМР групп"</option>
+<option value="398">ИП Непершева Галина Григорьевна</option>
+<option value="399">ИП Каримов Александр Николаевич</option>
+<option value="400">ООО "Графит"</option>
+<option value="401">ИП Пархоменко Анастасия Борисовна</option>
+<option value="402">ООО "КАЛИБР"</option>
+<option value="403">ИП Чернышова А. С.</option>
+<option value="404">BrvFinance</option>
+<option value="405">ООО "КАЛИБР"</option>
+<option value="407">ООО «ФинТраст Юг»</option>
+<option value="408">ИП Советов Филипп Владимирович</option>
+<option value="409">ООО "АкваСтоунСервис"</option>
+<option value="410">хООО "Финансовая компания Ассоциация"</option>
+<option value="411">БГ Легко</option>
+<option value="412">ООО Юридический центр "Максимум"</option>
+<option value="413">ИП Ефремов Дмитрий Иванович</option>
+<option value="414">ООО МИНМАР КАПИТАЛ</option>
+<option value="415">BG Малюшевский О. А.</option>
+<option value="416">ИП Ковалева С.Э.</option>
+<option value="419">ТЕСТ Банк "Новый Век"</option>
+<option value="421">ООО "Финвольт"</option>
+<option value="422">ООО «СЕНАТОР»</option>
+<option value="423">ИП Кузьмина Мария Юрьевна</option>
+<option value="424">СПК</option>
+<option value="426">ИП Тарасов Алексей Владимирович </option>
+<option value="427">ИП Гриднев Олег Валерьевич</option>
+<option value="428">ООО "ГК РКЦ"</option>
+<option value="429">ООО " ПБА"</option>
+<option value="430">ИП Шапошников Александр Владимирович</option>
+<option value="431">ООО "ВТО 12" ТЛ Фин</option>
+<option value="432">ООО "Каролина и Ангелина" ТЛ-Фин</option>
+<option value="433">ООО «Бриск Торч» ТЛ-Фин</option>
+<option value="434">ИП Добров Андрей Владимирович ТЛ-Фин</option>
+<option value="435">ИП Назарова Анастасия Викторовна</option>
+<option value="436">ИП Кижваткин Виталий Александрович</option>
+<option value="437">ООО "Эдинком" ТЛ-Фин</option>
+<option value="438">ИП Стороженко В.И.ТЛ-Фин</option>
+<option value="439">ООО "ФК Русфин" ТЛ-Фин</option>
+<option value="440">ИП Латаев Иван Олегович</option>
+<option value="441">ИП Никулин Роман Вячеславович ТЛ-Фин</option>
+<option value="442">ИП Каримов Александр Николаевич ТЛ-Фин</option>
+<option value="444">ООО "Финмаркет"(ИП Яковлев)</option>
+<option value="445">ООО "Профессиональный Партнер" ТЛ-Фин</option>
+<option value="446">ООО " ПБА" ТЛ-ФИН</option>
+<option value="447">МЦ Финанс</option>
+<option value="448">ООО Тендер Плюс</option>
+<option value="449">ИП Максудов Сергей Валерьевич</option>
+<option value="450">ООО «Эксперт Б»</option>
+<option value="451">ИП Смолкин Р. Г.</option>
+<option value="452">BGtender</option>
+<option value="453">ИП Бутов Александр Анатольевич</option>
+<option value="454">ИП Бутов А.А</option>
+<option value="455">ООО «Гарант Инвест Капитал» ТЛ-Фин</option>
+<option value="456">ИП "Хрулева Ирина Сергеевна" ТЛ-ФИН</option>
+<option value="457">ООО «Центр финансовых решений»</option>
+<option value="458">ИП Петров Андрей Андреевич</option>
+<option value="459">ИП Вальсамакин Александр Анатольевич</option>
+<option value="460">ИП Шилов Н. Н.</option>
+<option value="461">ИП Афанасьев А.В.</option>
+<option value="462">ООО ВБГ</option>
+<option value="463">Сфера Контракт</option>
+<option value="464">ООО «ЮК «Планета Права» ТЛ-ФИН</option>
+<option value="465">ООО «ЮК «Планета Права»</option>
+<option value="466">ООО «Первый план»</option>
+<option value="468">ИП Федченко В. В.</option>
+<option value="470">ООО Атлант-Финансовые услуги</option>
+<option value="471">ИП Варфоломеева В. А.</option>
+<option value="472">ООО "ТендерПрофи" ТЛ-ФИН</option>
+<option value="473">ООО "ПРАЙД"</option>
+<option value="475">РОСТЕНДЕР24</option>
+<option value="476">Команда Компании "Финанс Гарант"</option>
+<option value="477">ООО АКОНСАЛТ</option>
+<option value="479">ООО «ВТО» </option>
+<option value="480">ООО "Гарант Бизнес Групп"</option>
+<option value="482">ИП Моргунов Антон Игоревич</option>
+<option value="483">Менеджер ТЛ-ФИН</option>
+<option value="485">ИП Шляхов Михаил Михайлович</option>
+<option value="486">ООО Банковское сопровождение контракта</option>
+<option value="487">ИП Новиков Е.Ю. </option>
+<option value="488">ИП Саляхова Ирина Рифовна</option>
+<option value="489">Тарасов</option>
+<option value="490">ООО "Коста групп"</option>
+<option value="492">ИП Пахсарьян Сергей Викторович</option>
+<option value="493">ИП Белявцев Александр Александрович</option>
+<option value="494">ИП ЕРЕМИН СЕРГЕЙ СЕРГЕЕВИЧ</option>
+<option value="495">ООО «Альянс»</option>
+<option value="496">ООО "МФ ЕКОММЕРС"</option>
+<option value="497">ИП Лазарев Д.В.</option>
+<option value="498">ИП Баранова Евгения Валерьевна</option>
+<option value="499">ИП Советов Филипп Владимирович ТЛ-ФИН</option>
+<option value="500">ИП ПАРФЕНОВ А. А.</option>
+<option value="501">ИП Минин А.Ю</option>
+<option value="502">ИП Прудников А.В</option>
+<option value="503">ИП Латыпова Ю.Р.</option>
+<option value="504">ААА Консалтинг</option>
+<option value="505">ООО «Центр Инвест»</option>
+<option value="506">ИП  Колесниченко С. В.</option>
+<option value="507">ИП Парамян Е.Н.</option>
+<option value="509">ИП Забазнов АА.</option>
+<option value="510">ГК ГОСТЕНДЕР</option>
+<option value="511">ООО «Интегра»</option>
+<option value="512">ИП Арзуманов Георгий Григорьевич</option>
+<option value="513">ИП Морозова А. Ю.</option>
+<option value="514">ИП Мамонтов Д. В.</option>
+<option value="515">ООО «СтимФин»</option>
+<option value="516">ООО "Фин-Директ"</option>
+<option value="518">ИП Гиренко К. А.</option>
+<option value="520">ИП Паращенко А. П.</option>
+<option value="521">ИП Димитрович Евгений Юрьевич</option>
+<option value="522">ИП Патраков Владислав Вадимович</option>
+<option value="523">ООО «ГК «ДМ Финанс»</option>
+<option value="524">ИП Яковлева Татьяна Борисовна</option>
+<option value="525">tenderpobeda.ru</option>
+<option value="526">ИП Кутасевич С.В</option>
+<option value="528">ООО «СитиФинанс»</option>
+<option value="529">ООО "А-ЦЕНТР"</option>
+<option value="530">ООО «РБ Гарант»</option>
+<option value="531">ООО "КОМПАНИЯ ПИЛОТ"</option>
+<option value="532">ООО «САХАРА»</option>
+<option value="534">ООО «МСБ форум»</option>
+<option value="535">FK BankGarant</option>
+<option value="536">ООО «ЭТП-ГАРАНТ»</option>
+<option value="537">"Комплект Плюс"</option>
+<option value="538">ИП Николаенков Дмитрий Игоревич</option>
+<option value="539">ИП Макеев Сергей Николаевич</option>
+<option value="540">ООО "Отраслевые решения"</option>
+<option value="541">ООО "РЕШЕНИЕ"</option>
+<option value="542">ИП Гореликов Арсений Геннадьевич</option>
+<option value="543">ООО «Тендерконсультант»</option>
+<option value="544">ИП Шестаков Константин Сергеевич</option>
+<option value="545">ИП Целоухов В. В.</option>
+<option value="547">ИП Жуков М.Л.</option>
+<option value="548">ООО  “Аудит РТВ“</option>
+<option value="550">ИП Малыгина Светлана Александровна</option>
+<option value="551">ИП БЕЛОУСОВА АНАСТАСИЯ СЕРГЕЕВНА</option>
+<option value="552">ИП Евдокимов А. С.</option>
+<option value="553">ООО "АЛЬБИОН ТЕНДЕР"</option>
+<option value="555">ООО «АльянсКомплект»</option>
+<option value="556">ООО «Региональная консалтинговая группа»</option>
+<option value="557">ИП Гаевой Максим Сергеевич</option>
+<option value="558">ИП Чернышевский Алексей Владимирович ТЛ-ФИН</option>
+<option value="559">ИП Музраев С.В.</option>
+<option value="560">ИП Борисовский Александр Сергеевич</option>
+<option value="561">ИП Бондаренко Александр Александрович</option>
+<option value="562">ИП Каргальцев А. В.</option>
+<option value="563">ИП Хафизова Лейсан </option>
+<option value="564">ИП Кипова А.Н.</option>
+<option value="565">ИП Борисова А. В.</option>
+<option value="566">ИП ШВАБ КОНСТАНТИН ВЯЧЕСЛАВОВИЧ</option>
+<option value="567">ИП Степанов Артем Павлович</option>
+<option value="568">ИП_Бурцева Светлана Александровна</option>
+<option value="569">ООО «ТД Агро Био Партнер»</option>
+<option value="570">ИП Росовская</option>
+<option value="571">ООО "АКБ "ТЕНЭКС-ИНВЕСТ"</option>
+<option value="572">Лига-Финанс (ИП Мовчан Н.Е.)</option>
+<option value="573">ИП Парфенов Давид Леонидович</option>
+<option value="574">ИП Зайнутдинова Е.А.</option>
+<option value="575">ООО ТАПБ Банковские гарантии</option>
+<option value="576">ООО НТЭТ</option>
+<option value="577">Центр банковских гарантий</option>
+<option value="578">GeneralTender</option>
+<option value="579">ИП Ильинский Илья Сергеевич</option>
+<option value="580">RomanoffBroker</option>
+<option value="581">ООО «Центр эффективных закупок»</option>
+<option value="582">ООО «Солид Дистрибьютор БГ»</option>
+<option value="583">ИП Портянко Леонид Евгеньевич</option>
+<option value="584">ООО "ДОКУМЕНТ"</option>
+<option value="585">ООО «МД-ГАРАНТ»</option>
+<option value="586">ИП Старков Алексей Леонидович</option>
+<option value="587">ИП Фаизов Эльдар Гиниятович</option>
+<option value="588">ИП Клишнина Наталья Тимофеевна</option>
+<option value="589">ООО «Бета Лайн»</option>
+<option value="590">ИП Бабаян А.А.</option>
+<option value="591">ИП Бессолицын Кирилл Борисович</option>
+<option value="592">ИП Климова Екатерина Николаевна</option>
+<option value="593">ИП Павлов Антон Николаевич</option>
+<option value="594">ООО «ТРЕЙД ГРУПП»</option>
+<option value="595">ИП Калягина Н.В.</option>
+<option value="596">Финансовая помощь</option>
+<option value="597">ИП Нураев М.С.</option>
+<option value="598">ИП Ягодина Елена Петровна</option>
+<option value="599">ООО "Тетра-Консалтинг"</option>
+<option value="601">ИП Кирсанова Татьяна Петровна</option>
+<option value="603">ООО ПРОФКОНСАЛТИНГ</option>
+<option value="604">ИП Захаров Сергей Васильевич</option>
+<option value="605">ИП Демидов Александр Александрович ТЛ-ФИН</option>
+<option value="606">ООО "БИКО"</option>
+<option value="607">ООО ТЕСТ БРОКЕР</option>
+<option value="608">ИП БАЛБАШЕВ ВЛАДИМИР АЛЕКСАНДРОВИЧ </option>
+<option value="609">ООО «БИЗНЕС–ПОДДЕРЖКА» ТЛ-ФИН</option>
+<option value="610">ООО «ЮРИДИЧЕСКАЯ КОМПАНИЯ «ПЛАНЕТА ПРАВА»</option>
+<option value="611">ООО "УНИВЕРСАЛЬНЫЙ ПАРТНЕР БИЗНЕСА" </option>
+<option value="612">ООО «ЭЙТКОМ»</option>
+<option value="613">ИП Троянский Олег Игоревич</option>
+<option value="614">ИП Мацера А.А.</option>
+<option value="615">ИП КОСЯКОВ ДМИТРИЙ ЮРЬЕВИЧ</option>
+<option value="616">ООО "ТЕНДЕР-ФИНАНС"</option>
+<option value="617">ООО «Решение»</option>
+<option value="618">ООО «Управляющая К-5»</option>
+<option value="619">ООО АН МСН</option>
+<option value="620">ИП Максимова Н. В.</option>
+<option value="621">ИП Бутова Н. Н.</option>
+<option value="622">ООО "Рубакс"</option>
+<option value="623">ООО ЦФК </option>
+<option value="624">ИП Фаттахова Э. Н.</option>
+<option value="625">ИП Воробьева Е. В.</option>
+<option value="627">ИП Хаустова А.Ю.</option>
+<option value="628">ИП Бредихина В. В.</option>
+<option value="629">ИП Ковалев А.В.</option>
+<option value="630">ИП Белохвостик А.М.</option>
+<option value="631">ИП Шаповалов А. А.</option>
+<option value="632">ИП Пантелеев Франтишек Григорьевич</option>
+<option value="633">ИП Асачева Н.И.</option>
+<option value="634">ИП Тетерина Л. В.</option>
+<option value="635">СПР</option>
+<option value="636">ООО «РУСЭКОГАРАНТ»</option>
+<option value="637">ИП Куксова</option>
+<option value="638">помощник по получению БГ</option>
+<option value="639">ИП Петров Андрей Сергеевич </option>
+<option value="640">ООО ОРЭКС +</option>
+<option value="642">ИП Аносова Наталья Владимировна</option>
+<option value="643">ИП Бухтиярова Т. А.</option>
+<option value="644">ИП Афанасов Е. В.</option>
+<option value="645">ИП Агиенко О. В.</option>
+<option value="646">ИП Сизов Д. В.</option>
+<option value="647">ИП Дунаев А. В.</option>
+<option value="648">ИП Ким</option>
+<option value="649">ИП Бурмистрова Т. П.</option>
+<option value="650">ООО «СТК»</option>
+<option value="651">ИП Кислов Д. Н.</option>
+<option value="652">ООО Авион</option>
+<option value="653">ИП Сафин И. Ф.</option>
+<option value="654">ООО «БГ-24»</option>
+<option value="655">ИП Анфилова Ю. П.</option>
+<option value="656">ИП Никонова А.А.</option>
+<option value="657">ООО «Форум участников торгов»</option>
+<option value="658">Тендер партнёр</option>
+<option value="659">ИП Игнатов Сергей Вячеславович</option>
+<option value="660">ИП Горбачева Наталья Игоревна</option>
+<option value="661">ООО «АВИС»</option>
+<option value="662">ООО «Ипотечный дом»</option>
+<option value="663">ООО «Альфа Гарантии»</option>
+<option value="664">ИП Крылова</option>
+<option value="665">ИП Ускова Надежда Владимировна</option>
+<option value="666">ИП Черняевская Ольга Владимировна</option>
+<option value="667">ИП Катков Дмитрий Алексеевич</option>
+<option value="668">«Фин Эксперт» ИП Бессалова Е.В.</option>
+<option value="669">ИП Панасенко В.В.</option>
+<option value="670">ИП Дударов Петр Викторович</option>
+<option value="671">ИП Коломойцев Вячеслав Александрович</option>
+<option value="672">ООО «ФинАйТи»</option>
+<option value="673">ООО «Сибирский брокер»</option>
+<option value="674">ООО «ЭЛЕМЕНТ»</option>
+<option value="675">ИП Грицай Владислав Александрович</option>
+<option value="676">ИП Минченко Т. Н.</option>
+<option value="677">ООО «ЮрКонсалт»</option>
+<option value="678">ИП Мамонтов Максим Игоревич</option>
+<option value="679">ООО «Аврора»</option>
+<option value="680">ИП Теслюк Ярослав Владимирович</option>
+<option value="681">ИП Беляева</option>
+<option value="682">ИП Разаханова Гульнара Наримановна</option>
+<option value="683">ИП Цапов О. В.</option>
+<option value="684">ИП Лосева Ю.В.</option>
+<option value="685">ИП Бородин Дмитрий Сергеевич</option>
+<option value="686">ООО "Раздолье"</option>
+<option value="687">ИП Мунсузбаев Александр Кожгалиевич</option>
+<option value="689">Тест регистрации брокера</option>
+<option value="690">ИП Бажутина О.М.</option>
+<option value="691">ООО «Цифрон»</option>
+<option value="692">ООО «ФИНСУПЕР»</option>
+<option value="693">ООО «ТРЕК»</option>
+<option value="694">ООО "Центр гарантий и инвестиций"</option>
+<option value="695">ИП Кочкарев С. В.</option>
+<option value="696">ООО ЮЦ «Фемида»</option>
+<option value="697">ООО «Агентство А»</option>
+<option value="698">ИП Безруких Игорь Александрович</option>
+<option value="699">Е-ГАРАНТ</option>
+<option value="700">BG Finance</option>
+<option value="701">ИП Науменкова Наталия Валерьевна</option>
+<option value="702">ИП Вахромеева Антонида Павловна</option>
+<option value="703">ООО  «Престиж»</option>
+<option value="704">Центр Бизнес Решений</option>
+<option value="707">Z</option>
+<option value="708">ИП Акопян Нарек Артурович</option>
+<option value="709">ООО "Финансовые технологии"</option>
+<option value="710">ООО «Аксиома Финанс»</option>
+<option value="711">ООО «АЙС»</option>
+<option value="713">ИП Саляхов Динар Забирович</option>
+<option value="714">ИП Рябкова Дарья Владимировна</option>
+<option value="715">ИП Косякова Д. Ю.</option>
+<option value="716">ООО «АльянсГарант»</option>
+<option value="717">ИП Ярушко М.В.</option>
+<option value="718">ИП Ерофеевский А. А.</option>
+<option value="719">ООО:«АСТ-Консалтинг групп»</option>
+<option value="720">BG Александрова Ольга Вячеславовна</option>
+<option value="721">ИП Гольдберг М. А.</option>
+<option value="722">ООО «Сибирь Проект»</option>
+<option value="723">ИП Станченко О.И.</option>
+<option value="724">ИП СИЗОВ ЕГОР МИХАЙЛОВИЧ</option>
+<option value="725">ИП Токмашев Максим Сергеевич</option>
+<option value="726">ИП Гайгер Е.В.</option>
+<option value="727">ИП Дмитриева Оксана Алексеевна</option>
+<option value="728">ООО «Ворлд Трейд»</option>
+<option value="729">Тендерлэнд</option>
+<option value="730">ИП Ахметова Э. Р.</option>
+<option value="731">ИП Зимин Д. В.</option>
+<option value="732">ООО «АЛЬФА»</option>
+<option value="733">ИП Оробейко Е.С.</option>
+<option value="735">ИП Плохий Т.В.</option>
+<option value="736">Гусев ИП</option>
+<option value="737">ООО "АФК"</option>
+<option value="738">ИП Богомаз Г.Г.</option>
+<option value="739">ООО «Зенит»</option>
+<option value="740">ИП ДИМИТРОВИЧ ДМИТРИЙ ЮРЬЕВИЧ</option>
+<option value="741">ООО «ВЕКТОР РАЗВИТИЯ»</option>
+<option value="742">ООО «Бизнес Маклер»</option>
+<option value="743">ИП Терехов К.В.</option>
+<option value="744">ИП Колотовкина В. И.</option>
+<option value="745">ИП Путилов В. А.</option>
+<option value="746">ИП Коновалова А. А.</option>
+<option value="748">ИП Бальжирова И. А.</option>
+<option value="749">ИП Пономарева А. О.</option>
+<option value="750">ИП Попова Елена Дмитриевна</option>
+<option value="751">ТМ "ВостокИнвест"</option>
+<option value="752">БАНКОВСКИЕ ГАРАНТИИ ОНЛАЙН</option>
+<option value="753">ИП Рыжов</option>
+<option value="754">ИП Муртазин А.А.</option>
+<option value="755">ИП Арсланова Алия Марсовна</option>
+<option value="756">NKГарант</option>
+<option value="757">ИП Раевский Кирилл Александрович </option>
+<option value="758">GoldFin</option>
+<option value="759">ИП Макарова Ольга Николаевна</option>
+<option value="760">ИП Никулин И.С.</option>
+<option value="761">ООО "ТехИнКом"</option>
+<option value="762">Ип Иванов</option>
+<option value="763">ИП Скорзова К. А.</option>
+<option value="764">ИП Кириченко Игорь Андреевич</option>
+<option value="765">ИП Филимонова Е.С</option>
+<option value="766">ГосФинас (GosFinans)</option>
+<option value="767">Эллада Консалт</option>
+<option value="768">ИП Сабиров А.З.</option>
+<option value="769">ООО «Волга -Финанс»</option>
+<option value="770">Пащенко В.С.</option>
+<option value="771">Финансовые Бизнес Решения (ФБР)</option>
+<option value="772">РосГарантия</option>
+<option value="773">ФинКон24</option>
+<option value="774">ООО «Кредитная практика»</option>
+<option value="775">ИП Романова М.К.</option>
+<option value="776">Комплекс-Авто</option>
+<option value="777">ИП Кудинова Александра Владимировна</option>
+<option value="778">Финансово-Аналитический Центр «Финик Эксперт»</option>
+<option value="779">ИП Кондратьева Ольга Андреевна</option>
+<option value="780">Агент 101</option>
+<option value="781">Титан Брокер</option>
+<option value="782">ИП Журавлева Александра Александровна</option>
+<option value="783">Сириус тендер</option>
+<option value="784">ООО «Тендер Групп»</option>
+<option value="785">ИП Фаворский Николай Сергеевич</option>
+<option value="786">ООО Брокер Люкс</option>
+<option value="787">ИП Ильичёв Антон Юрьевич</option>
+</select>            </div>
+            </div>
+    <table style="border-collapse:collapse">
+        <tbody><tr>
+            <td class="type_bg_td" style="width: 400px;">
+                <div class="errorMessage" id="Card_bg_type_em_"></div>                <label for="Card_bg_type" class="required">Тип БГ <span class="required">*</span></label><br>
+                <input id="ytCard_bg_type" type="hidden" value="" name="Card[bg_type]"><span id="Card_bg_type"><input onchange="changeBgType2()" id="Card_bg_type_0" value="0" checked="checked" type="radio" name="Card[bg_type]"> <label for="Card_bg_type_0">Обеспечение участия в конкурсе/тендере</label><br>
+<input onchange="changeBgType2()" id="Card_bg_type_1" value="1" type="radio" name="Card[bg_type]"> <label for="Card_bg_type_1">Гарантия исполнения обязательств по контракту</label><br>
+<input onchange="changeBgType2()" id="Card_bg_type_2" value="2" type="radio" name="Card[bg_type]"> <label for="Card_bg_type_2">Гарантия возврата аванса</label><br>
+<input onchange="changeBgType2()" id="Card_bg_type_3" value="3" type="radio" name="Card[bg_type]"> <label for="Card_bg_type_3">Гарантия гарантийного периода</label></span>            </td>
+            <td class="type_bg_td">
+                <div id="enforceContract" style="display:none">
+                    <div class="errorMessage" id="Card_enforce_contract_em_"></div>                    <label for="Card_enforce_contract">Тип обеспечения контракта</label><br>
+                    <input id="ytCard_enforce_contract" type="hidden" value="" name="Card[enforce_contract]"><span id="Card_enforce_contract"><input onchange="changeEnforceContract()" id="Card_enforce_contract_0" value="0" type="radio" name="Card[enforce_contract]"> <label for="Card_enforce_contract_0">Контракт подлежит заключению</label><br>
+<input onchange="changeEnforceContract()" id="Card_enforce_contract_1" value="1" type="radio" name="Card[enforce_contract]"> <label for="Card_enforce_contract_1">Контракт уже заключен</label></span>                </div>
+            </td>
+        </tr>
+    </tbody></table>
+    <br>
+    <div class="clearfix" id="need_more_garant">
+        <strong>
+            Потребуются иные гарантии по контракту?
+        </strong>
+        <div class="more-garant">
+            <div class="more_garant_cell">
+                <div class="more_garant_row">
+                    <label for="Card_need_exec_guarantee">Исполнение обязательств</label>                    <br>
+                    <span id="Card_need_exec_guarantee"><input onchange="moreGarantToggle(&quot;exec&quot;)" value="1" id="Card_need_exec_guarantee_0" checked="checked" type="radio" name="Card[need_exec_guarantee]"> <label for="Card_need_exec_guarantee_0">Да</label><input onchange="moreGarantToggle(&quot;exec&quot;)" value="0" id="Card_need_exec_guarantee_1" type="radio" name="Card[need_exec_guarantee]"> <label for="Card_need_exec_guarantee_1">Нет</label></span>                </div>
+                <div class="more_garant_row more_garant_block_exec">
+                    <div class="errorMessage" id="Card_exec_guarant_sum_em_"></div>                    <label for="Card_exec_guarant_sum">Сумма</label> <span class="required">*</span>
+                    <br>
+                    <input class="sum" name="Card[exec_guarant_sum]" id="Card_exec_guarant_sum" type="text" value="1">                </div>
+                <div class="more_garant_row more_garant_block_exec">
+                    <label for="Card_exec_guarant_time">Срок (месяцев)</label>                    <br>
+                    <input name="Card[exec_guarant_time]" id="Card_exec_guarant_time" type="text">                </div>
+            </div>
+            <div class="more_garant_cell">
+                <div class="more_garant_row">
+                    <label for="Card_need_warr_guarantee">Гарантия гарантийного периода</label>                    <br>
+                    <span id="Card_need_warr_guarantee"><input onchange="moreGarantToggle(&quot;warr&quot;)" value="1" id="Card_need_warr_guarantee_0" type="radio" name="Card[need_warr_guarantee]"> <label for="Card_need_warr_guarantee_0">Да</label><input onchange="moreGarantToggle(&quot;warr&quot;)" value="0" id="Card_need_warr_guarantee_1" checked="checked" type="radio" name="Card[need_warr_guarantee]"> <label for="Card_need_warr_guarantee_1">Нет</label></span>                </div>
+                <div class="more_garant_row more_garant_block_warr" style="display:none;">
+                    <label for="Card_warr_guarant_sum">Сумма</label>                    <br>
+                    <input class="sum" name="Card[warr_guarant_sum]" id="Card_warr_guarant_sum" type="text">                </div>
+                <div class="more_garant_row more_garant_block_warr" style="display:none;">
+                    <label for="Card_warr_guarant_time">Срок (месяцев)</label>                    <br>
+                    <input name="Card[warr_guarant_time]" id="Card_warr_guarant_time" type="text">                </div>
+            </div>
+            <div class="more_garant_cell">
+                <div class="more_garant_row">
+                    <label for="Card_need_avans_guarantee">Возврат аванса</label>                    <br>
+                    <span id="Card_need_avans_guarantee"><input onchange="moreGarantToggle(&quot;avans&quot;)" value="1" id="Card_need_avans_guarantee_0" type="radio" name="Card[need_avans_guarantee]"> <label for="Card_need_avans_guarantee_0">Да</label><input onchange="moreGarantToggle(&quot;avans&quot;)" value="0" id="Card_need_avans_guarantee_1" checked="checked" type="radio" name="Card[need_avans_guarantee]"> <label for="Card_need_avans_guarantee_1">Нет</label></span>                </div>
+                <div class="more_garant_row more_garant_block_avans" style="display:none;">
+                    <label for="Card_avans_guarant_sum">Сумма</label>                    <br>
+                    <input class="sum" name="Card[avans_guarant_sum]" id="Card_avans_guarant_sum" type="text">                </div>
+                <div class="more_garant_row more_garant_block_avans" style="display:none;">
+                    <label for="Card_avans_guarant_time">Срок (месяцев)</label>                    <br>
+                    <input name="Card[avans_guarant_time]" id="Card_avans_guarant_time" type="text">                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="span-6">
+            <div class="errorMessage" id="Card_is_demping_em_"></div>            <input id="ytCard_is_demping" type="hidden" value="0" name="Card[is_demping]"><input class="custom-checkbox" onchange="toogle_is_demping(this)" name="Card[is_demping]" id="Card_is_demping" value="1" type="checkbox">            <label for="Card_is_demping">Снижение более 25% от начальной цены</label>        </div>
+        <div class="span-6">
+            <input class="custom-checkbox" onchange="js:if($(this).prop(&quot;checked&quot;)) {$(&quot;#Card_avans&quot;).prop(&quot;checked&quot;, false); $(&quot;#c_avans_sum&quot;).attr({hidden:true});}" type="checkbox" value="1" name="fake_avans" id="fake_avans">            <label for="fake_avans">Гарантия исполнения обязательств с Авансом</label>
+        </div>
+        <div class="span-6">
+            <input id="ytCard_writeoff" type="hidden" value="0" name="Card[writeoff]"><input class="custom-checkbox" name="Card[writeoff]" id="Card_writeoff" value="1" type="checkbox">            <label for="Card_writeoff">Требование бесспорного списания</label>        </div>
+        <div class="span-6" id="Card_is_275_block">
+            <div class="errorMessage" id="Card_is_275_em_"></div>            <input id="ytCard_is_275" type="hidden" value="0" name="Card[is_275]"><input class="custom-checkbox" name="Card[is_275]" id="Card_is_275" value="1" type="checkbox">            <label for="Card_is_275">Относится к ГосОборонЗаказу</label>        </div>
+    </div>
+    <div class="flex-card-fields">
+        <div class="span-6" id="c_avans_sum" hidden="">
+            <div class="errorMessage" id="Card_avans_sum_em_"></div>            <div>
+                <label for="Card_avans_sum">Сумма аванса</label>            </div>
+            <div>
+                <input class="sum" onchange="AvansSumChanged(this)" name="Card[avans_sum]" id="Card_avans_sum" type="text" value="0">            </div>
+        </div>
+        <div class="span-6" id="old_bg_sum" hidden="">
+            <div>
+                <label>Сумма БГ заказчика</label>
+            </div>
+            <div>
+                <input type="text" disabled="" value="">
+            </div>
+        </div>
+        <div class="span-6">
+            <div class="errorMessage" id="Card_guarantee_sum_em_"></div>            <div>
+                <label for="Card_guarantee_sum" class="required">Сумма банковской гарантии <span class="required">*</span></label>            </div>
+            <div>
+                <input class="sum" name="Card[guarantee_sum]" id="Card_guarantee_sum" type="text" value="1275800.00">            </div>
+        </div>
+                    <div class="span-6">
+                <div class="errorMessage" id="Card_cost_bg_em_"></div>                <div>
+                    <label for="Card_cost_bg">Комиссия банка</label>                </div>
+                <div>
+                    <input class="sum" name="Card[cost_bg]" id="Card_cost_bg" type="text" value="5000">                </div>
+            </div>
+                <div class="span-6">
+            <div class="errorMessage" id="Card_guarantee_from_em_"></div>            <div>
+                <label for="Card_guarantee_from">Срок БГ с</label>            </div>
+            <div>
+                <input class="checkbox" onchange="js:if($(this).prop(&quot;checked&quot;)) {$(&quot;#label_from_cur_date&quot;).attr({hidden:false}); $(&quot;#block_from_cur_date&quot;).attr({hidden:true}); $(&quot;#Card_guarantee_from&quot;).val(&quot;&quot;)} else {$(&quot;#block_from_cur_date&quot;).attr({hidden:false}); $(&quot;#label_from_cur_date&quot;).attr({hidden:true});}" checked="checked" type="checkbox" value="1" name="from_cur_date" id="from_cur_date">                <label id="label_from_cur_date" for="from_cur_date">даты выдачи</label>
+                <span id="block_from_cur_date" hidden="hidden">
+			<input style="width:90px;" autocomplete="off" id="Card_guarantee_from" name="Card[guarantee_from]" type="text" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">			</span>
+            </div>
+        </div>
+        <div class="span-6">
+            <div class="errorMessage" id="Card_guarantee_expired_em_"></div>            <div>
+                <label for="Card_guarantee_expired" class="required">Срок БГ до <span class="required">*</span></label>            </div>
+            <div>
+                <input autocomplete="off" id="Card_guarantee_expired" name="Card[guarantee_expired]" type="text" value="23.10.2021" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">            </div>
+        </div>
+        <div class="span-6 enforceContract_extra" style="display:none;">
+            <div class="errorMessage" id="Card_contract_number_em_"></div>            <div>
+                <label for="Card_contract_number">№ контракта/ договора (для случаев замены обеспечения)</label>            </div>
+            <div>
+                <input name="Card[contract_number]" id="Card_contract_number" type="text" value="">            </div>
+        </div>
+        <div class="span-6 enforceContract_extra" style="display:none;">
+            <div class="errorMessage" id="Card_contract_date_em_"></div>            <div>
+                <label for="Card_contract_date">Дата контракта/ договора (для случаев замены обеспечения)</label>            </div>
+            <div>
+                <input autocomplete="off" id="Card_contract_date" name="Card[contract_date]" type="text" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">            </div>
+        </div>
+        <div class="span-6 enforceContract" style="display:none;">
+            <div class="errorMessage" id="Card_responsibility_to_em_"></div>            <div>
+                <label for="Card_responsibility_to" class="required">Срок выполнения работ/оказания услуг <span class="required">*</span></label>            </div>
+            <div>
+                <input autocomplete="off" id="Card_responsibility_to" name="Card[responsibility_to]" type="text" value="23.11.2021" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">            </div>
+        </div>
+        <div class="span-6 enforceContract" style="display:none;">
+            <div class="errorMessage" id="Card_result_price_em_"></div>            <div>
+                <label for="Card_result_price">Итоговая цена контракта/договора</label> <span class="required">*</span>
+            </div>
+            <div>
+                <input class="sum" name="Card[result_price]" id="Card_result_price" type="text" value="12758000">            </div>
+        </div>
+        <div class="span-6 enforceContract" style="display:none;">
+            <div class="errorMessage" id="Card_protocol_number_em_"></div>            <div>
+                <label for="Card_protocol_number">№ протокола итогов</label> <span class="required">*</span>
+            </div>
+            <div>
+                <input name="Card[protocol_number]" id="Card_protocol_number" type="text" value="">            </div>
+        </div>
+        <div class="span-6 enforceContract" style="display:none;">
+            <div class="errorMessage" id="Card_protocol_date_em_"></div>            <div>
+                <label for="Card_protocol_date">Дата протокола итогов</label> <span class="required">*</span>
+            </div>
+            <div>
+                <input autocomplete="off" id="Card_protocol_date" name="Card[protocol_date]" type="text" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">            </div>
+        </div>
+        <div class="span-6 enforceContract" style="display:none;">
+            <div class="errorMessage" id="Card_provider_doc_em_"></div>            <div>
+                <label for="Card_provider_doc">Название документа, определяющего поставщика</label>            </div>
+            <div>
+                <input name="Card[provider_doc]" id="Card_provider_doc" type="text" value="">            </div>
+        </div>
+        <div class="span-6" style="display:none;">
+            <div class="errorMessage" id="Card_ikz_em_"></div>            <div>
+                <label for="Card_ikz">Идентификационный код закупки</label>            </div>
+            <div>
+                <input name="Card[ikz]" id="Card_ikz" type="text" value="">            </div>
+        </div>
+        <div class="span-6" style="display:none;">
+            <div class="errorMessage" id="Card_iku_em_"></div>            <div>
+                <label for="Card_iku">Идентификационный код участника</label>            </div>
+            <div>
+                <input name="Card[iku]" id="Card_iku" type="text" value="">            </div>
+        </div>
+        <div class="span-6">
+            <div class="errorMessage" id="Card_okpd2_em_"></div>            <div>
+                <label for="Card_okpd2">Код ОКПД2</label>            </div>
+            <div>
+                <input name="Card[okpd2]" id="Card_okpd2" type="text" value="32.50.50.190">            </div>
+        </div>
+    </div>
+    <div class="table-style">
+        <div class="table-row">
+            <div class="span-6 table-cell">
+                <div class="errorMessage" id="Card_contract_type_em_"></div>                <label for="Card_contract_type" class="required">Вид контракта/договора <span class="required">*</span></label><br>
+                <input id="ytCard_contract_type" type="hidden" value="" name="Card[contract_type]"><span id="Card_contract_type"><input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val() == 4) $(&quot;#contract_type_other&quot;).attr({disabled:false, hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_0" value="5" checked="checked" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_0">Контракт</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val() == 4) $(&quot;#contract_type_other&quot;).attr({disabled:false, hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_1" value="1" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_1">Государственный контракт</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val() == 4) $(&quot;#contract_type_other&quot;).attr({disabled:false, hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_2" value="0" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_2">Муниципальный контракт</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val() == 4) $(&quot;#contract_type_other&quot;).attr({disabled:false, hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_3" value="2" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_3">Государственный договор</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val() == 4) $(&quot;#contract_type_other&quot;).attr({disabled:false, hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_4" value="3" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_4">Муниципальный договор</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val() == 4) $(&quot;#contract_type_other&quot;).attr({disabled:false, hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_5" value="4" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_5">Другое</label></span>                <input id="contract_type_other" style="width:100%;" hidden="hidden" name="Card[contract_type_other]" type="text">            </div>
+            <div class="span-6 table-cell">
+                <div class="errorMessage" id="Card_isBigDeal_em_"></div>                <input id="ytCard_isBigDeal" type="hidden" value="0" name="Card[isBigDeal]"><input name="Card[isBigDeal]" id="Card_isBigDeal" value="1" type="checkbox"><br>
+                <label for="Card_isBigDeal">Является ли сделка крупной (размер гарантии составляет 25 процентов (и более) от валюты последнего баланса Принципала)</label>            </div>
+        </div>
+    </div>
+    <div class="errorMessage" id="Card_regnumber_em_"></div>    <input name="Card[regnumber]" id="Card_regnumber" type="hidden" value="0158300043421000067">    <div class="errorMessage" id="Card_lots_description_em_"></div>    <div class="clearfix" id="lots_description">
+        <table class="tableItems">
+	<tbody><tr>
+		<th colspan="2">
+			<label>Лот №</label>			<input class="num_lot" type="text" value="1" name="Card[lots_description][0][num_lot]" id="Card_lots_description_0_num_lot">				<a title="Удалить" href="javascript:void(0)" onclick="removeLot(this)"><img src="/images/remove.png" alt="Удалить"></a>
+					</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; width:200px;"><label class="required">Реестровый номер <span class="required">*</span></label></td>
+		<td>
+			<a title="Перейти к странице тендера" target="_blank" href="http://zakupki.gov.ru/epz/order/notice/ea44/view/common-info.html?regNumber=0158300043421000067">0158300043421000067</a>		</td>
+	</tr>
+	<tr>
+		<td style="text-align: center;"><label class="required">Предмет тендера <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_tender_name_em_" class="errorMessage"></div><input type="text" value="Приобретение медицинского оборудования" name="Card[lots_description][0][tender_name]" id="Card_lots_description_0_tender_name">					</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">НМЦ <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_start_price_em_" class="errorMessage"></div><input class="sum" type="text" value="12758000.00" name="Card[lots_description][0][start_price]" id="Card_lots_description_0_start_price">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Сумма БГ <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_bg_cost_em_" class="errorMessage"></div><input class="sum" type="text" value="1275800.00" name="Card[lots_description][0][bg_cost]" id="Card_lots_description_0_bg_cost">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Дата публикации <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_public_date_em_" class="errorMessage"></div><input type="text" value="17.06.2021" name="Card[lots_description][0][public_date]" id="Card_lots_description_0_public_date">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Способ определения поставщика <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_placing_way_em_" class="errorMessage"></div><select name="Card[lots_description][0][placing_way]" id="Card_lots_description_0_placing_way">
+<option value="0">Не определено</option>
+<option value="1">Открытый конкурс</option>
+<option value="2">Открытый аукцион</option>
+<option value="3">Запрос котировок</option>
+<option value="4">Открытый аукцион в электронной форме</option>
+<option value="5">Размещение заказа на поставки биржевых товаров</option>
+<option value="6">Предварительный отбор</option>
+<option value="7">Извещение о заинтересованности в проведении конкурса</option>
+<option value="8">Коммерческие закупки</option>
+<option value="9">ФЗ №223: Другое</option>
+<option value="10">Конкурс c ограниченным участием</option>
+<option value="11">Двухэтапный конкурс</option>
+<option value="12" selected="selected">Электронный аукцион</option>
+<option value="13">Закрытый конкурс</option>
+<option value="14">Закрытый конкурс с ограниченным участием</option>
+<option value="15">Закрытый двухэтапный конкурс</option>
+<option value="16">Закрытый аукцион</option>
+<option value="17">Запрос котировок без размещения извещения</option>
+<option value="18">Запрос предложений</option>
+<option value="19">Закупка у единственного поставщика (подрядчика, исполнителя)</option>
+<option value="20">Иной однолотовый способ</option>
+<option value="21">Иной многолотовый способ</option>
+<option value="22">Повторный конкурс</option>
+<option value="23">Конкурс для заключения энергосервисного контракта</option>
+<option value="24">Запросы цен товаров, работ, услуг</option>
+<option value="25">Повторный конкурс с ограниченным участием</option>
+<option value="26">Прочие (в соответствии со статьей 111 Закона № 44-ФЗ)</option>
+<option value="27">Закупки малого объема</option>
+<option value="28">Открытый конкурс в электронной форме</option>
+<option value="29">Конкурс с ограниченным участием в электронной форме</option>
+<option value="30">Двухэтапный конкурс в электронной форме</option>
+<option value="615">ПП РФ 615 (Капитальный ремонт)</option>
+<option value="1000">ФЗ №223: Процедуры с ограниченным участием</option>
+<option value="1001">ФЗ №223: Редукцион</option>
+<option value="1002">ФЗ №223: Закупка у единственного поставщика</option>
+<option value="1003">ФЗ №223: Электронный аукцион</option>
+<option value="1004">ФЗ №223: Конкурс открытый</option>
+<option value="1005">ФЗ №223: Открытый аукцион</option>
+<option value="1006">ФЗ №223: Запрос котировок</option>
+<option value="1007">ФЗ №223: Запрос котировок в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства</option>
+<option value="1008">ФЗ №223: Аукцион в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства</option>
+<option value="1009">ФЗ №223: Запрос предложений в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства</option>
+<option value="1010">ФЗ №223: Конкурс в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства</option>
+</select>		
+		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Заказчик <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_customer_full_name_em_" class="errorMessage"></div><input type="text" value="МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ &quot;ГОРОДСКАЯ БОЛЬНИЦА №1 ИМ. Н.А. СЕМАШКО ГОРОДА РОСТОВА-НА-ДОНУ&quot;" name="Card[lots_description][0][customer_full_name]" id="Card_lots_description_0_customer_full_name">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Сокращенное наименование заказчика <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_customer_short_name_em_" class="errorMessage"></div><input type="text" value="МБУЗ &quot;ГБ №1 ИМ. Н.А. СЕМАШКО ГОРОДА РОСТОВА-НА-ДОНУ&quot;" name="Card[lots_description][0][customer_short_name]" id="Card_lots_description_0_customer_short_name">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label>Код СПЗ</label></td>
+		<td>
+			<div id="Card_lots_description_0_code_spz_em_" class="errorMessage"></div><input onchange="js:changeNumericField(this)" type="text" value="03583000689" name="Card[lots_description][0][code_spz]" id="Card_lots_description_0_code_spz">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label>Дата постановки на учет в налоговом органе</label></td>
+		<td>
+			<div id="Card_lots_description_0_customer_registration_date_em_" class="errorMessage"></div><input type="text" value="1999-04-21" name="Card[lots_description][0][customer_registration_date]" id="Card_lots_description_0_customer_registration_date">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Юридический адрес <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_ti_address_em_" class="errorMessage"></div>				<input type="hidden" id="Card_lots_description_0_ti_address">
+						<table class="tableItems">
+			<tbody><tr class="row">
+				<td style="text-align: center;"><label>Индекс</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_index_em_" class="errorMessage"></div><input type="text" value="344003" name="Card[lots_description][0][customer_index]" id="Card_lots_description_0_customer_index">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label class="required">Код региона <span class="required">*</span></label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_region_code_em_" class="errorMessage"></div><input type="text" value="61" name="Card[lots_description][0][customer_region_code]" id="Card_lots_description_0_customer_region_code">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Регион</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_region_em_" class="errorMessage"></div><input type="text" value="ОБЛАСТЬ РОСТОВСКАЯ" name="Card[lots_description][0][customer_region]" id="Card_lots_description_0_customer_region">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Район</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_district_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][0][customer_district]" id="Card_lots_description_0_customer_district">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Город</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_city_em_" class="errorMessage"></div><input type="text" value="ГОРОД РОСТОВ-НА-ДОНУ" name="Card[lots_description][0][customer_city]" id="Card_lots_description_0_customer_city">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Населенный пункт</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_locality_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][0][customer_locality]" id="Card_lots_description_0_customer_locality">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Улица</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_street_em_" class="errorMessage"></div><input type="text" value="ПРОСПЕКТ ВОРОШИЛОВСКИЙ" name="Card[lots_description][0][customer_street]" id="Card_lots_description_0_customer_street">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Дом</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_house_em_" class="errorMessage"></div><input type="text" value="ДОМ 105" name="Card[lots_description][0][customer_house]" id="Card_lots_description_0_customer_house">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Строение</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_building_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][0][customer_building]" id="Card_lots_description_0_customer_building">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Офис (квартира)</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_flat_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][0][customer_flat]" id="Card_lots_description_0_customer_flat">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label class="required">ОКТМО <span class="required">*</span></label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_oktmo_em_" class="errorMessage"></div><input type="text" value="60701000001" name="Card[lots_description][0][customer_oktmo]" id="Card_lots_description_0_customer_oktmo">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>ОКАТО</label></td>
+				<td>
+					<div id="Card_lots_description_0_customer_okato_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][0][customer_okato]" id="Card_lots_description_0_customer_okato">				</td>
+			</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">ИНН <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_customer_inn_em_" class="errorMessage"></div><input onchange="js:changeNumericField(this)" type="text" value="6165025382" name="Card[lots_description][0][customer_inn]" id="Card_lots_description_0_customer_inn">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">КПП <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_customer_kpp_em_" class="errorMessage"></div><input onchange="js:changeNumericField(this)" type="text" value="616501001" name="Card[lots_description][0][customer_kpp]" id="Card_lots_description_0_customer_kpp">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">ОГРН <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_0_customer_ogrn_em_" class="errorMessage"></div><input onchange="js:changeNumericField(this)" type="text" value="1026103728782" name="Card[lots_description][0][customer_ogrn]" id="Card_lots_description_0_customer_ogrn">		</td>
+	</tr>
+</tbody></table>
+<script type="text/javascript">
+$(document).ready(function() {
+	submitted_form_id = $('.tableItems:first').parents('form').attr('id') || 'cardParamsForm';
+	var attributes = [
+		'lots_description_' + 0 + '_tender_name',
+		'lots_description_' + 0 + '_start_price',
+		'lots_description_' + 0 + '_bg_cost',
+		'lots_description_' + 0 + '_public_date',
+		'lots_description_' + 0 + '_placing_way',
+		'lots_description_' + 0 + '_customer_full_name',
+		'lots_description_' + 0 + '_customer_short_name',
+		'lots_description_' + 0 + '_code_spz',
+		'lots_description_' + 0 + '_customer_registration_date',
+		'lots_description_' + 0 + '_ti_address',
+		// 'lots_description_' + 0 + '_customer_index',
+		'lots_description_' + 0 + '_customer_region_code',
+		// 'lots_description_' + 0 + '_customer_region',
+		// 'lots_description_' + 0 + '_customer_district',
+		// 'lots_description_' + 0 + '_customer_city',
+		// 'lots_description_' + 0 + '_customer_locality',
+		// 'lots_description_' + 0 + '_customer_street',
+		// 'lots_description_' + 0 + '_customer_house',
+		// 'lots_description_' + 0 + '_customer_building',
+		// 'lots_description_' + 0 + '_customer_flat',
+		'lots_description_' + 0 + '_customer_oktmo',
+		// 'lots_description_' + 0 + '_customer_okato',
+		'lots_description_' + 0 + '_customer_inn',
+		'lots_description_' + 0 + '_customer_kpp',
+		'lots_description_' + 0 + '_customer_ogrn'
+	];
+	addValidators(attributes, submitted_form_id, 'Card');
+});
+</script>
+    </div>
+    <a title="Добавить" href="javascript:void(0)" onclick="addLotView('lot', 'lots_description')">
+        <img src="/images/plus.png" alt="Добавить">добавить закупку (лот)
+    </a>
+    </form></div>
+<script>
+    var baseUrl = '';
+</script></div>
+<div id="tabForm" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true" style="display: none;"><div class="scroll-container">
+        <form id="FormSetting" action="/card/FormSettings/23647" method="post">    <input class="btn primary-btn sub" type="submit" name="yt2" value="Далее">	<div class="title">
+	  <h1>Текущий тип формы БГ: 44 Обеспечение участия в конкурсе/тендере</h1>
+	</div>
+	<div class="borderGroup">
+		<input id="ytstandart_form" type="hidden" value="" name="Card[is_custom_form]"><span id="Card_is_custom_form"><input id="Card_is_custom_form_0" onchange="standartform()" value="0" checked="checked" type="radio" name="Card[is_custom_form]"> <label for="Card_is_custom_form_0">Типовая форма</label><br>
+<input id="Card_is_custom_form_1" onchange="standartform()" value="1" type="radio" name="Card[is_custom_form]"> <label for="Card_is_custom_form_1">Форма заказчика</label></span>	</div>
+	<div id="for_standard_form">
+				<div class="borderGroup">
+			<input id="ytCard_change_garant_0" type="hidden" value="0" name="Card[change_garant]"><input value="0" id="Card_change_garant_0" name="Card[change_garant]" checked="checked" type="radio"><label for="Card_change_garant_0">Гарантия может быть изменена Гарантом в следующем порядке:</label>			<ol>
+				<li>изменения, связанные с увеличением суммы и/или срока действия Гарантии, и иные изменения, не ухудшающие положение Бенефициара, вступают в силу в дату выпуска Гарантом изменений в Гарантию;</li>
+				<li>иные изменения в Гарантию вступают в силу в дату получения Гарантом согласия Бенефициара на соответствующее изменение Гарантии.</li>
+			</ol>
+			<b>Альтернативный вариант вышеуказанного пункта, в случае, когда Бенефиициар отказывается от своего права согласовывать любые изменения к Гарантию.</b>
+			<br>
+			<br>
+			<input id="ytCard_change_garant_1" type="hidden" value="0" name="Card[change_garant]"><input value="1" id="Card_change_garant_1" name="Card[change_garant]" type="radio"><label for="Card_change_garant_1">Гарантия может быть изменена Гарантом, при этом изменения в Гарантию вступают в силу в дату выпуска Гарантом изменений в Гарантию.</label>		</div>
+		<br>
+		<div class="borderGroup">
+			<label for="Card_send_type">Тип отправки требований Бенефициара Гаранту</label>			<br>
+			<select class="largecheckbox" size="4" name="Card[send_type]" id="Card_send_type">
+<option value="0">получено Гарантом</option>
+<option value="1">передано Гаранту</option>
+<option value="2">направлено Гаранту</option>
+<option value="3">представлено Гаранту</option>
+<option value="4">предъявлено Гаранту</option>
+</select>		</div>
+	</div>
+	<div id="for_custom_form" style="display:none;">
+		<table id="files_category_atf" style="width:600px" class="detail-table">
+				</table>
+		<div id="uploadFile_32"><div class="qq-uploader"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div>	</div>
+    </form></div>
+<script>
+	var has_custom_form=0;
+	function standartform() {
+		if(has_custom_form) {
+			$('#Card_is_custom_form_0').prop('checked',true);
+			$('#Card_is_custom_form_1').prop('checked',false);
+			showErrorMsg("По данному заказчику в системе уже существует специальная форма БГ", 500);
+		}
+		if($('[name="Card[is_custom_form]"]:checked').val()==1) {
+			$('#for_standard_form input, #for_standard_form select').prop('disabled', true);
+			$('#for_standard_form').hide();
+			$('#for_custom_form').show();
+		} else {
+			$('#for_standard_form input, #for_standard_form select').prop('disabled', false);
+			$('#for_standard_form').show();
+			$('#for_custom_form').hide();
+		}
+	}
+</script>
+</div>
+<div id="tabAnket" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true" style="display: none;"><div class="scroll-container">
+	<div class="borderGroup">
+		<div class="borderGroup-title">Анкета</div>
+		<a class="btn primary-btn" href="#" id="yt3">Заполнить</a>	</div>
+		<div class="borderGroup">
+		<div class="borderGroup-title">Бухгалтерская отчетность</div>
+		<a class="btn primary-btn" href="/card/EditBuhReport/23647">Заполнить</a>	</div>
+			<div class="borderGroup">
+		<div class="borderGroup-title">Данные по скорингу</div>
+		<div id="scoring-data">
+			<div class="scoring-list">
+	<a id="scoringBtn" class="btn primary-btn" href="#">Начать скоринг</a></div>		</div>
+	</div>
+	</div></div>
+<div id="tabDocs" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="true" style="display: none;"><div class="clearfix">
+</div>
+<div class="scroll-container">
+<div class="padding-bottom">
+<style>
+.clients-files {display: table; border-collapse: separate; border-spacing: 2px;}
+.clients-files .files-row {display: table-row; background: #f7fbff; height: 40px;}
+.clients-files .files-row .files-cell {display: table-cell; max-width: 600px; vertical-align: middle;}
+</style>
+<div class="borderGroup">
+	<div class="borderGroup-title">Анкета</div>
+	<div class="clients-files" id="files_category_1">
+</div>
+	<div id="uploadFile_1"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Бухгалтерская отчётность по итогам 2 квартала 2021 года (за 6 месяцев)</div>
+	<div class="clients-files" id="files_category_76">
+</div>
+	<div id="uploadFile_76"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Бухгалтерская отчётность за 2020 год</div>
+	<div class="clients-files" id="files_category_71">
+</div>
+	<div id="uploadFile_71"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Бухгалтерская отчётность по итогам 2 квартала 2020 года (за 6 месяцев)</div>
+	<div class="clients-files" id="files_category_66">
+</div>
+	<div id="uploadFile_66"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Бухгалтерская отчётность за 2019 год</div>
+	<div class="clients-files" id="files_category_62">
+</div>
+	<div id="uploadFile_62"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Документ, удостоверяющий личность руководителя (все страницы включая пустые)</div>
+	<div class="clients-files" id="files_category_8">
+</div>
+	<div id="uploadFile_8"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Документ, удостоверяющий личность учредителей (все страницы, включая пустые)</div>
+	<div class="clients-files" id="files_category_6">
+</div>
+	<div id="uploadFile_6"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Исполненные контракты ФКР, 615 ПП кап.ремонт за последние 2 года (договора, КС-3)</div>
+	<div class="clients-files" id="files_category_48">
+</div>
+	<div id="uploadFile_48"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Реестр акционеров не старше 30 дней для АО, ЗАО, ПАО, ОАО</div>
+	<div class="clients-files" id="files_category_40">
+</div>
+	<div id="uploadFile_40"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+<div class="borderGroup">
+	<div class="borderGroup-title">Прочие документы</div>
+	<div class="clients-files" id="files_category_12">
+</div>
+	<div id="uploadFile_12"><div class="qq-uploader span12"><div class="qq-upload-drop-area" style="display: none;"><span>Перетащите файлы сюда</span></div><div class="qq-upload-button upload-btn" style="position: relative; overflow: hidden; direction: ltr;">Загрузить<input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div><ul class="qq-upload-list"></ul></div></div></div>
+</div>
+</div></div>
+</div>
+	</div>
+</div>
+	</div>
+	<!--<footer id="footer">
+	</footer>-->
+</div><!-- page -->
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Закрыть" class="close">X</a>
+		<p class="title">Ошибка</p>
+		<div class="content">описание ошибки</div>
+	</div>
+</div>
+<div id="questionDlg" title="" class="modalDialog">
+</div>
+<div id="site-message">
+	<div class="title"></div>
+	<div class="message"></div>
+	<a href="javascript:void(0)" id="close_site_message" title="закрыть" style="float:right"><img width="22" height="22" src="/images/close_white.png"></a>
+</div>
+<script>
+$(document).ready(function(){
+	$('#close_site_message').click(function() {
+		$('#site-message').hide(); 
+		$('#site-message').removeClass();
+		$('#site-message .title').html("");
+		$('#site-message .message').html("");
+	});
+	document.getElementById('waiting_img').style.display = 'none';
+	user_thumbprint = "";
+});
+</script>
+<script type="text/javascript" src="/assets/ca3e1e76/jui/js/jquery-ui-i18n.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+$(".in-window").colorbox({close:"X",className:"colorBoxStyle",scrolling:false});
+jQuery('#Card_broker_manager_id').select2({'formatNoMatches':function(){return "No matches found";},'formatInputTooShort':function(input,min){return "Please enter "+(min-input.length)+" more characters";},'formatInputTooLong':function(input,max){return "Please enter "+(input.length-max)+" less characters";},'formatSelectionTooBig':function(limit){return "You can only select "+limit+" items";},'formatLoadMore':function(pageNumber){return "Loading more results...";},'formatSearching':function(){return "Searching...";}});
+jQuery('#Card_broker_id').select2({'formatNoMatches':function(){return "No matches found";},'formatInputTooShort':function(input,min){return "Please enter "+(min-input.length)+" more characters";},'formatInputTooLong':function(input,max){return "Please enter "+(input.length-max)+" less characters";},'formatSelectionTooBig':function(limit){return "You can only select "+limit+" items";},'formatLoadMore':function(pageNumber){return "Loading more results...";},'formatSearching':function(){return "Searching...";}});
+jQuery('#Card_guarantee_from').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'showOn':'both','changeMonth':'true','changeYear':'true','buttonImageOnly':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#Card_guarantee_expired').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'minDate':new Date(),'showOn':'both','changeMonth':'true','changeYear':'true','buttonImageOnly':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#Card_contract_date').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'showOn':'both','buttonImageOnly':'true','yearRange':'-20:+1','changeMonth':'true','changeYear':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#Card_responsibility_to').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'showOn':'both','buttonImageOnly':'true','yearRange':'-0:+20','changeMonth':'true','changeYear':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#Card_protocol_date').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'showOn':'both','buttonImageOnly':'true','yearRange':'-20:+1','changeMonth':'true','changeYear':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#cardParamsForm').yiiactiveform({'validateOnSubmit':true,'validateOnChange':false,'beforeValidate':function() {showWaiting(); return true;},'afterValidate':function(form, data, hasError) {return afterValidateFunc(form, data, hasError);},'attributes':[{'id':'Card_bg_type','inputID':'Card_bg_type','errorID':'Card_bg_type_em_','model':'Card','name':'bg_type','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0422\u0438\u043f \u0411\u0413\u00bb.");
+}
+
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0422\u0438\u043f \u0411\u0413 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_enforce_contract','inputID':'Card_enforce_contract','errorID':'Card_enforce_contract_em_','model':'Card','name':'enforce_contract','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && value!="1" && value!="0") {
+	messages.push("\u0422\u0438\u043f \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430 \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c 1 \u0438\u043b\u0438 0.");
+}
+
+}},{'id':'Card_exec_guarant_sum','inputID':'Card_exec_guarant_sum','errorID':'Card_exec_guarant_sum_em_','model':'Card','name':'exec_guarant_sum','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0421\u0443\u043c\u043c\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_is_demping','inputID':'Card_is_demping','errorID':'Card_is_demping_em_','model':'Card','name':'is_demping','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && value!="1" && value!="0") {
+	messages.push("\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u0431\u043e\u043b\u0435\u0435 25% \u043e\u0442 \u043d\u0430\u0447\u0430\u043b\u044c\u043d\u043e\u0439 \u0446\u0435\u043d\u044b \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c 1 \u0438\u043b\u0438 0.");
+}
+
+}},{'id':'Card_is_275','inputID':'Card_is_275','errorID':'Card_is_275_em_','model':'Card','name':'is_275','enableAjaxValidation':true,'status':1},{'id':'Card_avans_sum','inputID':'Card_avans_sum','errorID':'Card_avans_sum_em_','model':'Card','name':'avans_sum','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0421\u0443\u043c\u043c\u0430 \u0430\u0432\u0430\u043d\u0441\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_guarantee_sum','inputID':'Card_guarantee_sum','errorID':'Card_guarantee_sum_em_','model':'Card','name':'guarantee_sum','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0421\u0443\u043c\u043c\u0430 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0438\u00bb.");
+}
+
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0421\u0443\u043c\u043c\u0430 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0438 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_cost_bg','inputID':'Card_cost_bg','errorID':'Card_cost_bg_em_','model':'Card','name':'cost_bg','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f \u0431\u0430\u043d\u043a\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_guarantee_from','inputID':'Card_guarantee_from','errorID':'Card_guarantee_from_em_','model':'Card','name':'guarantee_from','enableAjaxValidation':true,'status':1},{'id':'Card_guarantee_expired','inputID':'Card_guarantee_expired','errorID':'Card_guarantee_expired_em_','model':'Card','name':'guarantee_expired','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0421\u0440\u043e\u043a \u0411\u0413 \u0434\u043e\u00bb.");
+}
+
+}},{'id':'Card_contract_number','inputID':'Card_contract_number','errorID':'Card_contract_number_em_','model':'Card','name':'contract_number','enableAjaxValidation':true,'status':1},{'id':'Card_contract_date','inputID':'Card_contract_date','errorID':'Card_contract_date_em_','model':'Card','name':'contract_date','enableAjaxValidation':true,'status':1},{'id':'Card_responsibility_to','inputID':'Card_responsibility_to','errorID':'Card_responsibility_to_em_','model':'Card','name':'responsibility_to','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0421\u0440\u043e\u043a \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f \u0440\u0430\u0431\u043e\u0442\/\u043e\u043a\u0430\u0437\u0430\u043d\u0438\u044f \u0443\u0441\u043b\u0443\u0433\u00bb.");
+}
+
+}},{'id':'Card_result_price','inputID':'Card_result_price','errorID':'Card_result_price_em_','model':'Card','name':'result_price','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0418\u0442\u043e\u0433\u043e\u0432\u0430\u044f \u0446\u0435\u043d\u0430 \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430\/\u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_protocol_number','inputID':'Card_protocol_number','errorID':'Card_protocol_number_em_','model':'Card','name':'protocol_number','enableAjaxValidation':true,'status':1},{'id':'Card_protocol_date','inputID':'Card_protocol_date','errorID':'Card_protocol_date_em_','model':'Card','name':'protocol_date','enableAjaxValidation':true,'status':1},{'id':'Card_provider_doc','inputID':'Card_provider_doc','errorID':'Card_provider_doc_em_','model':'Card','name':'provider_doc','enableAjaxValidation':true,'status':1},{'id':'Card_ikz','inputID':'Card_ikz','errorID':'Card_ikz_em_','model':'Card','name':'ikz','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u043a\u043e\u0434 \u0437\u0430\u043a\u0443\u043f\u043a\u0438 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_iku','inputID':'Card_iku','errorID':'Card_iku_em_','model':'Card','name':'iku','enableAjaxValidation':true,'status':1},{'id':'Card_okpd2','inputID':'Card_okpd2','errorID':'Card_okpd2_em_','model':'Card','name':'okpd2','enableAjaxValidation':true,'status':1},{'id':'Card_contract_type','inputID':'Card_contract_type','errorID':'Card_contract_type_em_','model':'Card','name':'contract_type','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0412\u0438\u0434 \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430\/\u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430\u00bb.");
+}
+
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("\u0412\u0438\u0434 \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430\/\u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0446\u0435\u043b\u044b\u043c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_isBigDeal','inputID':'Card_isBigDeal','errorID':'Card_isBigDeal_em_','model':'Card','name':'isBigDeal','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && value!="1" && value!="0") {
+	messages.push("\u042f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043b\u0438 \u0441\u0434\u0435\u043b\u043a\u0430 \u043a\u0440\u0443\u043f\u043d\u043e\u0439 (\u0440\u0430\u0437\u043c\u0435\u0440 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0438 \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 25 \u043f\u0440\u043e\u0446\u0435\u043d\u0442\u043e\u0432 (\u0438 \u0431\u043e\u043b\u0435\u0435) \u043e\u0442 \u0432\u0430\u043b\u044e\u0442\u044b \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0433\u043e \u0431\u0430\u043b\u0430\u043d\u0441\u0430 \u041f\u0440\u0438\u043d\u0446\u0438\u043f\u0430\u043b\u0430) \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c 1 \u0438\u043b\u0438 0.");
+}
+
+}},{'id':'Card_regnumber','inputID':'Card_regnumber','errorID':'Card_regnumber_em_','model':'Card','name':'regnumber','enableAjaxValidation':true,'status':1,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0420\u0435\u0435\u0441\u0442\u0440\u043e\u0432\u044b\u0439 \u043d\u043e\u043c\u0435\u0440\u00bb.");
+}
+
+}},{'id':'Card_lots_description','inputID':'Card_lots_description','errorID':'Card_lots_description_em_','model':'Card','name':'lots_description','enableAjaxValidation':true,'status':1}],'errorCss':'error'});
+jQuery('body').on('click','#yt3',function(){jQuery.ajax({'beforeSend':function() {if(!isSavedData) {var r = confirm("Вы не сохранили данные.\nПерейти без сохранения?");if (r == false) {return false;}}},'success':function() {location = "/card/editClientProfile/23647";},'url':'/card/update/23647?openTab=tabForm','cache':false});return false;});
+jQuery('#scoringBtn').on('click', function(){jQuery.ajax({'dataType':'json','type':'POST','beforeSend':function() {showWaiting();},'success':function(data) {
+			if(data.status != 0) {
+				location = "/card/23647?openTab=tabAnket";
+			} else {
+				showErrorMsg(data.errors, 500);
+				hideWaiting();
+			}
+		},'error':function(error) {
+			showErrorMsg(error.responseText, 500);
+			hideWaiting();
+		},'url':'/card/startScoring/23647','cache':false,'data':jQuery(this).parents("form").serialize()});return false;});
+jQuery('#mainCardsTabs').tabs({'selected':0});
+$("#mainCardsTabs").tabs("option", "active", $('#mainCardsTabs a[href="#tabForm"]').parent().index());
+$("#mainCardsTabs").tabs("option", "disabled", [$('#mainCardsTabs a[href="#tabDocs"]').parent().index()])
+isSavedData = true;$("#tabParams input").change(function(e){isSavedData = false;});
+});
+jQuery(window).on('load',function() {
+var FileUploader_uploadFile_32 = new qq.FileUploader({'element':document.getElementById("uploadFile_32"),'debug':false,'multiple':false,'action':'/file/UploadCustomForm/23647','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+					$('#files_category_atf').append('<tr class="box"><td><div class="uploadify-queue-item clearfix"><div style="float:left"><a href="/file/downloadAgreementFile/'+response.id+'">'+fileName+'</a></div></div></td></tr>');$('#uploadFile_32 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_1 = new qq.FileUploader({'element':document.getElementById("uploadFile_1"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=1','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_1').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_1 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_76 = new qq.FileUploader({'element':document.getElementById("uploadFile_76"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=76','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_76').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_76 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_71 = new qq.FileUploader({'element':document.getElementById("uploadFile_71"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=71','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_71').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_71 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_66 = new qq.FileUploader({'element':document.getElementById("uploadFile_66"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=66','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_66').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_66 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_62 = new qq.FileUploader({'element':document.getElementById("uploadFile_62"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=62','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_62').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_62 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_8 = new qq.FileUploader({'element':document.getElementById("uploadFile_8"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=8','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_8').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_8 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_6 = new qq.FileUploader({'element':document.getElementById("uploadFile_6"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=6','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_6').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_6 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_48 = new qq.FileUploader({'element':document.getElementById("uploadFile_48"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=48','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_48').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_48 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_40 = new qq.FileUploader({'element':document.getElementById("uploadFile_40"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=40','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_40').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_40 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+var FileUploader_uploadFile_12 = new qq.FileUploader({'element':document.getElementById("uploadFile_12"),'debug':false,'multiple':false,'action':'/file/uploadDocs?id=23647&category=12','allowedExtensions':['jpg','jpeg','png','gif','doc','docx','xls','xlsx','xlsm','pdf','zip','rar','sig'],'sizeLimit':41943040,'template':'<div class=\"qq-uploader span12\"><div class=\"qq-upload-drop-area\"><span>Перетащите файлы сюда<\/span><\/div><div class=\"qq-upload-button upload-btn\">Загрузить<\/div><ul class=\"qq-upload-list\"><\/ul><\/div>','onComplete':function(id, fileName, response){
+				var el = $("#"+id);
+				el.data("remote-id", response.id);
+				$('#files_category_12').append('<div class="files-row"><div class="files-cell uploadify-queue-item" data-remote-id="'+response.id+'"><a href="/file/downloadFromStore/'+response.id+'">'+fileName+'</a></div><div class="files-cell cancel"><a href="/file/deleteFromStore/'+response.id+'?card_id=23647">X</a></div><div class="files-cell"><input type="hidden" name="clientDocs64" idfile="'+response.id+'" value="'+response.id+'"></div></div>');$('#uploadFile_12 .qq-upload-list').empty()},'params':{'PHPSESSID':'dej8j5iaaoalf931eiea92ors3','YII_CSRF_TOKEN':'6a82f727555819cc424ce7d88d603ada01abb880'}}); 
+});
+/*]]>*/
+</script>
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

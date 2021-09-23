@@ -132,7 +132,7 @@
                 > <span class="truncate-40"><a
                     href="9a5d47abb2ab7a68e8f4b87a0c5a2f4fcdd99ad8e4894453cd27c3596468a421.html">When Create Request</a></span>
                 > <span class="truncate-60"><a
-                    href="00b82832efa87d9d8d3f31b4d6e637352e82f1c09ccfed0f658a400cdc1c2baf.html">Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств' </a></span>
+                    href="d2d97bab7e82272a63c3c1f7ab233a840aa7e91879dfbc34419fdc4672f56d3c.html">Проверка скрытия минимального тарифа доставки </a></span>
                 > Screenshots
             </span>
         </div>
@@ -151,7 +151,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-09-2021 09:45</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-09-2021 10:05</span>
     <br style="clear:left"/>
 </div>
 
@@ -186,9 +186,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'
+                                <span class="failing-color">Проверка скрытия минимального тарифа доставки
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -211,7 +211,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                    <span class="error-message error-message-title">Comparison failure: [Блок с минимальным тарифом не скрыт] expected:([fals]e) but was:([tru]e)</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -227,11 +227,11 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                    <h4>org.junit.ComparisonFailure </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>pages.CreateRequestPage.setRequiredSum(CreateRequestPage.java:186)<br />steps.CreateRequestSteps.set_invalid_text_required_sum(CreateRequestSteps.java:174)<br />testpackage.WhenCreateRequest.checkInvalidRequiredSum(WhenCreateRequest.java:325)<br /></pre>
+                        <pre>steps.CreateRequestSteps.check_hide_minimum_tariff_delivery(CreateRequestSteps.java:222)<br />testpackage.WhenCreateRequest.checkHideMinimumTariffDelivery(WhenCreateRequest.java:494)<br /></pre>
                     </div>
 
                 </div>
@@ -241,7 +241,7 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource14327677880470650213.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource2661259174816498859.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
@@ -256,10 +256,16 @@
                 <img src="c1b1ba823cd7a20ebd448f5604c8197717fa00e14d175d85283d927c210c106d.png" title=" Ввод реестрового номера" width="929"/>
                 <img src="6a5984a0a7b76474cbbfe0e7f1ea18e021284c25718478648477a10536413a1f.png" title=" Выбор типа БГ" width="929"/>
                 <img src="1815e4295991e988cc53e0bac18f05c59d3a3229aabad85f011e8201a5d79d58.png" title=" Нажать кнопку [0]" width="929"/>
-                <img src="070ffc2857dbc10f47a7c2c73025869601f46818db63fbcd21003b38f1dec5d8.png" title=" Ввод срока выполнения работ" width="929"/>
-                <img src="6bebc9b6099925d086c061cdbe3b344558ec48faa04838440344110c45cd1bf1.png" title=" Ввод срока БГ" width="929"/>
-                <img src="e88ae1c7bd99718f1f92089b77fe43ae1d3f39b3daddd18a3b3bdcb7d774ad6b.png" title=" Нажать кнопку [0]" width="929"/>
-                <img src="c1e6dd9f3706c7f48095b17557213f6be8c59d58415563977f5762adaa400ef7.png" title=" Ввести некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств': <span class='error-color'>ERROR</span>" width="929"/>
+                <img src="31e8cdef86cafb3bd2b903f3e3d5da2be85e082cfabd7b90ae120d64e0115dfc.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="46e206ce3be8fed5c6fb3575b4b2d6e261e0b6e38c9f4e98c35e2ba9d282b7bf.png" title=" Ввод срока БГ" width="929"/>
+                <img src="23c7ccf48c5fa0a9163dbde582c39c76c7fd227083ce3a34468c4f91ce8d951c.png" title=" Ввод срока выполнения работ" width="929"/>
+                <img src="6d57d0c05165be65705482ff5ec06786387cf213a63d20b075fee38505930e4c.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="10bdde812b4ec8234bc5d271de6ab06c0e8f537b31f7eef34fb92fb9385606d8.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="397d2a04e79b1b8d8e20a4c4e472bb18cd2a6b9b34aa5f90664b921bf6df2dec.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="faa30bb4fde23fea8e89be10e613fd1442674c2491cfb81d3d305ae91a13f73a.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="11dcd17a0b9211839a20696ead94bcd97c6ed3de2d98179b0f8e40bd8a608675.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="ab4511aadc8b4929b45b9509e986eda15781e0cd0afdc3603dd498eed38aff80.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="61b3ade6e2beb329ebeeae9dadfac092fa82145f5c2cab7619f39f53413b0a47.png" title=" Проверка скрытия минимального тарифа доставки: <span class='failing-color'>FAILURE</span>" width="929"/>
             </div>
         </div>
 

@@ -118,6 +118,10 @@ public class CreateRequestPage extends PageObject {
         return find(sumGuarantee).getValue().isEmpty();
     } // Проверка, что поле "Сумма банковской гарантии" заполнено
 
+    public String getSumGuarantee(){
+        return find(sumGuarantee).getValue();
+    } // Проверка, что поле "Сумма банковской гарантии" заполнено
+
     public String getExecutionGuaranteeSum(){
         return find(card_ExecutionGuaranteeSum).getValue();
     } // Получить значение поля "Сумма" в блоке "Исполнение обязательств"
@@ -156,7 +160,8 @@ public class CreateRequestPage extends PageObject {
         Calendar calendar = new GregorianCalendar();
         calendar.add(Calendar.MONTH, 1);
         find(requiredExpiredGuarantee).sendKeys(dateFormat.format(calendar.getTime()));
-        valueSumGuarantee = find(sumGuarantee).getText();
+        valueSumGuarantee = find(sumGuarantee).getValue();
+        System.out.println("Сумма банковской гарантии:" + valueSumGuarantee);
         return this;
     } // Ввести срок БГ до
 
@@ -183,7 +188,6 @@ public class CreateRequestPage extends PageObject {
         Calendar calendar = new GregorianCalendar();
         calendar.add(Calendar.MONTH, 2);
         find(requiredResponsibilityGuarantee).sendKeys(dateFormat.format(calendar.getTime()));
-        valueSumGuarantee = find(sumGuarantee).getText();
         return this;
     } // Ввести срок выполнения работ
 

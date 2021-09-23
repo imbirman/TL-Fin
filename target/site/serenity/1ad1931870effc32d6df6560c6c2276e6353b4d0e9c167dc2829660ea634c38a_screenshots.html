@@ -132,7 +132,7 @@
                 > <span class="truncate-40"><a
                     href="9a5d47abb2ab7a68e8f4b87a0c5a2f4fcdd99ad8e4894453cd27c3596468a421.html">When Create Request</a></span>
                 > <span class="truncate-60"><a
-                    href="00b82832efa87d9d8d3f31b4d6e637352e82f1c09ccfed0f658a400cdc1c2baf.html">Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств' </a></span>
+                    href="1ad1931870effc32d6df6560c6c2276e6353b4d0e9c167dc2829660ea634c38a.html">Проверка создания заявки (Контракт) </a></span>
                 > Screenshots
             </span>
         </div>
@@ -151,7 +151,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-09-2021 09:45</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-09-2021 12:02</span>
     <br style="clear:left"/>
 </div>
 
@@ -186,9 +186,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'
+                                <span class="failing-color">Проверка создания заявки (Контракт)
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -211,7 +211,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                    <span class="error-message error-message-title">Comparison failure: [Значение поля 'Сумма банковской гарантии' не соответствует тому, которое было при создании заявки] expected:('1275800[]') but was:('1275800[.00]')</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -227,11 +227,11 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                    <h4>org.junit.ComparisonFailure </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>pages.CreateRequestPage.setRequiredSum(CreateRequestPage.java:186)<br />steps.CreateRequestSteps.set_invalid_text_required_sum(CreateRequestSteps.java:174)<br />testpackage.WhenCreateRequest.checkInvalidRequiredSum(WhenCreateRequest.java:325)<br /></pre>
+                        <pre>steps.CreateRequestSteps.check_is_equal_sum_guarantee(CreateRequestSteps.java:235)<br />testpackage.WhenCreateRequest.checkCreateRequest(WhenCreateRequest.java:50)<br /></pre>
                     </div>
 
                 </div>
@@ -241,7 +241,7 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource14327677880470650213.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource3214299267638974154.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
@@ -250,16 +250,25 @@
                 <img src="59949c167f42188ea80ce717d7aa21c90c2a1e46ee47861c298b8e7db2d74ce4.png" title=" Ввод логина" width="929"/>
                 <img src="13e773d6c78d5483a8e050009d1cafea1ac703b40fc10d87e587dcc3f6b1b114.png" title=" Ввод пароля" width="929"/>
                 <img src="19460e634322e27144cfe3ad8fbcf74d91d5eb6b754c0220d1b414a774f58802.png" title=" Нажать кнопку [0]" width="929"/>
-                <img src="8afbb8aecf54e6bdf6be781bbbfe309fd4e07c6965cf48c930507d5e065a63b8.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="23575b09597aff2aa1862b706e2505f469a88eed6894ce5a2b4a162d7b9e0ae9.png" title=" Нажать кнопку [0]" width="929"/>
                 <img src="b958c4aebd450c687a40a23de02575a4936567014be3bcee3f6c243938a4aaa9.png" title=" Нажать кнопку [0]" width="929"/>
                 <img src="8f12a27c868aa5c66554ca73d7db8e6404a5823478d7a9c9f8fbc08cf796566c.png" title=" Нажать кнопку [0]" width="929"/>
                 <img src="c1b1ba823cd7a20ebd448f5604c8197717fa00e14d175d85283d927c210c106d.png" title=" Ввод реестрового номера" width="929"/>
                 <img src="6a5984a0a7b76474cbbfe0e7f1ea18e021284c25718478648477a10536413a1f.png" title=" Выбор типа БГ" width="929"/>
                 <img src="1815e4295991e988cc53e0bac18f05c59d3a3229aabad85f011e8201a5d79d58.png" title=" Нажать кнопку [0]" width="929"/>
-                <img src="070ffc2857dbc10f47a7c2c73025869601f46818db63fbcd21003b38f1dec5d8.png" title=" Ввод срока выполнения работ" width="929"/>
-                <img src="6bebc9b6099925d086c061cdbe3b344558ec48faa04838440344110c45cd1bf1.png" title=" Ввод срока БГ" width="929"/>
-                <img src="e88ae1c7bd99718f1f92089b77fe43ae1d3f39b3daddd18a3b3bdcb7d774ad6b.png" title=" Нажать кнопку [0]" width="929"/>
-                <img src="c1e6dd9f3706c7f48095b17557213f6be8c59d58415563977f5762adaa400ef7.png" title=" Ввести некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств': <span class='error-color'>ERROR</span>" width="929"/>
+                <img src="08da4da99d51a0191c8b2cd1d8efbfc692196c1af5c3cf6b08828215370b19ab.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="2f9d9db92e6095690c1731d9c1bd571ecb3e46359994d5f0ee68164c511f202b.png" title=" Ввод срока выполнения работ" width="929"/>
+                <img src="c5c0422f586c74b126b6ac95fa65d5cec803e018c29db84920c631c64abc798e.png" title=" Ввод срока БГ" width="929"/>
+                <img src="55882e7f32ef093b708b1d44cba94d0247674df012fc20434be6959eb3846e19.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="10bdde812b4ec8234bc5d271de6ab06c0e8f537b31f7eef34fb92fb9385606d8.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="d25b2313ec9085d5f312ed56120a1bd8b182f6684ea044782e5159e502503b72.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="50f42575bd4b12e937fa22e8e22a95d7a23c31a35f1544a8961d1e25fe04b337.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="529d442c5e6a22ef2fbae74b98e5cdf75f743fe059a5497c615978271dc9b425.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="228750a7e19c0d767fc9ca92d2b422518b5e5f37b710bed7c4fb162ee638b7d2.png" title=" Нажать кнопку [0]" width="929"/>
+                <img src="228750a7e19c0d767fc9ca92d2b422518b5e5f37b710bed7c4fb162ee638b7d2.png" title=" Проверка поля 'Срок БГ до' на сохранение значения после создания заявки" width="929"/>
+                <img src="228750a7e19c0d767fc9ca92d2b422518b5e5f37b710bed7c4fb162ee638b7d2.png" title=" Проверка выбора значения 'Да' в блоке 'Исполнение обязательств' после создания заявки" width="929"/>
+                <img src="228750a7e19c0d767fc9ca92d2b422518b5e5f37b710bed7c4fb162ee638b7d2.png" title=" Проверка выбора значения 'Да' в блоке 'Исполнение обязательств' после создания заявки" width="929"/>
+                <img src="228750a7e19c0d767fc9ca92d2b422518b5e5f37b710bed7c4fb162ee638b7d2.png" title=" Проверка поля 'Сумма банковской гарантии' на сохранение значения после создания заявки: <span class='failing-color'>FAILURE</span>" width="929"/>
             </div>
         </div>
 
