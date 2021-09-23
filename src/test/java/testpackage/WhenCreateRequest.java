@@ -22,7 +22,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
 
     @Test
     @Pending
-    @Title("Проверка создания заявки")
+    @Title("Проверка создания заявки (Контракт)")
     public void checkCreateRequest(){
 
         steps.open_login_main_page();
@@ -41,7 +41,11 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(executionGuaranteeNoRB);
         steps.click_button(createCard);
         steps.click_button(bankToSelect);
-//        steps.click_button(submitSelectBank);
+        steps.click_button(electronicFormatBg);
+        steps.click_button(submitSelectBank);
+        steps.check_is_equal_required_expired_guarantee();
+        steps.check_is_selected_execution_guarantee_no_rb();
+        steps.check_hide_ex_guarantee();
 
     }
 

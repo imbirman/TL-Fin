@@ -144,7 +144,7 @@ public class CreateRequestSteps{
     @Step("Скрытие полей в блоке 'Исполнение обязательств'")
     public void check_hide_ex_guarantee(){
         Assertions.assertThat(page.hideExGuarantee())
-                .as("Блок 'Исполнение обязательств' не скрыт").isFalse();
+                .as("Поля 'Сумма' и 'Срок(месяцев)' в блоке 'Исполнение обязательств' не скрыты").isFalse();
     }
 
     @Step("Ввод срока БГ")
@@ -169,9 +169,9 @@ public class CreateRequestSteps{
                 .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Не заполнено поле Сумма");
     }
 
-    @Step("Ввести значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
+    @Step("Ввести некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
     public void set_invalid_text_required_sum(){
-        page.setInvalidRRequiredSum("tes0t/*");
+        page.setRequiredSum("tes0t/*");
     }
 
     @Step("Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
@@ -220,6 +220,18 @@ public class CreateRequestSteps{
     public void check_hide_minimum_tariff_delivery(){
         Assertions.assertThat(page.isVisibleMinimumTariff())
                 .as("Блок с минимальным тарифом не скрыт").isFalse();
+    }
+
+    @Step("Проверка поля 'Срок БГ до' на сохранение значения после создания заявки")
+    public void check_is_equal_required_expired_guarantee(){
+        Assertions.assertThat(page.isEqualRequiredExpiredGuarantee())
+                .as("Значение поля 'Срок БГ до' не соответствует тому, которое было введено при создании заявки").isTrue();
+    }
+
+    @Step("Проверка выбора значения 'Нет' в блоке 'Исполнение обязательств' после создания заявки")
+    public void check_is_selected_execution_guarantee_no_rb(){
+        Assertions.assertThat(page.isSelectedExecutionGuaranteeNoRB())
+                .as("не выбрано значение 'Нет' в блоке 'Исполнение обязательств'").isTrue();
     }
 
 
