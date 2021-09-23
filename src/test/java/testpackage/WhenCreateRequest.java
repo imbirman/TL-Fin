@@ -8,7 +8,6 @@ import net.thucydides.core.annotations.Title;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import pages.CreateRequestPage;
 import steps.CreateRequestSteps;
 
@@ -65,7 +64,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.type_tender_number("0158300043421000067");
         steps.click_button(getDataTender);
         steps.check_error_empty_type_bg();
-        steps.click_button(createCard);
 
     }
 
@@ -86,7 +84,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.check_error_empty_registry_number();
         steps.check_fz_tender_button();
         steps.check_close_tender_button();
-        steps.click_button(createCard);
     }
 
     @Test
