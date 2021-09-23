@@ -186,6 +186,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
         steps.click_button(requiredContractGuarantee);
+        steps.click_button(executionGuaranteeYesRB);
         steps.click_button(createCard);
         steps.check_error_message_sum();
     }
@@ -283,6 +284,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
         steps.click_button(requiredContractGuarantee);
+        steps.click_button(executionGuaranteeYesRB);
         steps.click_button(createCard);
         steps.check_text_error_message_sum_alert();
     }
@@ -323,6 +325,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
         steps.click_button(requiredContractGuarantee);
+        steps.click_button(executionGuaranteeYesRB);
         steps.set_invalid_text_required_sum();
         steps.click_button(createCard);
         steps.check_invalid_text_required_sum();
@@ -345,6 +348,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
         steps.click_button(requiredContractGuarantee);
+        steps.click_button(executionGuaranteeYesRB);
         steps.set_invalid_text_required_sum();
         steps.click_button(createCard);
         steps.check_invalid_error_message_sum_alert();
@@ -367,6 +371,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
         steps.click_button(requiredContractGuarantee);
+        steps.click_button(executionGuaranteeYesRB);
         steps.set_invalid_text_required_sum();
         steps.click_button(executionGuaranteeNoRB);
         steps.click_button(createCard);
