@@ -21,7 +21,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     WebDriver driver;
 
     @Test
-    @Pending
+    
     @Title("Проверка корректного входа админа")
     public void checkCorrectLoginAdmin(){
 
@@ -34,7 +34,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
-    @Pending
+    
     @Title("Проверка корректного входа агента")
     public void checkCorrectLoginAgent(){
 
@@ -47,7 +47,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
-    @Pending
+    
     @Title("Проверка корректного входа клиента")
     public void checkCorrectLoginClient(){
 
@@ -59,7 +59,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
-    @Pending
+    
     @Title("Проверка корректного входа сотрудника банка")
     public void checkCorrectLoginBank(){
 
@@ -71,7 +71,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
-    @Pending
+    
     @Title("Проверка скрытия меню таблицы")
     public void checkDisabledSidebar(){
 
@@ -84,7 +84,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
-    @Pending
+    
     @Title("Проверка количества элементов таблицы по умолчанию")
     public void checkNumberRowsDefault(){
 
@@ -96,7 +96,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
-    @Pending
+    
     @Title("Проверка количества элементов таблицы при выборе 25")
     public void checkNumberRows25(){
 
@@ -110,7 +110,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
-    @Pending
+    
     @Title("Проверка количества элементов таблицы при выборе 50")
     public void checkNumberRows50(){
 
@@ -124,7 +124,7 @@ public class WhenLoginMenuPage extends LoginMainPage {
     }
 
     @Test
-    @Pending
+    
     @Title("Проверка количества элементов таблицы при выборе 100")
     public void checkNumberRows100(){
 
