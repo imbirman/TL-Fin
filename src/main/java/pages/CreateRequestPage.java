@@ -18,6 +18,7 @@ public class CreateRequestPage extends PageObject {
     protected By createCard = By.xpath("//input[@name='createCardBtn']"); // Кнопка "Создать заявку"
     protected By getDataTender = By.id("GetTenderInfoBtn"); // Кнопка "Получить данные" (получение данные для заявки из тендера)
     protected By executionGuaranteeNoRB = By.id("Card_need_exec_guarantee_1"); // radiobutton "исполнение обязательств" - нет
+    protected By executionGuaranteeYesRB = By.id("Card_need_exec_guarantee_0"); // radiobutton "исполнение обязательств" - да
     protected By requiredContractGuarantee = By.id("Card_contract_type_0"); // radiobutton "Вид контракта/договора *" - Контракт
     protected By bankToSelect = By.id("bank_18"); // чек-бокс выбора тестового банка
     protected By submitSelectBank = By.id("selectBanksBtn");// Кнопка подтверждения выбора тестового банка
@@ -25,6 +26,7 @@ public class CreateRequestPage extends PageObject {
     protected By electronicFormatBg = By.id("CardToBank_18_format_bg_1"); // radiobutton - электронный формат БГ
     protected By deliveryYes = By.id("CardToBank_18_need_delivery_0");
     protected By deliveryNo = By.id("CardToBank_18_need_delivery_1");
+    protected By tabParametersAfterCreateRequest = By.id("ui-id-1");
 
 
 
@@ -36,7 +38,6 @@ public class CreateRequestPage extends PageObject {
     private By createRequestCloseTenderButton = By.xpath("//a[text()='Создать заявку на БГ (закрытый тендер)']");
     private By createRequestFz = By.xpath("//a[text()='Создать заявку на БГ по ФЗ-185, 615-ПП']");
     private By sourceLink = By.id("Card_link"); // Поле "Ссылка на источник"
-    private By executionGuaranteeYesRB = By.id("Card_need_exec_guarantee_0"); // radiobutton "исполнение обязательств" - да
     private By warrantyGuaranteeNoRB = By.id("Card_need_warr_guarantee_1"); // radiobutton "Гарантия гарантийного периода" - нет
     private By prepaymentGuaranteeNoRB = By.id("Card_need_avans_guarantee_1"); // radiobutton "Возврат аванса" - нет
     private By sumGuarantee = By.id("Card_guarantee_sum"); // Поле "Сумма банковской гарантии"
@@ -89,34 +90,37 @@ public class CreateRequestPage extends PageObject {
         return find(errorMessage).getText();
     } // Получение текста ошибки
 
-    public boolean getVisibilityCloseTenderButton(){
+    public boolean isVisibilityCloseTenderButton(){
         return find(createRequestCloseTenderButton).isDisplayed();
     } // Проверка доступности кнопки для создания заявки на БГ для закрытого тендера
 
-    public boolean getVisibilityFzTenderButton(){
+    public boolean isVisibilityFzTenderButton(){
         return find(createRequestFz).isDisplayed();
     } // Проверка доступности кнопки для создания заявки на БГ по ФЗ-185, 615-ПП
 
-    public boolean getFullSourceLink(){
+    public boolean isNotEmptyFullSourceLink(){
         return find(sourceLink).getValue().isEmpty();
-//        return find(sourceLink).getText().isEmpty();
     } // Проверка, что в поле есть ссылка
 
-    public boolean getExGuaranteeYesRB(){
+    public boolean isNotSelectedExGuaranteeYesRB(){
         return find(executionGuaranteeYesRB).isSelected();
-    } // Проверка, что по умолчанию выбрано "Да" в блоке "Исполнение обязательств"
+    } // Проверка, что по умолчанию не выбрано "Да" в блоке "Исполнение обязательств"
 
-    public boolean getWarrantyGuaranteeNoRB(){
+    public boolean isSelectedWarrantyGuaranteeNoRB(){
         return find(warrantyGuaranteeNoRB).isSelected();
     } // Проверка, что по умолчанию выбрано "Нет" в блоке "Гарантия гарантийного периода"
 
-    public boolean getPrepaymentGuaranteeNoRB(){
+    public boolean isSelectedPrepaymentGuaranteeNoRB(){
         return find(prepaymentGuaranteeNoRB).isSelected();
     } // Проверка, что по умолчанию выбрано "Нет" в блоке "Возврат аванса"
 
-    public boolean getSumGuarantee(){
+    public boolean isEmptySumGuarantee(){
         return find(sumGuarantee).getValue().isEmpty();
     } // Проверка, что поле "Сумма банковской гарантии" заполнено
+
+    public String getExecutionGuaranteeSum(){
+        return find(card_ExecutionGuaranteeSum).getValue();
+    } // Получить значение поля "Сумма" в блоке "Исполнение обязательств"
 
     public boolean getDateBgFrom(){
         return find(dateBgFromChB).isSelected();
@@ -142,7 +146,7 @@ public class CreateRequestPage extends PageObject {
         return find(errorMessageAlert).waitUntilVisible().isDisplayed();
     } // Получение наличия алерта ошибок
 
-    public boolean hideExGuarantee(){
+    public boolean isHideExGuarantee(){
         return find(card_ExecutionGuaranteeSum).isDisplayed() | find(card_ExecutionGuaranteeTime).isDisplayed();
     } // Проверка скрытия элементов при выборе в блоке "Исполнение обязательств" значения "Нет"
 
@@ -170,11 +174,16 @@ public class CreateRequestPage extends PageObject {
         return find(executionGuaranteeNoRB).isSelected();
     } // Проверка выбрано ли значение "Нет" в блоке "Исполнение обязательств"
 
+    public boolean isSelectedExecutionGuaranteeYesRB(){
+        return find(executionGuaranteeYesRB).isSelected();
+    } // Проверка выбрано ли значение "Да" в блоке "Исполнение обязательств"
+
     public CreateRequestPage setRequiredResponsibilityGuarantee(){
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
         Calendar calendar = new GregorianCalendar();
         calendar.add(Calendar.MONTH, 2);
         find(requiredResponsibilityGuarantee).sendKeys(dateFormat.format(calendar.getTime()));
+        valueSumGuarantee = find(sumGuarantee).getText();
         return this;
     } // Ввести срок выполнения работ
 

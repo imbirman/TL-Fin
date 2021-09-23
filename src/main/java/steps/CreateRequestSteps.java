@@ -54,43 +54,43 @@ public class CreateRequestSteps{
 
     @Step("Кнопка 'Создать заявку на БГ (закрытый тендер)' доступна при создании заявки без указания реестрового номера")
     public void check_close_tender_button(){
-        Assertions.assertThat(page.getVisibilityCloseTenderButton())
+        Assertions.assertThat(page.isVisibilityCloseTenderButton())
                 .as("Кнопка 'Создать заявку на БГ (закрытый тендер)' отсутствует").isTrue();
     }
 
     @Step("Кнопка 'Создать заявку на БГ по ФЗ-185, 615-ПП' доступна при создании заявки без указания реестрового номера")
     public void check_fz_tender_button(){
-        Assertions.assertThat(page.getVisibilityFzTenderButton())
+        Assertions.assertThat(page.isVisibilityFzTenderButton())
                 .as("Кнопка 'Создать заявку на БГ по ФЗ-185, 615-ПП' отсутствует").isTrue();
     }
 
     @Step("Проверка на заполненность поля 'Ссылка на источник' по умолчанию")
     public void check_full_source_link(){
-        Assertions.assertThat(page.getFullSourceLink())
+        Assertions.assertThat(page.isNotEmptyFullSourceLink())
                 .as("Поле 'Ссылка на источник' не заполнена или некорректна!!!").isFalse();
     }
 
     @Step("Проверка на заполненность поля 'Сумма банковской гарантии' по умолчанию")
     public void check_sum_guarantee(){
-        Assertions.assertThat(page.getSumGuarantee())
+        Assertions.assertThat(page.isEmptySumGuarantee())
                 .as("Поле 'Сумма банковской гарантии' не заполнена!!!").isFalse();
     }
 
     @Step("Проверка на выбор значения 'Да' блока 'Исполнение обязательств' по умолчанию")
     public void check_ex_guarantee_yes_rb(){
-        Assertions.assertThat(page.getExGuaranteeYesRB())
-                .as("В блоке 'Исполнение обязательств' не выбрано значение 'Да' по умолчанию!!!").isTrue();
+        Assertions.assertThat(page.isNotSelectedExGuaranteeYesRB())
+                .as("В блоке 'Исполнение обязательств' выбрано значение 'Да' по умолчанию!!!").isFalse();
     }
 
     @Step("Проверка на выбор значения 'Нет' блока 'Гарантия гарантийного периода' по умолчанию")
     public void check_warranty_guarantee_no_rb(){
-        Assertions.assertThat(page.getWarrantyGuaranteeNoRB())
+        Assertions.assertThat(page.isSelectedWarrantyGuaranteeNoRB())
                 .as("В блоке 'Гарантия гарантийного периода' не выбрано значение 'Нет' по умолчанию!!!").isTrue();
     }
 
     @Step("Проверка на выбор значения 'Нет' блока 'Возврат аванса' по умолчанию")
     public void check_prepayment_guarantee_no_rb(){
-        Assertions.assertThat(page.getPrepaymentGuaranteeNoRB())
+        Assertions.assertThat(page.isSelectedPrepaymentGuaranteeNoRB())
                 .as("В блоке 'Возврат аванса' не выбрано значение 'Нет' по умолчанию!!!").isTrue();
     }
 
@@ -141,9 +141,10 @@ public class CreateRequestSteps{
         Assertions.assertThat(page.getErrorMessageAlert())
                 .as("Всплывающая ошибка отсутствует").isTrue();
     }
+
     @Step("Скрытие полей в блоке 'Исполнение обязательств'")
     public void check_hide_ex_guarantee(){
-        Assertions.assertThat(page.hideExGuarantee())
+        Assertions.assertThat(page.isHideExGuarantee())
                 .as("Поля 'Сумма' и 'Срок(месяцев)' в блоке 'Исполнение обязательств' не скрыты").isFalse();
     }
 
@@ -228,10 +229,22 @@ public class CreateRequestSteps{
                 .as("Значение поля 'Срок БГ до' не соответствует тому, которое было введено при создании заявки").isTrue();
     }
 
-    @Step("Проверка выбора значения 'Нет' в блоке 'Исполнение обязательств' после создания заявки")
-    public void check_is_selected_execution_guarantee_no_rb(){
-        Assertions.assertThat(page.isSelectedExecutionGuaranteeNoRB())
-                .as("не выбрано значение 'Нет' в блоке 'Исполнение обязательств'").isTrue();
+    @Step("Проверка поля 'Сумма банковской гарантии' на сохранение значения после создания заявки")
+    public void check_is_equal_sum_guarantee(){
+        Assertions.assertThat(page.getExecutionGuaranteeSum())
+                .as("Значение поля 'Сумма банковской гарантии' не соответствует тому, которое было при создании заявки").isEqualTo(CreateRequestPage.valueSumGuarantee);
+    }
+
+    @Step("Проверка выбора значения 'Да' в блоке 'Исполнение обязательств' после создания заявки")
+    public void check_is_selected_execution_guarantee_yes_rb(){
+        Assertions.assertThat(page.isSelectedExecutionGuaranteeYesRB())
+                .as("выбрано значение 'Да' в блоке 'Исполнение обязательств'").isTrue();
+    }
+
+    @Step("Проверка выбора значения 'Да' в блоке 'Исполнение обязательств' после создания заявки")
+    public void check_sum_guarantee_after_create_request(){
+        Assertions.assertThat(page.getExecutionGuaranteeSum())
+                .as(" В поле 'Сумма' в блоке 'Исполнение обязательств' по умолчанию должна быть 1").isEqualTo("1");
     }
 
 
