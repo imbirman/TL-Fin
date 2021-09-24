@@ -21,7 +21,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     WebDriver driver;
 
     @Test
-    @Title("Проверка создания заявки (Контракт)")
+    @Title("Проверка создания заявки (Участие в конкурсе / Контракт)")
     public void checkCreateRequest(){
 
         steps.open_login_main_page();
@@ -32,7 +32,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(requiredContractGuarantee);
         steps.set_required_responsibility_guarantee();
@@ -79,7 +79,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(createRequestButton);
         steps.click_button(bank);
         steps.click_button(createNewCard);
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.check_error_empty_registry_number();
         steps.check_fz_tender_button();
@@ -99,7 +99,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.check_full_source_link();
         steps.check_sum_guarantee();
@@ -122,7 +122,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(createCard);
         steps.check_error_message_expired();
@@ -141,7 +141,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(createCard);
         steps.check_error_message_responsibility();
@@ -160,7 +160,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(createCard);
         steps.check_error_message_contract();
@@ -178,7 +178,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
@@ -201,7 +201,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(createCard);
         steps.check_error_message_alert();
@@ -220,7 +220,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(createCard);
         steps.check_text_error_message_expired_alert();
@@ -239,7 +239,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(createCard);
         steps.check_text_error_message_responsibility_alert();
@@ -258,7 +258,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(createCard);
         steps.check_text_error_message_contract_alert();
@@ -276,7 +276,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
@@ -299,7 +299,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(executionGuaranteeNoRB);
         steps.check_hide_ex_guarantee();
@@ -317,7 +317,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
@@ -340,7 +340,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
@@ -363,7 +363,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
@@ -387,7 +387,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.set_required_responsibility_guarantee();
         steps.set_required_expired_guarantee();
@@ -411,7 +411,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(requiredContractGuarantee);
         steps.set_required_expired_guarantee();
@@ -434,7 +434,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(requiredContractGuarantee);
         steps.set_required_expired_guarantee();
@@ -458,7 +458,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(requiredContractGuarantee);
         steps.set_required_expired_guarantee();
@@ -483,7 +483,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(bank);
         steps.click_button(createNewCard);
         steps.type_tender_number("0158300043421000067");
-        steps.set_type_bg();
+        steps.set_type_ensuring_tender_bg();
         steps.click_button(getDataTender);
         steps.click_button(requiredContractGuarantee);
         steps.set_required_expired_guarantee();
@@ -495,6 +495,28 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(deliveryYes);
         steps.click_button(electronicFormatBg);
         steps.check_hide_minimum_tariff_delivery();
+    }
+
+    @Test
+
+    @Title("Проверка сохранения суммы банковской гарантии при изменении типа БГ")
+    public void checkNotEmptySumGuarantee(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.set_type_execution_guarantee_bg();
+        steps.click_button(getDataTender);
+        steps.click_button(requiredContractGuarantee);
+        steps.set_type_ensuring_tender_bg();
+        steps.set_type_execution_guarantee_bg();
+        steps.check_sum_guarantee();
+
     }
 
 

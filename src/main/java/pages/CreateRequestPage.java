@@ -27,13 +27,14 @@ public class CreateRequestPage extends PageObject {
     protected By deliveryYes = By.id("CardToBank_18_need_delivery_0");
     protected By deliveryNo = By.id("CardToBank_18_need_delivery_1");
     protected By tabParametersAfterCreateRequest = By.id("ui-id-1");
-
+    protected By radioButtonEnsuringTender = By.id("Card_bg_type_0"); // Выбор типа БГ - Обеспечение участия в конкурсе/тендере
+    protected By radioButtonExecutionGuarantee = By.id("Card_bg_type_1"); // Выбор типа БГ - Гарантия исполнения обязательств по контракту
 
 
     private By loginField = By.id("LoginForm_login"); // Поле логина
     private By passwordField = By.id("LoginForm_password"); // Поле пароля
     private By cardRegNumber = By.id("Card_regnumber"); // Поле для ввода реестрового номера
-    private By radioButtonEnsuringTender = By.id("Card_bg_type_0"); // Выбор типа БГ
+
     private By errorMessage= By.xpath("//p[@class='errorMessage']");
     private By createRequestCloseTenderButton = By.xpath("//a[text()='Создать заявку на БГ (закрытый тендер)']");
     private By createRequestFz = By.xpath("//a[text()='Создать заявку на БГ по ФЗ-185, 615-ПП']");
@@ -81,10 +82,15 @@ public class CreateRequestPage extends PageObject {
         return this;
     } // Поиск поля реестрового номера и ввод значения
 
-    public CreateRequestPage setTypeBG(){
-        find(radioButtonEnsuringTender).click();
+    public CreateRequestPage setTypeEnsuringTenderBG(){
+        find(radioButtonEnsuringTender).waitUntilClickable().click();
         return this;
-    } // Выбор типа БГ
+    } // Выбор типа БГ - Обеспечение участия в конкурсе/тендере
+
+    public CreateRequestPage setTypeExecutionGuaranteeBG(){
+        find(radioButtonExecutionGuarantee).waitUntilClickable().click();
+        return this;
+    } // Выбор типа БГ - Гарантия исполнения обязательств по контракту
 
     public String getErrorMessage(){
         return find(errorMessage).getText();

@@ -35,10 +35,15 @@ public class CreateRequestSteps{
         page.typeTenderNumber(tender);
     } // Ввести номер тендера для БГ
 
-    @Step("Выбор типа БГ")
-    public void set_type_bg(){
-        page.setTypeBG();
-    } // Выбрать тип БГ
+    @Step("Выбор типа БГ - Обеспечение участия в конкурсе/тендере")
+    public void set_type_ensuring_tender_bg(){
+        page.setTypeEnsuringTenderBG();
+    }
+
+    @Step("Выбор типа БГ - Гарантия исполнения обязательств по контракту")
+    public void set_type_execution_guarantee_bg(){
+        page.setTypeExecutionGuaranteeBG();
+    }
 
     @Step("Проверка ошибки при неуказанном типе БГ")
     public void check_error_empty_type_bg(){
