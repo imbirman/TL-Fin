@@ -1,0 +1,876 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="en">
+
+	<!-- blueprint CSS framework -->
+	<link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" />
+	<![endif]-->
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/main.css?v=20210621">
+	<link rel="stylesheet" type="text/css" href="/css/grid.css?v=20200629">
+	<link rel="stylesheet" type="text/css" href="/css/form.css?_t=20210713">
+				        	<link rel="stylesheet" type="text/css" href="/css/jquery-confirm.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/ca3e1e76/jui/css/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/css/jui2/viewCard.css?_t=20200715_2">
+<script type="text/javascript" src="/assets/ca3e1e76/jquery.js"></script>
+<script type="text/javascript" src="/assets/ca3e1e76/jquery.yiiactiveform.js"></script>
+<script type="text/javascript" src="/assets/ca3e1e76/jui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/colorbox/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/js/colorbox/i18n/jquery.colorbox-ru.js"></script>
+<script type="text/javascript" src="/js/jquery-confirm.min.js"></script>
+<script type="text/javascript" src="/js/CardParams.js?_t=20210323"></script>
+<script type="text/javascript" src="/js/es6-promise.min.js"></script>
+<script type="text/javascript" src="/js/App.js?_t=20210723"></script>
+<script type="text/javascript" src="/js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="/js/inputmask.js"></script><style type="text/css">span.im-caret {
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+span.im-static {
+    color: grey;
+}
+
+div.im-colormask {
+    display: inline-block;
+    border-style: inset;
+    border-width: 2px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div.im-colormask > input {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    -webkit-appearance: caret;
+    -moz-appearance: caret;
+    appearance: caret;
+    border-style: none;
+    left: 0; /*calculated*/
+}
+
+div.im-colormask > input:focus {
+    outline: none;
+}
+
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > input::selection{
+    background: none;
+}
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > div {
+    color: black;
+    display: inline-block;
+    width: 100px; /*calculated*/
+}</style>
+<title>TenderLand Finance - Создать заявку</title>
+</head>
+
+<body style="overflow: visible;">
+<div id="waiting_img" class="waiting_img1" style="display: none;">
+  <div class="waiting_img2"><span id="waiting">Пожалуйста, подождите</span>
+    <div id="preloader"></div>
+	<span id="cntSignedFiles">Это займет какое-то время</span>
+  </div>
+</div>
+<div class="container" id="page">
+	<div id="header" style="float:left; overflow:auto;">
+		<div id="logo">
+					<a href="http://test.tl-fin.ru/" style="display:block;float:left;"><img src="/images/logo2.png"></a>
+				</div>
+        <div style="position: fixed; top: 0px; height: 110px; left: 140px; right: 0px; overflow: hidden;">
+		<div style="float:left;">
+			<div align="center" id="free_consult">
+				<span id="contact_phone">8 800 333-99-73</span><br>
+				<span id="contact_extra">Бесплатный звонок по России</span>
+			</div>
+		</div>
+            <div style="float:left;">
+                
+                        <div class="headerBlock" style="display: flex;align-content: space-around;flex-wrap: wrap;">
+                            <div style="width: 100%;font-size: 17px;color:#13171c">
+                                <div><span style="color: #989da4; width: 75px; display: inline-flex; font-size: 15px;">куратор: </span><span id="curator_name">Ярцев Денис</span></div>
+                                                                <div>
+                                    <span style="color: #989da4; width: 75px; display: inline-flex; font-size: 15px;">тел.: </span><span style="margin-right: 15px;" id="curator_phone">223232323232</span>
+                                                                    </div>
+                                                                                            </div>
+                            <h1 style="font-size: 1.2vw;width: 100%;">
+                                Создать заявку                            </h1>
+                        </div>
+
+                    
+                            </div>
+		<div style="float:right;">
+			<div class="headerBlock">
+				<div class="support_info">
+					Техническая поддержка
+				</div>
+				<div class="support_info">
+					8 800 333-99-73
+				</div>
+							</div>
+		</div>
+				</div>
+		<br class="clear">
+	</div><!-- header -->
+	<div class="commonContent clearfix">
+	<div class="mainMenu last">
+	<div id="sidebar">
+				<div class="myProfile">
+			<div id="welcome-user">
+				<div class="drop-menu-main">
+					<span class="drop-down">s.kosobutskiy<span class="arrow">▼</span></span>
+					<div class="drop-menu-main-sub">
+						<span class="title"></span>
+						<a href="/user/1">Личная страница</a>
+						<a href="/user/ChangeCompany">Сменить компанию</a>
+						<a href="/admin">Настройки</a>						<a href="/auth/logout">Выйти</a>
+					</div>
+				</div>
+			</div>
+			<div class="typeUser">
+			брокер			</div>
+			<script>
+				$(document).ready(function () {
+					function hideallDropdowns() {
+						$(".dropped .drop-menu-main-sub").hide();
+						$(".dropped").removeClass('dropped');
+						$(".dropped .drop-menu-main-sub .title").unbind("click");
+					}
+					function showDropdown(el) {
+						var el_li;
+						if($(el).parent().hasClass('dropped')) {
+							el_li = $(el).parent().removeClass('dropped');
+							el_li.find('.drop-menu-main-sub').hide();
+						}
+						else {
+							el_li = $(el).parent().addClass('dropped');
+							el_li.find('.title').click(function () {
+								hideallDropdowns();
+							}).html($(el).html());
+							el_li.find('.drop-menu-main-sub').show();
+						}
+					}
+					$(".drop-down").click(function(){
+						showDropdown(this);
+					});
+					$(document).mouseup(function () {
+						hideallDropdowns();
+					});
+				});
+			</script>
+		</div>
+	<ul class="operations" id="yw0">
+<li id="CardListItem"><a href="/card/index">Список заявок</a>
+<ul class="sub-tab sub-tab-list">
+<li><a href="/card/index">Заявки БГ</a></li>
+<li><a href="/credit/index">Заявки на кредит</a></li>
+<li><a href="/account/list">Заявки Р/С</a></li>
+</ul>
+</li>
+<li id="BrokerListItem"><a href="/broker/1">Кабинет агента</a>
+<ul class="sub-tab">
+<li><a href="/broker/1">Кабинет агента</a></li>
+<li><a href="/broker/ReportPartner">Отчеты</a></li>
+</ul>
+</li>
+<li id="UserListItem"><a href="/user/index">Список пользователей</a>
+<ul class="sub-tab">
+<li><a href="/broker/index">Список агентов</a></li>
+<li><a href="/user/index?active=0">Активные</a></li>
+<li><a href="/user/index?active=1">Удаленные</a></li>
+<li><a class="primary" href="/user/create">Добавить сотрудника</a></li>
+<li><a class="primary" href="/register/index?type=2">Зарегистрировать брокера</a></li>
+<li><a class="primary" href="/register/index?type=1">Зарегистрировать банк</a></li>
+</ul>
+</li>
+<li id="ClientListItem"><a href="/client/index">Создать заявку</a>
+<ul class="sub-tab">
+<li><a href="/client/index?partner=2">Поиск</a></li>
+<li><a href="/client/index?partner=1">Мои клиенты</a></li>
+</ul>
+</li>
+<li id="RevizorItem"><a target="_blank" href="/site/revizor">Ревизор</a></li>
+<li id="SettingSystemItem"><a href="/admin">Настройка системы</a></li>
+<li id="SettingSystemItem"><a href="/Report/ReportList">Отчёт</a></li>
+<li id="ExitListItem"><a href="/auth/logout">Выход</a></li>
+</ul>		</div>
+</div>
+<div class="mainContent">
+	<div id="content" class="clearfix">
+						<div id="mainCardsTabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabParams" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a href="#tabParams" title="tabParams" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Параметры</a></li>
+</ul>
+<div id="tabParams" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-hidden="false"><div class="scroll-container">
+    <form id="cardParamsForm" action="/card/create?client_id=11" method="post">    <div class="clearfix">
+        <div class="errorMessage" id="Card_broker_manager_id_em_"></div>        <div class="errorMessage" id="Card_broker_id_em_"></div>        <div class="errorMessage" id="Card_client_id_em_"></div>        <div class="errorMessage" id="Card_regnumber_em_"></div>        <label for="Card_regnumber" class="required">Реестровый номер <span class="required">*</span></label><br>
+        <input class="span-6" onchange="js:changeTextField(this);$(&quot;#selectTenderId&quot;).empty();" name="Card[regnumber]" id="Card_regnumber" type="text">        <a id="GetTenderInfoBtn" class="btn primary-btn" href="#">Получить данные</a>        <input class="btn primary-btn createCardBtns" style="" name="createCardBtn" type="submit" value="Создать заявку">        <input class="btn primary-btn createCardBtns" style="" name="delegateCardBtn" data-tip="Создание заявки специалистами площадки ТЛ-ФИН" type="submit" value="Делегировать создание заявки">        <em class="tooltip createCardBtns" style="" data-tip="Создание заявки специалистами площадки ТЛ-ФИН">?</em>
+        <br>
+        <select id="selectTenderId" style="display:none;" class="select-css" name="Card[tender_id]"><option value="48522682">Приобретение медицинского оборудования</option></select>    </div>
+    <div>
+        <table style="border-collapse: collapse;">
+            <tbody><tr>
+                <td class="type_bg_td" style="width: 400px;">
+                    <div class="errorMessage" id="Card_bg_type_em_"></div>                    <label for="Card_bg_type" class="required">Тип БГ <span class="required">*</span></label><br>
+                    <input id="ytCard_bg_type" type="hidden" value="" name="Card[bg_type]"><span id="Card_bg_type"><input onchange="changeBgType2()" id="Card_bg_type_0" value="0" type="radio" name="Card[bg_type]"> <label for="Card_bg_type_0">Обеспечение участия в конкурсе/тендере</label><br>
+<input onchange="changeBgType2()" id="Card_bg_type_1" value="1" type="radio" name="Card[bg_type]"> <label for="Card_bg_type_1">Гарантия исполнения обязательств по контракту</label><br>
+<input onchange="changeBgType2()" id="Card_bg_type_2" value="2" type="radio" name="Card[bg_type]"> <label for="Card_bg_type_2">Гарантия возврата аванса</label><br>
+<input onchange="changeBgType2()" id="Card_bg_type_3" value="3" type="radio" name="Card[bg_type]"> <label for="Card_bg_type_3">Гарантия гарантийного периода</label></span>                </td>
+                <td class="type_bg_td">
+                    <div id="enforceContract" style="display: inline-block;">
+                        <div class="errorMessage" id="Card_enforce_contract_em_"></div>                        <label for="Card_enforce_contract">Тип обеспечения контракта</label><br>
+                        <input id="ytCard_enforce_contract" type="hidden" value="" name="Card[enforce_contract]"><span id="Card_enforce_contract"><input onchange="changeEnforceContract()" id="Card_enforce_contract_0" value="0" type="radio" name="Card[enforce_contract]"> <label for="Card_enforce_contract_0">Контракт подлежит заключению</label><br>
+<input onchange="changeEnforceContract()" id="Card_enforce_contract_1" value="1" type="radio" name="Card[enforce_contract]"> <label for="Card_enforce_contract_1">Контракт уже заключен</label></span>                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+        <div id="resultCheckOnUnique" style="display:none;">
+        <input onclick="ContinueAnyway()" class="btn primary-btn" name="yt0" type="button" value="Всё равно продолжить">        <div></div>
+    </div>
+    <div id="typeCreateBtns" style="display:none;">
+        <br>
+        <a style="margin-bottom:20px;" class="btn primary-btn" href="/card/create?client_id=11&amp;is_closed=1">Создать заявку на БГ (закрытый тендер)</a><br><a style="margin-bottom:20px;" class="btn primary-btn" href="/card/create?client_id=11&amp;fz=185">Создать заявку на БГ по ФЗ-185, 615-ПП</a>    </div>
+    <div id="cardParams" style="display: block;">
+        <div class="clearfix">
+            <div class="errorMessage" id="Card_link_em_"></div>            <label for="Card_link">Ссылка на источник</label><br>
+            <input class="max-width" name="Card[link]" id="Card_link" type="text">        </div>
+        <div class="clearfix" id="need_more_garant" style="display: none;">
+            <strong>
+                Потребуются иные гарантии по контракту?
+            </strong>
+            <div class="more-garant">
+                <div class="more_garant_cell">
+                    <div class="more_garant_row">
+                        <label for="Card_need_exec_guarantee">Исполнение обязательств</label>                        <br>
+                        <span id="Card_need_exec_guarantee"><input onchange="moreGarantToggle(&quot;exec&quot;)" value="1" id="Card_need_exec_guarantee_0" type="radio" name="Card[need_exec_guarantee]"> <label for="Card_need_exec_guarantee_0">Да</label><input onchange="moreGarantToggle(&quot;exec&quot;)" value="0" id="Card_need_exec_guarantee_1" type="radio" name="Card[need_exec_guarantee]"> <label for="Card_need_exec_guarantee_1">Нет</label></span>                    </div>
+                    <div class="more_garant_row more_garant_block_exec" style="display:none;">
+                        <div class="errorMessage" id="Card_exec_guarant_sum_em_"></div>                        <label for="Card_exec_guarant_sum">Сумма</label> <span class="required">*</span>
+                        <br>
+                        <input class="sum" name="Card[exec_guarant_sum]" id="Card_exec_guarant_sum" type="text">                    </div>
+                    <div class="more_garant_row more_garant_block_exec" style="display:none;">
+                        <label for="Card_exec_guarant_time">Срок (месяцев)</label>                        <br>
+                        <input name="Card[exec_guarant_time]" id="Card_exec_guarant_time" type="text">                    </div>
+                </div>
+                <div class="more_garant_cell">
+                    <div class="more_garant_row">
+                        <label for="Card_need_warr_guarantee">Гарантия гарантийного периода</label>                        <br>
+                        <span id="Card_need_warr_guarantee"><input onchange="moreGarantToggle(&quot;warr&quot;)" value="1" id="Card_need_warr_guarantee_0" type="radio" name="Card[need_warr_guarantee]"> <label for="Card_need_warr_guarantee_0">Да</label><input onchange="moreGarantToggle(&quot;warr&quot;)" value="0" id="Card_need_warr_guarantee_1" checked="checked" type="radio" name="Card[need_warr_guarantee]"> <label for="Card_need_warr_guarantee_1">Нет</label></span>                    </div>
+                    <div class="more_garant_row more_garant_block_warr" style="display:none;">
+                        <label for="Card_warr_guarant_sum">Сумма</label>                        <br>
+                        <input class="sum" name="Card[warr_guarant_sum]" id="Card_warr_guarant_sum" type="text">                    </div>
+                    <div class="more_garant_row more_garant_block_warr" style="display:none;">
+                        <label for="Card_warr_guarant_time">Срок (месяцев)</label>                        <br>
+                        <input name="Card[warr_guarant_time]" id="Card_warr_guarant_time" type="text">                    </div>
+                </div>
+                <div class="more_garant_cell">
+                    <div class="more_garant_row">
+                        <label for="Card_need_avans_guarantee">Возврат аванса</label>                        <br>
+                        <span id="Card_need_avans_guarantee"><input onchange="moreGarantToggle(&quot;avans&quot;)" value="1" id="Card_need_avans_guarantee_0" type="radio" name="Card[need_avans_guarantee]"> <label for="Card_need_avans_guarantee_0">Да</label><input onchange="moreGarantToggle(&quot;avans&quot;)" value="0" id="Card_need_avans_guarantee_1" checked="checked" type="radio" name="Card[need_avans_guarantee]"> <label for="Card_need_avans_guarantee_1">Нет</label></span>                    </div>
+                    <div class="more_garant_row more_garant_block_avans" style="display:none;">
+                        <label for="Card_avans_guarant_sum">Сумма</label>                        <br>
+                        <input class="sum" name="Card[avans_guarant_sum]" id="Card_avans_guarant_sum" type="text">                    </div>
+                    <div class="more_garant_row more_garant_block_avans" style="display:none;">
+                        <label for="Card_avans_guarant_time">Срок (месяцев)</label>                        <br>
+                        <input name="Card[avans_guarant_time]" id="Card_avans_guarant_time" type="text">                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="span-6" id="is_demping_block" style="display: block;">
+                <div class="errorMessage" id="Card_is_demping_em_"></div>                <input id="ytCard_is_demping" type="hidden" value="0" name="Card[is_demping]"><input class="checkbox" onchange="toogle_is_demping(this)" name="Card[is_demping]" id="Card_is_demping" value="1" type="checkbox">                <label for="Card_is_demping">Снижение более 25% от начальной цены</label>            </div>
+            <div class="span-6" id="fake_avans_block" style="display: block;">
+                <input class="checkbox" onchange="js:if($(this).prop(&quot;checked&quot;)) {$(&quot;#Card_avans&quot;).prop(&quot;checked&quot;, false); $(&quot;#c_avans_sum&quot;).attr({hidden:true});}" type="checkbox" value="1" name="fake_avans" id="fake_avans">                <label for="fake_avans">Гарантия исполнения обязательств с Авансом</label>
+            </div>
+            <div class="span-6">
+                <div class="errorMessage" id="Card_writeoff_em_"></div>                <input id="ytCard_writeoff" type="hidden" value="0" name="Card[writeoff]"><input class="checkbox" name="Card[writeoff]" id="Card_writeoff" value="1" type="checkbox">                <label for="Card_writeoff">Требование бесспорного списания</label>            </div>
+            <div class="span-6" id="Card_is_275_block">
+                <div class="errorMessage" id="Card_is_275_em_"></div>                <input id="ytCard_is_275" type="hidden" value="0" name="Card[is_275]"><input class="checkbox" name="Card[is_275]" id="Card_is_275" value="1" type="checkbox">                <label for="Card_is_275">Относится к ГосОборонЗаказу</label>            </div>
+        </div>
+        <div class="flex-card-fields">
+            <div class="span-6" id="c_avans_sum" hidden="hidden">
+                <div class="errorMessage" id="Card_avans_sum_em_"></div>                <div>
+                    <label for="Card_avans_sum">Сумма аванса</label>                </div>
+                <div>
+                    <input class="sum" onchange="AvansSumChanged(this)" name="Card[avans_sum]" id="Card_avans_sum" type="text">                </div>
+            </div>
+            <div class="span-6" id="old_bg_sum" hidden="">
+                <div>
+                    <label>Сумма БГ заказчика</label>
+                </div>
+                <div>
+                    <input type="text" disabled="">
+                </div>
+            </div>
+            <div class="span-6" id="c_guarantee_sum">
+                <div class="errorMessage" id="Card_guarantee_sum_em_"></div>                <div>
+                    <label for="Card_guarantee_sum" class="required">Сумма банковской гарантии <span class="required">*</span></label>                </div>
+                <div>
+                    <input class="sum" name="Card[guarantee_sum]" id="Card_guarantee_sum" type="text">                </div>
+            </div>
+            <div class="span-6">
+                <div class="errorMessage" id="Card_guarantee_from_em_"></div>                <div>
+                    <label for="Card_guarantee_from">Срок БГ с</label>                </div>
+                <div>
+                    <input class="checkbox" onchange="js:$(&quot;#label_from_cur_date&quot;).attr({hidden:!$(this).prop(&quot;checked&quot;)});$(&quot;#block_from_cur_date&quot;).attr({hidden:$(this).prop(&quot;checked&quot;)});" checked="checked" type="checkbox" value="1" name="from_cur_date" id="from_cur_date">                    <label id="label_from_cur_date" for="from_cur_date">даты выдачи</label>
+                    <span id="block_from_cur_date" hidden="hidden">
+                    <input style="width:90px;" autocomplete="off" id="Card_guarantee_from" name="Card[guarantee_from]" type="text" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">					</span>
+                </div>
+            </div>
+            <div class="span-6">
+                <div class="errorMessage" id="Card_guarantee_expired_em_"></div>                <div>
+                    <label for="Card_guarantee_expired" class="required">Срок БГ до <span class="required">*</span></label>                </div>
+                <div>
+                    <input autocomplete="off" id="Card_guarantee_expired" name="Card[guarantee_expired]" type="text" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">                </div>
+            </div>
+            <div class="span-6 enforceContract_extra" style="display: none;">
+                <div class="errorMessage" id="Card_contract_number_em_"></div>                <div>
+                    <label for="Card_contract_number">№ контракта/ договора (для случаев замены обеспечения)</label>                </div>
+                <div>
+                    <input name="Card[contract_number]" id="Card_contract_number" type="text">                </div>
+            </div>
+            <div class="span-6 enforceContract_extra" style="display: none;">
+                <div class="errorMessage" id="Card_contract_date_em_"></div>                <div>
+                    <label for="Card_contract_date">Дата контракта/ договора (для случаев замены обеспечения)</label>                </div>
+                <div>
+                    <input autocomplete="off" id="Card_contract_date" name="Card[contract_date]" type="text" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">                </div>
+            </div>
+            <div class="span-6">
+                <div class="errorMessage" id="Card_responsibility_to_em_"></div>                <div>
+                    <label for="Card_responsibility_to" class="required">Срок выполнения работ/оказания услуг <span class="required">*</span></label>                </div>
+                <div>
+                    <input autocomplete="off" id="Card_responsibility_to" name="Card[responsibility_to]" type="text" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">                </div>
+            </div>
+            <div class="span-6 enforceContract" style="display: block;">
+                <div class="errorMessage" id="Card_result_price_em_"></div>                <div>
+                    <label for="Card_result_price">Итоговая цена контракта/договора</label>                </div>
+                <div>
+                    <input class="sum" name="Card[result_price]" id="Card_result_price" type="text">                </div>
+            </div>
+            <div class="span-6 enforceContract" style="display: block;">
+                <div class="errorMessage" id="Card_protocol_number_em_"></div>                <div>
+                    <label for="Card_protocol_number">№ протокола итогов</label>                </div>
+                <div>
+                    <input name="Card[protocol_number]" id="Card_protocol_number" type="text">                </div>
+            </div>
+            <div class="span-6 enforceContract" style="display: block;">
+                <div class="errorMessage" id="Card_protocol_date_em_"></div>                <div>
+                    <label for="Card_protocol_date">Дата протокола итогов</label>                </div>
+                <div>
+                    <input autocomplete="off" id="Card_protocol_date" name="Card[protocol_date]" type="text" class="hasDatepicker" placeholder="дд.мм.гггг" maxlength="10"><img class="ui-datepicker-trigger" src="/images/calendar.png" alt="..." title="...">                </div>
+            </div>
+            <div class="span-6 enforceContract" style="display: block;">
+                <div class="errorMessage" id="Card_provider_doc_em_"></div>                <div>
+                    <label for="Card_provider_doc">Название документа, определяющего поставщика</label>                </div>
+                <div>
+                    <input name="Card[provider_doc]" id="Card_provider_doc" type="text">                </div>
+            </div>
+            <div class="span-6">
+                <div class="errorMessage" id="Card_ikz_em_"></div>                <div>
+                    <label for="Card_ikz">Идентификационный код закупки</label>                </div>
+                <div>
+                    <input name="Card[ikz]" id="Card_ikz" type="text">                </div>
+            </div>
+            <div class="span-6">
+                <div class="errorMessage" id="Card_iku_em_"></div>                <div>
+                    <label for="Card_iku">Идентификационный код участника</label>                </div>
+                <div>
+                    <input name="Card[iku]" id="Card_iku" type="text" value="">                </div>
+            </div>
+        </div>
+        <div class="table-style">
+            <div class="table-row">
+                <div class="span-6 table-cell">
+                    <div class="errorMessage" id="Card_contract_type_em_"></div>                    <label for="Card_contract_type" class="required">Вид контракта/договора <span class="required">*</span></label><br>
+                    <input id="ytCard_contract_type" type="hidden" value="" name="Card[contract_type]"><span id="Card_contract_type"><input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val()==4) $(&quot;#contract_type_other&quot;).attr({disabled:false,hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_0" value="5" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_0">Контракт</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val()==4) $(&quot;#contract_type_other&quot;).attr({disabled:false,hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_1" value="1" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_1">Государственный контракт</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val()==4) $(&quot;#contract_type_other&quot;).attr({disabled:false,hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_2" value="0" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_2">Муниципальный контракт</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val()==4) $(&quot;#contract_type_other&quot;).attr({disabled:false,hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_3" value="2" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_3">Государственный договор</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val()==4) $(&quot;#contract_type_other&quot;).attr({disabled:false,hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_4" value="3" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_4">Муниципальный договор</label><br>
+<input onchange="js:if($('[name=&quot;Card[contract_type]&quot;]:checked').val()==4) $(&quot;#contract_type_other&quot;).attr({disabled:false,hidden:false}); else $(&quot;#contract_type_other&quot;).attr({disabled:true,hidden:true});" id="Card_contract_type_5" value="4" type="radio" name="Card[contract_type]"> <label for="Card_contract_type_5">Другое</label></span>                    <div class="errorMessage" id="Card_contract_type_other_em_"></div>                    <input id="contract_type_other" class="max-width" hidden="hidden" name="Card[contract_type_other]" type="text" disabled="disabled">                </div>
+                <div class="span-6 table-cell">
+                    <div class="errorMessage" id="Card_isBigDeal_em_"></div>                    <input id="ytCard_isBigDeal" type="hidden" value="0" name="Card[isBigDeal]"><input name="Card[isBigDeal]" id="Card_isBigDeal" value="1" type="checkbox"><br>
+                    <label for="Card_isBigDeal">Является ли сделка крупной (размер гарантии составляет 25 процентов (и более) от валюты последнего баланса Принципала)</label>                </div>
+                            </div>
+        </div>
+        <div class="errorMessage" id="Card_lots_description_em_"></div>        <div class="clearfix" id="lots_description"><table class="tableItems">
+	<tbody><tr>
+		<th colspan="2">
+			<label>Лот №</label>			<input class="num_lot" type="text" value="" name="Card[lots_description][1][num_lot]" id="Card_lots_description_1_num_lot">				<a title="Удалить" href="javascript:void(0)" onclick="removeLot(this)"><img src="/images/remove.png" alt="Удалить"></a>
+					</th>
+	</tr>
+	<tr>
+		<td style="text-align: center; width:200px;"><label class="required">Реестровый номер <span class="required">*</span></label></td>
+		<td>
+			<a title="Перейти к странице тендера" target="_blank" href="http://zakupki.gov.ru/epz/order/quicksearch/search.html?searchString="></a>		</td>
+	</tr>
+	<tr>
+		<td style="text-align: center;"><label class="required">Предмет тендера <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_tender_name_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][tender_name]" id="Card_lots_description_1_tender_name">					</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">НМЦ <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_start_price_em_" class="errorMessage"></div><input class="sum" type="text" value="" name="Card[lots_description][1][start_price]" id="Card_lots_description_1_start_price">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Сумма БГ <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_bg_cost_em_" class="errorMessage"></div><input class="sum" type="text" value="" name="Card[lots_description][1][bg_cost]" id="Card_lots_description_1_bg_cost">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Дата публикации <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_public_date_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][public_date]" id="Card_lots_description_1_public_date">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Способ определения поставщика <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_placing_way_em_" class="errorMessage"></div><select name="Card[lots_description][1][placing_way]" id="Card_lots_description_1_placing_way">
+<option value="0">Не определено</option>
+<option value="1">Открытый конкурс</option>
+<option value="2">Открытый аукцион</option>
+<option value="3">Запрос котировок</option>
+<option value="4">Открытый аукцион в электронной форме</option>
+<option value="5">Размещение заказа на поставки биржевых товаров</option>
+<option value="6">Предварительный отбор</option>
+<option value="7">Извещение о заинтересованности в проведении конкурса</option>
+<option value="8">Коммерческие закупки</option>
+<option value="9">ФЗ №223: Другое</option>
+<option value="10">Конкурс c ограниченным участием</option>
+<option value="11">Двухэтапный конкурс</option>
+<option value="12">Электронный аукцион</option>
+<option value="13">Закрытый конкурс</option>
+<option value="14">Закрытый конкурс с ограниченным участием</option>
+<option value="15">Закрытый двухэтапный конкурс</option>
+<option value="16">Закрытый аукцион</option>
+<option value="17">Запрос котировок без размещения извещения</option>
+<option value="18">Запрос предложений</option>
+<option value="19">Закупка у единственного поставщика (подрядчика, исполнителя)</option>
+<option value="20">Иной однолотовый способ</option>
+<option value="21">Иной многолотовый способ</option>
+<option value="22">Повторный конкурс</option>
+<option value="23">Конкурс для заключения энергосервисного контракта</option>
+<option value="24">Запросы цен товаров, работ, услуг</option>
+<option value="25">Повторный конкурс с ограниченным участием</option>
+<option value="26">Прочие (в соответствии со статьей 111 Закона № 44-ФЗ)</option>
+<option value="27">Закупки малого объема</option>
+<option value="28">Открытый конкурс в электронной форме</option>
+<option value="29">Конкурс с ограниченным участием в электронной форме</option>
+<option value="30">Двухэтапный конкурс в электронной форме</option>
+<option value="615">ПП РФ 615 (Капитальный ремонт)</option>
+<option value="1000">ФЗ №223: Процедуры с ограниченным участием</option>
+<option value="1001">ФЗ №223: Редукцион</option>
+<option value="1002">ФЗ №223: Закупка у единственного поставщика</option>
+<option value="1003">ФЗ №223: Электронный аукцион</option>
+<option value="1004">ФЗ №223: Конкурс открытый</option>
+<option value="1005">ФЗ №223: Открытый аукцион</option>
+<option value="1006">ФЗ №223: Запрос котировок</option>
+<option value="1007">ФЗ №223: Запрос котировок в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства</option>
+<option value="1008">ФЗ №223: Аукцион в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства</option>
+<option value="1009">ФЗ №223: Запрос предложений в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства</option>
+<option value="1010">ФЗ №223: Конкурс в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства</option>
+<option value="1011">ФЗ №223: Открытый запрос предложений в электронной форме</option>
+<option value="1012">ФЗ №223: Запрос предложений в электронной форме</option>
+<option value="1013">ФЗ №223: Запрос предложений</option>
+<option value="1014">ФЗ №223: Открытый запрос предложений</option>
+</select>		
+		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Заказчик <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_customer_full_name_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_full_name]" id="Card_lots_description_1_customer_full_name">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Сокращенное наименование заказчика <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_customer_short_name_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_short_name]" id="Card_lots_description_1_customer_short_name">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label>Код СПЗ</label></td>
+		<td>
+			<div id="Card_lots_description_1_code_spz_em_" class="errorMessage"></div><input onchange="js:changeNumericField(this)" type="text" value="" name="Card[lots_description][1][code_spz]" id="Card_lots_description_1_code_spz">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label>Дата постановки на учет в налоговом органе</label></td>
+		<td>
+			<div id="Card_lots_description_1_customer_registration_date_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_registration_date]" id="Card_lots_description_1_customer_registration_date">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">Юридический адрес <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_ti_address_em_" class="errorMessage"></div>				<input type="hidden" id="Card_lots_description_1_ti_address">
+						<table class="tableItems">
+			<tbody><tr class="row">
+				<td style="text-align: center;"><label>Индекс</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_index_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_index]" id="Card_lots_description_1_customer_index">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label class="required">Код региона <span class="required">*</span></label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_region_code_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_region_code]" id="Card_lots_description_1_customer_region_code">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Регион</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_region_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_region]" id="Card_lots_description_1_customer_region">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Район</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_district_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_district]" id="Card_lots_description_1_customer_district">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Город</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_city_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_city]" id="Card_lots_description_1_customer_city">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Населенный пункт</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_locality_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_locality]" id="Card_lots_description_1_customer_locality">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Улица</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_street_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_street]" id="Card_lots_description_1_customer_street">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Дом</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_house_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_house]" id="Card_lots_description_1_customer_house">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Строение</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_building_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_building]" id="Card_lots_description_1_customer_building">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>Офис (квартира)</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_flat_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_flat]" id="Card_lots_description_1_customer_flat">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label class="required">ОКТМО <span class="required">*</span></label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_oktmo_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_oktmo]" id="Card_lots_description_1_customer_oktmo">				</td>
+			</tr>
+			<tr class="row">
+				<td style="text-align: center;"><label>ОКАТО</label></td>
+				<td>
+					<div id="Card_lots_description_1_customer_okato_em_" class="errorMessage"></div><input type="text" value="" name="Card[lots_description][1][customer_okato]" id="Card_lots_description_1_customer_okato">				</td>
+			</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">ИНН <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_customer_inn_em_" class="errorMessage"></div><input onchange="js:changeNumericField(this)" type="text" value="" name="Card[lots_description][1][customer_inn]" id="Card_lots_description_1_customer_inn">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">КПП <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_customer_kpp_em_" class="errorMessage"></div><input onchange="js:changeNumericField(this)" type="text" value="" name="Card[lots_description][1][customer_kpp]" id="Card_lots_description_1_customer_kpp">		</td>
+	</tr>
+	<tr class="row">
+		<td style="text-align: center;"><label class="required">ОГРН <span class="required">*</span></label></td>
+		<td>
+			<div id="Card_lots_description_1_customer_ogrn_em_" class="errorMessage"></div><input onchange="js:changeNumericField(this)" type="text" value="" name="Card[lots_description][1][customer_ogrn]" id="Card_lots_description_1_customer_ogrn">		</td>
+	</tr>
+</tbody></table>
+<script type="text/javascript">
+$(document).ready(function() {
+	submitted_form_id = $('.tableItems:first').parents('form').attr('id') || 'cardParamsForm';
+	var attributes = [
+		'lots_description_' + 1 + '_tender_name',
+		'lots_description_' + 1 + '_start_price',
+		'lots_description_' + 1 + '_bg_cost',
+		'lots_description_' + 1 + '_public_date',
+		'lots_description_' + 1 + '_placing_way',
+		'lots_description_' + 1 + '_customer_full_name',
+		'lots_description_' + 1 + '_customer_short_name',
+		'lots_description_' + 1 + '_code_spz',
+		'lots_description_' + 1 + '_customer_registration_date',
+		'lots_description_' + 1 + '_ti_address',
+		// 'lots_description_' + 1 + '_customer_index',
+		'lots_description_' + 1 + '_customer_region_code',
+		// 'lots_description_' + 1 + '_customer_region',
+		// 'lots_description_' + 1 + '_customer_district',
+		// 'lots_description_' + 1 + '_customer_city',
+		// 'lots_description_' + 1 + '_customer_locality',
+		// 'lots_description_' + 1 + '_customer_street',
+		// 'lots_description_' + 1 + '_customer_house',
+		// 'lots_description_' + 1 + '_customer_building',
+		// 'lots_description_' + 1 + '_customer_flat',
+		'lots_description_' + 1 + '_customer_oktmo',
+		// 'lots_description_' + 1 + '_customer_okato',
+		'lots_description_' + 1 + '_customer_inn',
+		'lots_description_' + 1 + '_customer_kpp',
+		'lots_description_' + 1 + '_customer_ogrn'
+	];
+	addValidators(attributes, submitted_form_id, 'Card');
+});
+</script>
+</div>
+        <a title="Добавить" href="javascript:void(0)" onclick="addLotView('lot', 'lots_description')">
+            <img src="/images/plus.png" alt="Добавить">добавить закупку (лот)
+        </a>
+        <input hidden="hidden" name="Card[is_collective]" id="Card_is_collective" type="text">        <input hidden="hidden" name="Card[is_closed]" id="Card_is_closed" type="text" value="0">                    <input hidden="hidden" name="Card[fz]" id="Card_fz" type="text">                <input name="Card[okpd2]" id="Card_okpd2" type="hidden" value="32.50.50.190">        <input name="Card[client_id]" id="Card_client_id" type="hidden" value="11">        <input name="Card[broker_id]" id="Card_broker_id" type="hidden" value="1">        <input name="Card[broker_manager_id]" id="Card_broker_manager_id" type="hidden" value="1">        <input type="hidden" name="Card[ManyLots]" id="Card_ManyLots" value="0">
+    </div>
+            <script>
+            getnews();
+        </script>
+        <script>
+        var baseUrl = '';
+    </script>
+    </form>    </div></div>
+</div>
+	</div>
+</div>
+	</div>
+	<!--<footer id="footer">
+	</footer>-->
+</div><!-- page -->
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Закрыть" class="close">X</a>
+		<p class="title">Ошибка</p>
+		<div class="content">описание ошибки</div>
+	</div>
+</div>
+<div id="questionDlg" title="" class="modalDialog">
+</div>
+<div id="site-message">
+	<div class="title"></div>
+	<div class="message"></div>
+	<a href="javascript:void(0)" id="close_site_message" title="закрыть" style="float:right"><img width="22" height="22" src="/images/close_white.png"></a>
+</div>
+<script>
+$(document).ready(function(){
+	$('#close_site_message').click(function() {
+		$('#site-message').hide(); 
+		$('#site-message').removeClass();
+		$('#site-message .title').html("");
+		$('#site-message .message').html("");
+	});
+	document.getElementById('waiting_img').style.display = 'none';
+	user_thumbprint = "";
+});
+</script>
+<script type="text/javascript" src="/assets/ca3e1e76/jui/js/jquery-ui-i18n.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+setTimeout(function(){$.datepicker.setDefaults($.datepicker.regional["ru"]);},2000);
+jQuery('#GetTenderInfoBtn').on('click', function(){jQuery.ajax({'data':{
+					regnumber:$("#Card_regnumber").val(), 
+					tender_id:$("#selectTenderId").val(), 
+					bg_type:$('input[name="Card[bg_type]"]:checked').val(),
+					enforce_contract:$('input[name="Card[enforce_contract]"]:checked').val()
+				},'dataType':'json','beforeSend':function() {
+					if(!checkBgTypeRequired())
+						return false;
+					showWaiting();
+				},'type':'POST','success':function(response) {
+					console.log(response);
+					getTenderInfo(response);
+					hideWaiting();
+				},'url':'/Card/GetTenderInfo?client_id=11','cache':false});return false;});
+jQuery('#Card_guarantee_from').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'minDate':new Date(),'showOn':'both','changeMonth':'true','changeYear':'true','buttonImageOnly':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#Card_guarantee_expired').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'minDate':new Date(),'showOn':'both','changeMonth':'true','changeYear':'true','buttonImageOnly':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#Card_contract_date').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'showOn':'both','buttonImageOnly':'true','yearRange':'-20:+1','changeMonth':'true','changeYear':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#Card_responsibility_to').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'showOn':'both','buttonImageOnly':'true','yearRange':'-0:+20','changeMonth':'true','changeYear':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#Card_protocol_date').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],{'showOn':'both','buttonImageOnly':'true','yearRange':'-20:+1','changeMonth':'true','changeYear':'true','buttonImage':'/images/calendar.png'}));
+jQuery('#cardParamsForm').yiiactiveform({'validateOnSubmit':true,'validateOnChange':false,'beforeValidate':function() {showWaiting(); return true;},'afterValidate':function(form, data, hasError) {return afterValidateFunc(form, data, hasError);},'attributes':[{'id':'Card_broker_manager_id','inputID':'Card_broker_manager_id','errorID':'Card_broker_manager_id_em_','model':'Card','name':'broker_manager_id','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440 \u0431\u0440\u043e\u043a\u0435\u0440\u0430\u00bb.");
+}
+
+}},{'id':'Card_broker_id','inputID':'Card_broker_id','errorID':'Card_broker_id_em_','model':'Card','name':'broker_id','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u0431\u0440\u043e\u043a\u0435\u0440\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0446\u0435\u043b\u044b\u043c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_client_id','inputID':'Card_client_id','errorID':'Card_client_id_em_','model':'Card','name':'client_id','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00abClient Id\u00bb.");
+}
+
+}},{'id':'Card_regnumber','inputID':'Card_regnumber','errorID':'Card_regnumber_em_','model':'Card','name':'regnumber','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0420\u0435\u0435\u0441\u0442\u0440\u043e\u0432\u044b\u0439 \u043d\u043e\u043c\u0435\u0440\u00bb.");
+}
+
+}},{'id':'Card_bg_type','inputID':'Card_bg_type','errorID':'Card_bg_type_em_','model':'Card','name':'bg_type','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0422\u0438\u043f \u0411\u0413\u00bb.");
+}
+
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0422\u0438\u043f \u0411\u0413 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_enforce_contract','inputID':'Card_enforce_contract','errorID':'Card_enforce_contract_em_','model':'Card','name':'enforce_contract','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && value!="1" && value!="0") {
+	messages.push("\u0422\u0438\u043f \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430 \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c 1 \u0438\u043b\u0438 0.");
+}
+
+}},{'id':'Card_link','inputID':'Card_link','errorID':'Card_link_em_','model':'Card','name':'link','enableAjaxValidation':true},{'id':'Card_exec_guarant_sum','inputID':'Card_exec_guarant_sum','errorID':'Card_exec_guarant_sum_em_','model':'Card','name':'exec_guarant_sum','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0421\u0443\u043c\u043c\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_is_demping','inputID':'Card_is_demping','errorID':'Card_is_demping_em_','model':'Card','name':'is_demping','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && value!="1" && value!="0") {
+	messages.push("\u0421\u043d\u0438\u0436\u0435\u043d\u0438\u0435 \u0431\u043e\u043b\u0435\u0435 25% \u043e\u0442 \u043d\u0430\u0447\u0430\u043b\u044c\u043d\u043e\u0439 \u0446\u0435\u043d\u044b \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c 1 \u0438\u043b\u0438 0.");
+}
+
+}},{'id':'Card_writeoff','inputID':'Card_writeoff','errorID':'Card_writeoff_em_','model':'Card','name':'writeoff','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && value!="1" && value!="0") {
+	messages.push("\u0422\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0435 \u0431\u0435\u0441\u0441\u043f\u043e\u0440\u043d\u043e\u0433\u043e \u0441\u043f\u0438\u0441\u0430\u043d\u0438\u044f \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c 1 \u0438\u043b\u0438 0.");
+}
+
+}},{'id':'Card_is_275','inputID':'Card_is_275','errorID':'Card_is_275_em_','model':'Card','name':'is_275','enableAjaxValidation':true},{'id':'Card_avans_sum','inputID':'Card_avans_sum','errorID':'Card_avans_sum_em_','model':'Card','name':'avans_sum','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0421\u0443\u043c\u043c\u0430 \u0430\u0432\u0430\u043d\u0441\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_guarantee_sum','inputID':'Card_guarantee_sum','errorID':'Card_guarantee_sum_em_','model':'Card','name':'guarantee_sum','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0421\u0443\u043c\u043c\u0430 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0438\u00bb.");
+}
+
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0421\u0443\u043c\u043c\u0430 \u0431\u0430\u043d\u043a\u043e\u0432\u0441\u043a\u043e\u0439 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0438 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_guarantee_from','inputID':'Card_guarantee_from','errorID':'Card_guarantee_from_em_','model':'Card','name':'guarantee_from','enableAjaxValidation':true},{'id':'Card_guarantee_expired','inputID':'Card_guarantee_expired','errorID':'Card_guarantee_expired_em_','model':'Card','name':'guarantee_expired','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0421\u0440\u043e\u043a \u0411\u0413 \u0434\u043e\u00bb.");
+}
+
+}},{'id':'Card_contract_number','inputID':'Card_contract_number','errorID':'Card_contract_number_em_','model':'Card','name':'contract_number','enableAjaxValidation':true},{'id':'Card_contract_date','inputID':'Card_contract_date','errorID':'Card_contract_date_em_','model':'Card','name':'contract_date','enableAjaxValidation':true},{'id':'Card_responsibility_to','inputID':'Card_responsibility_to','errorID':'Card_responsibility_to_em_','model':'Card','name':'responsibility_to','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0421\u0440\u043e\u043a \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f \u0440\u0430\u0431\u043e\u0442\/\u043e\u043a\u0430\u0437\u0430\u043d\u0438\u044f \u0443\u0441\u043b\u0443\u0433\u00bb.");
+}
+
+}},{'id':'Card_result_price','inputID':'Card_result_price','errorID':'Card_result_price_em_','model':'Card','name':'result_price','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0418\u0442\u043e\u0433\u043e\u0432\u0430\u044f \u0446\u0435\u043d\u0430 \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430\/\u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_protocol_number','inputID':'Card_protocol_number','errorID':'Card_protocol_number_em_','model':'Card','name':'protocol_number','enableAjaxValidation':true},{'id':'Card_protocol_date','inputID':'Card_protocol_date','errorID':'Card_protocol_date_em_','model':'Card','name':'protocol_date','enableAjaxValidation':true},{'id':'Card_provider_doc','inputID':'Card_provider_doc','errorID':'Card_provider_doc_em_','model':'Card','name':'provider_doc','enableAjaxValidation':true},{'id':'Card_ikz','inputID':'Card_ikz','errorID':'Card_ikz_em_','model':'Card','name':'ikz','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/)) {
+	messages.push("\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u043a\u043e\u0434 \u0437\u0430\u043a\u0443\u043f\u043a\u0438 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_iku','inputID':'Card_iku','errorID':'Card_iku_em_','model':'Card','name':'iku','enableAjaxValidation':true},{'id':'Card_contract_type','inputID':'Card_contract_type','errorID':'Card_contract_type_em_','model':'Card','name':'contract_type','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u044c \u043f\u043e\u043b\u0435 \u00ab\u0412\u0438\u0434 \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430\/\u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430\u00bb.");
+}
+
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("\u0412\u0438\u0434 \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430\/\u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0446\u0435\u043b\u044b\u043c \u0447\u0438\u0441\u043b\u043e\u043c.");
+}
+
+}
+
+}},{'id':'Card_contract_type_other','inputID':'Card_contract_type_other','errorID':'Card_contract_type_other_em_','model':'Card','name':'contract_type_other','enableAjaxValidation':true},{'id':'Card_isBigDeal','inputID':'Card_isBigDeal','errorID':'Card_isBigDeal_em_','model':'Card','name':'isBigDeal','enableAjaxValidation':true,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && value!="1" && value!="0") {
+	messages.push("\u042f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043b\u0438 \u0441\u0434\u0435\u043b\u043a\u0430 \u043a\u0440\u0443\u043f\u043d\u043e\u0439 (\u0440\u0430\u0437\u043c\u0435\u0440 \u0433\u0430\u0440\u0430\u043d\u0442\u0438\u0438 \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 25 \u043f\u0440\u043e\u0446\u0435\u043d\u0442\u043e\u0432 (\u0438 \u0431\u043e\u043b\u0435\u0435) \u043e\u0442 \u0432\u0430\u043b\u044e\u0442\u044b \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0433\u043e \u0431\u0430\u043b\u0430\u043d\u0441\u0430 \u041f\u0440\u0438\u043d\u0446\u0438\u043f\u0430\u043b\u0430) \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c 1 \u0438\u043b\u0438 0.");
+}
+
+}},{'id':'Card_lots_description','inputID':'Card_lots_description','errorID':'Card_lots_description_em_','model':'Card','name':'lots_description','enableAjaxValidation':true}],'errorCss':'error'});
+$("#Card_regnumber").keydown(function(e) {if(e.keyCode === 13) {$("#GetTenderInfoBtn").click(); return false;}});
+jQuery('#mainCardsTabs').tabs({'selected':0});
+});
+/*]]>*/
+</script>
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

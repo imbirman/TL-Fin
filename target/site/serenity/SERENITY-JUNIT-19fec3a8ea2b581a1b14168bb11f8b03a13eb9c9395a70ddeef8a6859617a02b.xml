@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="testpackage.WhenCreateRequest" skipped="0" tests="1" time="17.52" timestamp="2021-09-27 11:18:43"><testcase classname="testpackage.WhenCreateRequest" name="Проверка текста алерта с ошибками - содержит ошибку 'Не заполнено поле «Итоговая цена контракта/договора»"/></testsuite>

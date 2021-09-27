@@ -50,7 +50,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    
     @Title("Проверка ошибки при создании заявки без выбора типа БГ")
     public void checkErrorMessageEmptyTypeBg(){
 
@@ -68,7 +67,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    
     @Title("Проверка ошибки при создании заявки без указания реестрового номера")
     public void checkErrorMessageEmptyRegistryNumber(){
 
@@ -87,7 +85,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    
     @Title("Проверка заполнения полей по умолчанию после получения данных тендера")
     public void checkDefaultFields(){
 
@@ -188,7 +185,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    
     @Title("Проверка ошибки при не выборе пункта обязательного блока 'Вид контракта/договора *")
     public void checkRequiredFieldContract(){
 
@@ -229,7 +225,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    
     @Title("Проверка наличия алерта с ошибками")
     public void checkErrorAlert(){
 
@@ -308,7 +303,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    
     @Title("Проверка текста алерта с ошибками - ошибка поля 'Срок выполнения работ/оказания услуг *'")
     public void checkErrorResponsibilityAlert(){
 
@@ -327,7 +321,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    
     @Title("Проверка текста алерта с ошибками - ошибка поля 'Вид контракта/договора *'")
     public void checkErrorContractAlert(){
 
@@ -368,7 +361,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    
     @Title("Проверка скрытия элементов при выборе в блоке 'Исполнение обязательств' значения 'Нет'")
     public void checkHideExGuarantee(){
 
@@ -579,7 +571,6 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-
     @Title("Проверка сохранения суммы банковской гарантии при изменении типа БГ")
     public void checkNotEmptySumGuarantee(){
 
