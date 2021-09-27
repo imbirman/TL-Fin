@@ -29,6 +29,7 @@ public class CreateRequestPage extends PageObject {
     protected By tabParametersAfterCreateRequest = By.id("ui-id-1");
     protected By radioButtonEnsuringTender = By.id("Card_bg_type_0"); // Выбор типа БГ - Обеспечение участия в конкурсе/тендере
     protected By radioButtonExecutionGuarantee = By.id("Card_bg_type_1"); // Выбор типа БГ - Гарантия исполнения обязательств по контракту
+    protected By radioButtonSecurityGuarantee = By.id("Card_enforce_contract_0"); // Выбор типа обеспечения контракта - Контракт подлежит заключению
 
 
     private By loginField = By.id("LoginForm_login"); // Поле логина
@@ -42,8 +43,9 @@ public class CreateRequestPage extends PageObject {
     private By warrantyGuaranteeNoRB = By.id("Card_need_warr_guarantee_1"); // radiobutton "Гарантия гарантийного периода" - нет
     private By prepaymentGuaranteeNoRB = By.id("Card_need_avans_guarantee_1"); // radiobutton "Возврат аванса" - нет
     private By sumGuarantee = By.id("Card_guarantee_sum"); // Поле "Сумма банковской гарантии"
-    private By card_ExecutionGuaranteeSum = By.id("Card_exec_guarant_sum"); // Поле "Сумма" в блоке "Исполнение обязательств"
-    private By card_ExecutionGuaranteeTime = By.id("Card_exec_guarant_time"); // Поле "Срок(месяцев)" в блоке "Исполнение обязательств"
+    private By filedExecutionGuaranteeSum = By.id("Card_exec_guarant_sum"); // Поле "Сумма" в блоке "Исполнение обязательств"
+    private By fieldResultPrice = By.id("Card_result_price");
+    private By fieldExecutionGuaranteeTime = By.id("Card_exec_guarant_time"); // Поле "Срок(месяцев)" в блоке "Исполнение обязательств"
     private By dateBgFromChB = By.id("from_cur_date"); // Чек-бокс "Срок БГ с даты выдачи"
     private By errorMessageExpired = By.id("Card_guarantee_expired_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок БГ до»."
     private By errorMessageResponsibility = By.id("Card_responsibility_to_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок выполнения работ/оказания услуг»."
@@ -121,7 +123,7 @@ public class CreateRequestPage extends PageObject {
     } // Проверка, что поле "Сумма банковской гарантии" заполнено
 
     public String getExecutionGuaranteeSum(){
-        return find(card_ExecutionGuaranteeSum).getValue();
+        return find(filedExecutionGuaranteeSum).getValue();
     } // Получить значение поля "Сумма" в блоке "Исполнение обязательств"
 
     public boolean getDateBgFrom(){
@@ -157,7 +159,7 @@ public class CreateRequestPage extends PageObject {
     } // Получение наличия алерта ошибок
 
     public boolean isHideExGuarantee(){
-        return find(card_ExecutionGuaranteeSum).isDisplayed() | find(card_ExecutionGuaranteeTime).isDisplayed();
+        return find(fieldExecutionGuaranteeTime).isDisplayed() | find(fieldExecutionGuaranteeTime).isDisplayed();
     } // Проверка скрытия элементов при выборе в блоке "Исполнение обязательств" значения "Нет"
 
     public CreateRequestPage setRequiredExpiredGuarantee(){
@@ -167,7 +169,7 @@ public class CreateRequestPage extends PageObject {
         calendar.add(Calendar.MONTH, 1);
         find(requiredExpiredGuarantee).sendKeys(dateFormat.format(calendar.getTime()));
         valueSumGuarantee = find(sumGuarantee).getValue();
-        System.out.println("Сумма банковской гарантии:" + valueSumGuarantee);
+//        System.out.println("Сумма банковской гарантии:" + valueSumGuarantee);
         return this;
     } // Ввести срок БГ до
 
@@ -202,7 +204,12 @@ public class CreateRequestPage extends PageObject {
     } // Получение текста ошибки, если не заполнено поле 'Сумма' в блоке 'Исполнение обязательств'
 
     public CreateRequestPage setRequiredSum(String invalid){
-        find(card_ExecutionGuaranteeSum).sendKeys(invalid);
+        find(fieldExecutionGuaranteeTime).sendKeys(invalid);
+        return this;
+    } // Ввести данные в поле "Итоговая цена контракта/договора"
+
+    public CreateRequestPage setResultPrice(String price){
+        find(fieldResultPrice).sendKeys(price);
         return this;
     } // Ввести данные в поле "Сумма" блока "Исполнение обязательств"
 

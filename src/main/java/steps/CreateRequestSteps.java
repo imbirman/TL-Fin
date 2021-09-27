@@ -194,16 +194,33 @@ public class CreateRequestSteps{
         page.setRequiredSum("tes0t/*");
     }
 
+    @Step("Ввести некорректное значение в поле 'Итоговая цена контракта/договора'")
+    public void set_invalid_result_price(){
+        page.setResultPrice("tes0t/*");
+    }
+
     @Step("Проверка на некорректное значение в поле 'Сумма' в блоке 'Исполнение обязательств'")
     public void check_invalid_text_required_sum(){
         Assertions.assertThat(page.getErrorMessageSum())
                 .as("Текст ошибки некорректен или отсутствует").isEqualTo("Сумма должна быть числом");
     }
 
+    @Step("Проверка на некорректное значение в поле 'Итоговая цена контракта/договора'")
+    public void check_invalid_result_price(){
+        Assertions.assertThat(page.getErrorMessageResultPrice())
+                .as("Текст ошибки некорректен или отсутствует").isEqualTo("Итоговая цена контракта/договора должен быть числом.");
+    }
+
     @Step("Всплывающая ошибка содержит в себе: Сумма должна быть числом")
     public void check_invalid_error_message_sum_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
                 .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Сумма должна быть числом");
+    }
+
+    @Step("Всплывающая ошибка содержит в себе: Итоговая цена контракта/договора должен быть числом.")
+    public void check_invalid_result_price_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Итоговая цена контракта/договора должен быть числом.");
     }
 
     @Step("Проверка продолжения создания заявки при отключении исполнения обязательств")

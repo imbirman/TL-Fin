@@ -402,6 +402,52 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Title("Проверка на некорректное значение в поле 'Итоговая цена контракта/договора' в блоке 'Исполнение обязательств'")
+    public void checkInvalidResultPrice(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.click_button(radioButtonExecutionGuarantee);
+        steps.click_button(getDataTender);
+        steps.set_required_responsibility_guarantee();
+        steps.set_required_expired_guarantee();
+        steps.click_button(requiredContractGuarantee);
+        steps.click_button(radioButtonSecurityGuarantee);
+        steps.set_invalid_result_price();
+        steps.click_button(createCard);
+        steps.check_invalid_result_price();
+    }
+
+    @Test
+    @Title("Проверка алерта при некорректном значении в поле 'Итоговая цена контракта/договора'")
+    public void checkInvalidResultPriceAlert(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.click_button(radioButtonExecutionGuarantee);
+        steps.click_button(getDataTender);
+        steps.set_required_responsibility_guarantee();
+        steps.set_required_expired_guarantee();
+        steps.click_button(requiredContractGuarantee);
+        steps.click_button(radioButtonSecurityGuarantee);
+        steps.set_invalid_result_price();
+        steps.click_button(createCard);
+        steps.check_invalid_result_price_alert();
+    }
+
+    @Test
     @Title("Проверка алерта при некорректном значении в поле 'Сумма' в блоке 'Исполнение обязательств'")
     public void checkInvalidRequiredSumAlert(){
 
