@@ -49,7 +49,9 @@ public class CreateRequestPage extends PageObject {
     private By errorMessageResponsibility = By.id("Card_responsibility_to_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок выполнения работ/оказания услуг»."
     private By errorMessageContract = By.id("Card_contract_type_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Вид контракта/договора»."
     private By errorMessageSum = By.id("Card_exec_guarant_sum_em_"); //Сообщение об ошибке "Не заполнено поле Сумма" или "Сумма должна быть числом"
+    private By errorMessageResultPrice = By.id("Card_result_price_em_"); // Сообщение об ошибке "Не заполнено поле «Итоговая цена контракта/договора»"
     private By errorMessageAlert = By.xpath("//div[@class='message']"); // Алерт с ошибками при создании заявки и незаполнении обязательных полей
+    private By errorMessageTypeEnsuringContract = By.id("Card_enforce_contract_em_"); // Сообщение об ошибке "Не выбран тип обеспечения контракта"
     private By requiredExpiredGuarantee = By.id("Card_guarantee_expired"); // Поле "Срок БГ до *"
     private By requiredResponsibilityGuarantee = By.id("Card_responsibility_to"); // Поле "Срок выполнения работ/оказания услуг *"
     private By boxToSelectBank = By.id("colorbox"); // окно для выбора тестового банка при создании заявки
@@ -81,16 +83,6 @@ public class CreateRequestPage extends PageObject {
         find(cardRegNumber).sendKeys(tender);
         return this;
     } // Поиск поля реестрового номера и ввод значения
-
-    public CreateRequestPage setTypeEnsuringTenderBG(){
-        find(radioButtonEnsuringTender).waitUntilClickable().click();
-        return this;
-    } // Выбор типа БГ - Обеспечение участия в конкурсе/тендере
-
-    public CreateRequestPage setTypeExecutionGuaranteeBG(){
-        find(radioButtonExecutionGuarantee).waitUntilClickable().click();
-        return this;
-    } // Выбор типа БГ - Гарантия исполнения обязательств по контракту
 
     public String getErrorMessage(){
         return find(errorMessage).getText();
@@ -143,6 +135,14 @@ public class CreateRequestPage extends PageObject {
     public String getErrorMessageResponsibility(){
         return find(errorMessageResponsibility).getText();
     } // Получение текста ошибки при незаполнении поля "Срок выполнения работ/оказания услуг *"
+
+    public String getErrorMessageTypeEnsuringContract(){
+        return find(errorMessageTypeEnsuringContract).getText();
+    } // Получение текста ошибки при не выборе значения в блоке "Тип обеспечения контракта"
+
+    public String getErrorMessageResultPrice(){
+        return find(errorMessageResultPrice).getText();
+    } // Получение текста ошибки при незаполнении поля "Итоговая цена контракта/договора"
 
     public String getErrorMessageContract(){
         return find(errorMessageContract).getText();

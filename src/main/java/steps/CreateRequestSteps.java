@@ -35,16 +35,6 @@ public class CreateRequestSteps{
         page.typeTenderNumber(tender);
     } // Ввести номер тендера для БГ
 
-    @Step("Выбор типа БГ - Обеспечение участия в конкурсе/тендере")
-    public void set_type_ensuring_tender_bg(){
-        page.setTypeEnsuringTenderBG();
-    }
-
-    @Step("Выбор типа БГ - Гарантия исполнения обязательств по контракту")
-    public void set_type_execution_guarantee_bg(){
-        page.setTypeExecutionGuaranteeBG();
-    }
-
     @Step("Проверка ошибки при неуказанном типе БГ")
     public void check_error_empty_type_bg(){
         Assertions.assertThat(page.getErrorMessage())
@@ -129,6 +119,18 @@ public class CreateRequestSteps{
                 .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Необходимо заполнить поле «Срок БГ до».");
     }
 
+    @Step("Всплывающая ошибка содержит в себе: Не выбран тип обеспечения контракта")
+    public void check_text_error_message_type_ensuring_contract_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Не выбран тип обеспечения контракта");
+    }
+
+    @Step("Всплывающая ошибка содержит в себе: Не выбран тип обеспечения контракта")
+    public void check_text_error_message_result_price_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Не заполнено поле «Итоговая цена контракта/договора»");
+    }
+
     @Step("Всплывающая ошибка содержит в себе: Необходимо заполнить поле «Срок выполнения работ/оказания услуг».")
     public void check_text_error_message_responsibility_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
@@ -167,6 +169,18 @@ public class CreateRequestSteps{
     public void check_error_message_sum(){
         Assertions.assertThat(page.getErrorMessageSum())
                 .as("Текст ошибки некорректен или отсутствует").isEqualTo("Не заполнено поле Сумма");
+    }
+
+    @Step("Ошибка: Не выбран тип обеспечения контракта")
+    public void check_error_message_type_ensuring_contract(){
+        Assertions.assertThat(page.getErrorMessageTypeEnsuringContract())
+                .as("Текст ошибки некорректен или отсутствует").isEqualTo("Не выбран тип обеспечения контракта");
+    }
+
+    @Step("Ошибка: Не заполнено поле «Итоговая цена контракта/договора»")
+    public void check_error_message_result_price(){
+        Assertions.assertThat(page.getErrorMessageResultPrice())
+                .as("Текст ошибки некорректен или отсутствует").isEqualTo("Не заполнено поле «Итоговая цена контракта/договора»");
     }
 
     @Step("Всплывающая ошибка содержит в себе: Не заполнено поле Сумма")
