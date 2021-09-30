@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="testpackage.WhenCreateRequest" skipped="0" tests="1" time="33.35" timestamp="2021-09-29 03:04:35"><testcase classname="testpackage.WhenCreateRequest" name="Проверка алерта при некорректном значении в поле 'Итоговая цена контракта/договора'"><error message="Expected condition failed: waiting for By.xpath: //div[@class='message'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-I8U9460', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Expected condition failed: waiting for By.xpath: //div[@class='message'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I8U9460', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.xpath: //div[@class='message'] to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-I8U9460', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: unknown&#13;
+pages.CreateRequestPage.getTextErrorMessageAlert(CreateRequestPage.java:154)&#13;
+steps.CreateRequestSteps.check_invalid_result_price_alert(CreateRequestSteps.java:222)&#13;
+testpackage.WhenCreateRequest.checkInvalidResultPriceAlert(WhenCreateRequest.java:447)&#13;
+</system-err></testcase></testsuite>
