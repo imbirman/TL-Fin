@@ -62,7 +62,7 @@ public class CreateRequestPage extends PageObject {
     private By minimumTariff = By.id("BankDeliveryParams_18");
 
     public static String valueSumGuarantee;
-//    = find(sumGuarantee).getText();
+
 
 
 
