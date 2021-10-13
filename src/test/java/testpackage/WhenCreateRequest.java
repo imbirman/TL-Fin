@@ -467,7 +467,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
         steps.click_button(executionGuaranteeYesRB);
         steps.set_invalid_text_required_sum();
         steps.click_button(createCard);
-        steps.check_invalid_error_message_sum_alert();
+        steps.check_invalid_error_message_time_alert();
     }
 
     @Test

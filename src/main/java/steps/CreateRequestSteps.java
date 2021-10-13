@@ -217,6 +217,12 @@ public class CreateRequestSteps{
                 .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Сумма должна быть числом");
     }
 
+    @Step("Всплывающая ошибка содержит в себе: Срок (месяцев) должен быть числом.")
+    public void check_invalid_error_message_time_alert(){
+        Assertions.assertThat(page.getTextErrorMessageAlert())
+                .as("Всплывающая ошибка отсутствует или не содержит нужный текст").contains("Срок (месяцев) должен быть числом.");
+    }
+
     @Step("Всплывающая ошибка содержит в себе: Итоговая цена контракта/договора должен быть числом.")
     public void check_invalid_result_price_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())
