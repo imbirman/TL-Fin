@@ -44,7 +44,7 @@ public class CreateRequestPage extends PageObject {
     private By prepaymentGuaranteeNoRB = By.id("Card_need_avans_guarantee_1"); // radiobutton "Возврат аванса" - нет
     private By sumGuarantee = By.id("Card_guarantee_sum"); // Поле "Сумма банковской гарантии"
     private By filedExecutionGuaranteeSum = By.id("Card_exec_guarant_sum"); // Поле "Сумма" в блоке "Исполнение обязательств"
-    private By fieldResultPrice = By.id("Card_result_price");
+    private By fieldResultPrice = By.id("Card_result_price"); // Поле "Итоговая цена контракта/договора"
     private By fieldExecutionGuaranteeTime = By.id("Card_exec_guarant_time"); // Поле "Срок(месяцев)" в блоке "Исполнение обязательств"
     private By dateBgFromChB = By.id("from_cur_date"); // Чек-бокс "Срок БГ с даты выдачи"
     private By errorMessageExpired = By.id("Card_guarantee_expired_em_"); //Сообщение об ошибке "Необходимо заполнить поле «Срок БГ до»."
@@ -159,7 +159,7 @@ public class CreateRequestPage extends PageObject {
     } // Получение наличия алерта ошибок
 
     public boolean isHideExGuarantee(){
-        return find(fieldExecutionGuaranteeTime).isDisplayed() | find(fieldExecutionGuaranteeTime).isDisplayed();
+        return find(filedExecutionGuaranteeSum).isDisplayed() | find(fieldExecutionGuaranteeTime).isDisplayed();
     } // Проверка скрытия элементов при выборе в блоке "Исполнение обязательств" значения "Нет"
 
     public CreateRequestPage setRequiredExpiredGuarantee(){
@@ -206,7 +206,7 @@ public class CreateRequestPage extends PageObject {
     public CreateRequestPage setRequiredSum(String invalid){
         find(fieldExecutionGuaranteeTime).sendKeys(invalid);
         return this;
-    } // Ввести данные в поле "Итоговая цена контракта/договора"
+    } // Ввести данные в поле "Срок (месяцев)"
 
     public CreateRequestPage setResultPrice(String price){
         find(fieldResultPrice).sendKeys(price);

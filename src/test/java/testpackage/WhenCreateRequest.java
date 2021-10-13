@@ -448,7 +448,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    @Title("Проверка алерта при некорректном значении в поле 'Сумма' в блоке 'Исполнение обязательств'")
+    @Title("Проверка алерта при некорректном значении в поле 'Срок (месяцев)' в блоке 'Исполнение обязательств'")
     public void checkInvalidRequiredSumAlert(){
 
         steps.open_login_main_page();
