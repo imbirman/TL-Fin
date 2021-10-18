@@ -402,7 +402,7 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
-    @Title("Проверка на некорректное значение в поле 'Итоговая цена контракта/договора' в блоке 'Исполнение обязательств'")
+    @Title("Проверка на некорректное значение в поле 'Итоговая цена контракта/договора'")
     public void checkInvalidResultPrice(){
 
         steps.open_login_main_page();
