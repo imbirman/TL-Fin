@@ -24,9 +24,9 @@ public class CreateRequestPage extends PageObject {
     protected By submitSelectBank = By.id("selectBanksBtn");// Кнопка подтверждения выбора тестового банка
     protected By paperFormatBg = By.id("CardToBank_18_format_bg_0"); // radiobutton - бумажный формат БГ
     protected By electronicFormatBg = By.id("CardToBank_18_format_bg_1"); // radiobutton - электронный формат БГ
-    protected By deliveryYes = By.id("CardToBank_18_need_delivery_0");
-    protected By deliveryNo = By.id("CardToBank_18_need_delivery_1");
-    protected By tabParametersAfterCreateRequest = By.id("ui-id-1");
+    protected By deliveryYes = By.id("CardToBank_18_need_delivery_0");// radiobutton - нужна доставка оригинала БГ
+    protected By deliveryNo = By.id("CardToBank_18_need_delivery_1");// radiobutton - не нужна доставка оригинала БГ
+    protected By tabParametersAfterCreateRequest = By.id("ui-id-1"); // вкладка "Параметры" - после создания заявки
     protected By radioButtonEnsuringTender = By.id("Card_bg_type_0"); // Выбор типа БГ - Обеспечение участия в конкурсе/тендере
     protected By radioButtonExecutionGuarantee = By.id("Card_bg_type_1"); // Выбор типа БГ - Гарантия исполнения обязательств по контракту
     protected By radioButtonSecurityGuarantee = By.id("Card_enforce_contract_0"); // Выбор типа обеспечения контракта - Контракт подлежит заключению
