@@ -235,6 +235,11 @@ public class CreateRequestSteps{
                 .as("Ошибка в логике работы скрытия полей в блоке 'Исполнение обязательств'").isTrue();
     }
 
+    @Step
+    public void check_visible_error_message_alert_form(){
+        Assertions.assertThat(page.isVisibleErrorMessageAlertForm()).as("алерт с ошибками не скрыт").isFalse();
+    }
+
     @Step("Всплывающая ошибка содержит в себе: Не заполнено поле Сумма")
     public void check_text_error_message_format_bg_alert(){
         Assertions.assertThat(page.getTextErrorMessageAlert())

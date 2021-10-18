@@ -30,6 +30,7 @@ public class CreateRequestPage extends PageObject {
     protected By radioButtonEnsuringTender = By.id("Card_bg_type_0"); // Выбор типа БГ - Обеспечение участия в конкурсе/тендере
     protected By radioButtonExecutionGuarantee = By.id("Card_bg_type_1"); // Выбор типа БГ - Гарантия исполнения обязательств по контракту
     protected By radioButtonSecurityGuarantee = By.id("Card_enforce_contract_0"); // Выбор типа обеспечения контракта - Контракт подлежит заключению
+    protected By closeAlertButton = By.id("close_site_message"); // крестик закрытия алерта с ошибками
 
 
     private By loginField = By.id("LoginForm_login"); // Поле логина
@@ -53,6 +54,7 @@ public class CreateRequestPage extends PageObject {
     private By errorMessageSum = By.id("Card_exec_guarant_sum_em_"); //Сообщение об ошибке "Не заполнено поле Сумма" или "Сумма должна быть числом"
     private By errorMessageResultPrice = By.id("Card_result_price_em_"); // Сообщение об ошибке "Не заполнено поле «Итоговая цена контракта/договора»"
     private By errorMessageAlert = By.xpath("//div[@class='message']"); // Алерт с ошибками при создании заявки и незаполнении обязательных полей
+    private By errorMessageAlertForm = By.id("site-message"); // форма алерта с ошибками при создании заявки и незаполнении обязательных полей
     private By errorMessageTypeEnsuringContract = By.id("Card_enforce_contract_em_"); // Сообщение об ошибке "Не выбран тип обеспечения контракта"
     private By requiredExpiredGuarantee = By.id("Card_guarantee_expired"); // Поле "Срок БГ до *"
     private By requiredResponsibilityGuarantee = By.id("Card_responsibility_to"); // Поле "Срок выполнения работ/оказания услуг *"
@@ -233,5 +235,9 @@ public class CreateRequestPage extends PageObject {
     public boolean isVisibleMinimumTariff(){
         return find(minimumTariff).isDisplayed();
     } // Проверка появления текста минимального тарифа доставки
+
+    public boolean isVisibleErrorMessageAlertForm(){
+        return find(errorMessageAlertForm).isDisplayed();
+    }
 
 }

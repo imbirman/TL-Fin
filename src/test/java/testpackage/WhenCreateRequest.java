@@ -243,6 +243,25 @@ public class WhenCreateRequest  extends CreateRequestPage {
     }
 
     @Test
+    @Title("Проверка скрытия алерта с ошибками при нажатии на крестик")
+    public void checkVisibleErrorMessageAlertForm(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(createRequestButton);
+        steps.click_button(bank);
+        steps.click_button(createNewCard);
+        steps.type_tender_number("0158300043421000067");
+        steps.click_button(radioButtonEnsuringTender);
+        steps.click_button(getDataTender);
+        steps.click_button(createCard);
+        steps.click_button(closeAlertButton);
+        steps.check_visible_error_message_alert_form();
+    }
+
+    @Test
     @Title("Проверка текста алерта с ошибками - ошибка поля 'Срок БГ до *'")
     public void checkErrorExpiredAlert(){
 
