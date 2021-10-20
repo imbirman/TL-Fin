@@ -39,7 +39,7 @@ public class AgentOfficePage extends PageObject {
     } // Ввести пароль для входа
 
     public AgentOfficePage openMenuDownAgentOffice(){
-        actions.moveToElement(find(agentOfficeMenuButton)).build().perform();
+        actions.moveToElement(find(agentOfficeMenuButton).waitUntilVisible()).build().perform();
         return this;
     } // Открыть меню кабинета агента наведением курсора
 
