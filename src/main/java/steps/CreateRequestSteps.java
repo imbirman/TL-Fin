@@ -25,7 +25,7 @@ public class CreateRequestSteps{
         page.typePassword(password);
     } // Ввести данные пароля
 
-    @Step("Нажать кнопку [0]")
+    @Step("Нажать кнопку")
     public void click_button(By button){
         page.clickButton(button);
     } // Нажать на кнопку

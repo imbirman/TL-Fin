@@ -12,7 +12,7 @@ import pages.LoginMainPage;
 import steps.LoginMainSteps;
 
 @RunWith(SerenityRunner.class)
-public class WhenLoginMenuPage extends LoginMainPage {
+public class WhenLoginMenu extends LoginMainPage {
 
     @Steps
     LoginMainSteps steps;
