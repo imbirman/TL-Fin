@@ -16,7 +16,7 @@ public class AgentOfficePage extends PageObject {
     Actions actions = new Actions(driver); // Переменная для выполнения сложных действий
 
     protected By signInButton = By.xpath("//input[@type='submit']"); // Кнопка входа
-    protected By agentOfficeMenuButton = By.id("BrokerListItem"); // Кнопка меню для открытия кабинета агента
+    protected By agentOfficeMenuButton = By.xpath("//li[@id='BrokerListItem']//a"); // Кнопка меню для открытия кабинета агента
     protected By agentOfficeMenuDownButton = By.xpath("//ul[@class='sub-tab']/li[1]"); // меню кабинета агента - "кабинет агента"
     protected By listUsersAgentOfficeButton = By.xpath("//ul[@class='sub-tab']/li[2]"); // меню кабинета агента - "список пользователей"
     protected By reportsAgentOfficeButton = By.xpath("//ul[@class='sub-tab']/li[3]"); // меню кабинета агента - "отчеты"
