@@ -1,11 +1,16 @@
 package steps;
 
+import net.serenitybdd.core.pages.WebElementFacade;
+import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Step;
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import pages.AgentOfficePage;
 
-public class AgentOfficeSteps {
+public class AgentOfficeSteps extends AgentOfficePage {
 
     AgentOfficePage page;
 
@@ -30,12 +35,19 @@ public class AgentOfficeSteps {
     } // Нажать на кнопку
 
     @Step ("Навести курсор на пункт меню 'Кабинет агента'")
-    public void open_menu_down_agent_office(){page.openMenuDownAgentOffice();} // Навести курсор на пункт меню "Кабинет агента"
+    public void mouse_hover(By element){
+        page.mouseHover(element);
+    } // Навести курсор на пункт меню "Кабинет агента"
 
     @Step ("Проверка, что кнопка для открытия кабинета агента отображается")
     public void is_visible_agent_office(){
         Assertions.assertThat(page.isVisibleAgentOfficeButton()).as("В левом меню отсутствует пункт 'Кабинет агента'").isTrue();
     }// Проверка, что кнопка для открытия кабинета агента отображается
+
+    @Step ("Проверка, что меню кабинета агента отображается")
+    public void is_visible_agent_office_menu_down(){
+        Assertions.assertThat(page.isVisibleAgentOfficeMenuDown()).as("Меню кабинета агента не отобразилось").isTrue();
+    }
 
     @Step ("Проверка, что пункт 'Кабинет агента' в меню кабинета агента отображается")
     public void is_visible_menu_down_agent_office(){
