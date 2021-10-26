@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="ru">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/form.css?_t=20210713">
+<link rel="stylesheet" type="text/css" href="/css/auth_block.css?_t=20210713">
+<script type="text/javascript" src="/assets/ca3e1e76/jquery.js"></script>
+<script type="text/javascript" src="/assets/ca3e1e76/jquery.yiiactiveform.js"></script>
+<title>TenderLand Finance - Авторизация</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+<div class="auth-block">
+<table class="auth-tabs">
+<tbody><tr>
+	<td class="auth-tab active">
+		<a href="/auth/Login" class="auth-label">
+			<div class="authIco authIco_type_login auth__ico"></div>
+			Через логин/пароль
+		</a>
+	</td>
+	<td class="auth-tab">
+		<a href="/auth/LoginByEcp" class="auth-label">
+			<div class="authIco authIco_type_certificate auth__ico authIco_js_inited authIco_state_active"></div>
+			С помощью ЭЦП
+		</a>
+	</td>
+</tr>
+</tbody></table>
+<div class="indent-1">
+<div class="form byPass-form">
+<form id="LoginForm" action="/auth/login" method="post">	<div class="errorMessage" id="LoginForm_username_em_" style="display:none"></div>	<div class="row">
+		<label for="LoginForm_login" class="required">Логин <span class="required">*</span></label>		<input class="input-field" tabindex="1" name="LoginForm[login]" id="LoginForm_login" type="text">		<div class="errorMessage" id="LoginForm_login_em_" style="display:none"></div>	</div>
+
+	<div class="row">
+		<label for="LoginForm_password" class="required">Пароль <span class="required">*</span></label><a class="forgotten-pass link" href="/auth/forgot" tabindex="5">Забыли пароль?</a>
+		<input class="input-field" tabindex="2" name="LoginForm[password]" id="LoginForm_password" type="password">		<div class="errorMessage" id="LoginForm_password_em_" style="display:none"></div>	</div>
+
+	<div class="row rememberMe">
+		<input id="ytLoginForm_rememberMe" type="hidden" value="0" name="LoginForm[rememberMe]"><input tabindex="3" name="LoginForm[rememberMe]" id="LoginForm_rememberMe" value="1" type="checkbox">		<label for="LoginForm_rememberMe">Запомнить меня</label>		<div class="errorMessage" id="LoginForm_rememberMe_em_" style="display:none"></div>	</div>
+
+	<div class="row buttons">
+		<input class="input-btn active-btn" tabindex="4" type="submit" name="yt0" value="Войти">	</div>
+
+</form></div><!-- form -->
+</div><div class="support-info">
+	Телефон технической поддержки: 8 800 333-99-73
+</div>
+</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('#LoginForm').yiiactiveform({'validateOnSubmit':true,'validateOnChange':false,'afterValidate':function(form, data, hasError){
+			if(!hasError)
+				location.href = "/card/index";
+			else
+				if(typeof($.colorbox) !== "undefined") $.colorbox.resize();
+			return false;
+		},'attributes':[{'id':'LoginForm_username','inputID':'LoginForm_username','errorID':'LoginForm_username_em_','model':'LoginForm','name':'username','enableAjaxValidation':true},{'id':'LoginForm_login','inputID':'LoginForm_login','errorID':'LoginForm_login_em_','model':'LoginForm','name':'login','enableAjaxValidation':true},{'id':'LoginForm_password','inputID':'LoginForm_password','errorID':'LoginForm_password_em_','model':'LoginForm','name':'password','enableAjaxValidation':true},{'id':'LoginForm_rememberMe','inputID':'LoginForm_rememberMe','errorID':'LoginForm_rememberMe_em_','model':'LoginForm','name':'rememberMe','enableAjaxValidation':true}],'errorCss':'error'});
+});
+/*]]>*/
+</script>
+
+</body></html>

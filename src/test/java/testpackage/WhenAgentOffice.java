@@ -56,4 +56,25 @@ public class WhenAgentOffice extends AgentOfficePage {
         steps.check_text_menu_down_reports();
     }
 
+    @Test
+    @Title("Проверка наименования и руководителя отдела после добавления")
+    public void checkNameAndManagerDepartment(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(agentOfficeMenuButton);
+        steps.click_button(tabDepartment);
+        steps.click_button(addDepartment);
+        steps.set_name_department("Тестовый отдел");
+        steps.click_button(managerDepartmentByAddDepartment);
+        steps.waitFor();
+        steps.click_button(selectManagerDepartment34);
+        steps.click_button(saveAddDepartment);
+        steps.check_name_department();
+        steps.check_manager_department();
+        steps.delete_adding_department();
+    }
+
 }

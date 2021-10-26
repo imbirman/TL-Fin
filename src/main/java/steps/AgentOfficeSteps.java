@@ -14,6 +14,11 @@ public class AgentOfficeSteps extends AgentOfficePage {
 
     AgentOfficePage page;
 
+    @Step("Ожидание")
+    public void wait_a_bit(){
+        waitFor();
+    }
+
     @Step("Открытие страницы")
     public void open_login_main_page(){
         page.open();
@@ -28,6 +33,11 @@ public class AgentOfficeSteps extends AgentOfficePage {
     public void type_password(String password){
         page.typePassword(password);
     } // Ввести данные пароля
+
+    @Step("Ввод наименования отдела")
+    public void set_name_department(String name){
+        page.setNameDepartment(name);
+    }
 
     @Step("Нажать кнопку")
     public void click_button(By button){
@@ -79,5 +89,20 @@ public class AgentOfficeSteps extends AgentOfficePage {
         Assertions.assertThat(page.getTextMenuDownReportsAgentOfficeButton()).as("Название некорректно").isEqualTo("Отчеты");
     } // Проверка, что название пункта меню кабинета агента "Отчеты" корректно
 
+    @Step ("Проверка, что название отдела, который добавили, соответствует ранее введенному")
+    public void check_name_department(){
+        Assertions.assertThat(page.getNameDepartmentByEditDepartment()).as("Название отдела некорректно").isEqualTo("Тестовый отдел");
+    }
+
+    @Step ("Проверка, что руководитель отдела, который добавили, соответствует ранее введенному")
+    public void check_manager_department(){
+        Assertions.assertThat(page.getManagerDepartmentByEditDepartment()).as("Руководитель отдела определился некорректно")
+                .isEqualTo("ID: 34 - Гусев Павел Анатольевич");
+    }
+
+    @Step ("Удалить последний добавленный отдел")
+    public void delete_adding_department(){
+        page.deleteAddingDepartment();
+    }
 
 }

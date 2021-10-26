@@ -1,0 +1,435 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="en">
+
+	<!-- blueprint CSS framework -->
+	<link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" />
+	<![endif]-->
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/main.css?v=20210928">
+	<link rel="stylesheet" type="text/css" href="/css/grid.css?v=20200629">
+	<link rel="stylesheet" type="text/css" href="/css/form.css?_t=20210713">
+				        	<link rel="stylesheet" type="text/css" href="/assets/ca3e1e76/jui/css/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/assets/b6a07c0d/gridview/styles.css">
+<link rel="stylesheet" type="text/css" href="/assets/a4a7cf75/pager.css">
+<script type="text/javascript" src="/assets/ca3e1e76/jquery.js"></script>
+<script type="text/javascript" src="/assets/ca3e1e76/jquery.ba-bbq.js"></script>
+<script type="text/javascript" src="/assets/ca3e1e76/jui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/App.js?_t=20211006"></script>
+<script type="text/javascript" src="/js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="/js/inputmask.js"></script><style type="text/css">span.im-caret {
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+span.im-static {
+    color: grey;
+}
+
+div.im-colormask {
+    display: inline-block;
+    border-style: inset;
+    border-width: 2px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div.im-colormask > input {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    -webkit-appearance: caret;
+    -moz-appearance: caret;
+    appearance: caret;
+    border-style: none;
+    left: 0; /*calculated*/
+}
+
+div.im-colormask > input:focus {
+    outline: none;
+}
+
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > input::selection{
+    background: none;
+}
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > div {
+    color: black;
+    display: inline-block;
+    width: 100px; /*calculated*/
+}</style>
+<title>TenderLand Finance - Работа с заявками</title>
+</head>
+
+<body>
+<div id="waiting_img" class="waiting_img1" style="display: none;">
+  <div class="waiting_img2"><span id="waiting">Пожалуйста, подождите</span>
+    <div id="preloader"></div>
+	<span id="cntSignedFiles"></span>
+  </div>
+</div>
+<div class="container" id="page">
+	<div id="header" style="float:left; overflow:auto;">
+		<div id="logo">
+					<a href="http://test.tl-fin.ru/" style="display:block;float:left;"><img src="/images/logo2.png"></a>
+				</div>
+        <div style="position: fixed; top: 0px; height: 110px; left: 140px; right: 0px; overflow: hidden;">
+		<div style="float:left;">
+			<div align="center" id="free_consult">
+				<span id="contact_phone">8 800 333-99-73</span><br>
+				<span id="contact_extra">Бесплатный звонок по России</span>
+			</div>
+		</div>
+            <div style="float:left;">
+                
+                        <div class="headerBlock" style="display: flex;align-content: space-around;flex-wrap: wrap;">
+                            <div style="width: 100%;font-size: 17px;color:#13171c">
+                                <div><span style="color: #989da4; width: 75px; display: inline-flex; font-size: 15px;">куратор: </span><span id="curator_name">Ярцев Денис</span></div>
+                                                                <div>
+                                    <span style="color: #989da4; width: 75px; display: inline-flex; font-size: 15px;">тел.: </span><span style="margin-right: 15px;" id="curator_phone">223232323232</span>
+                                                                    </div>
+                                                                                            </div>
+                            <h1 style="font-size: 1.2vw;width: 100%;">
+                                Работа с заявками                            </h1>
+                        </div>
+
+                    
+                            </div>
+		<div style="float:right;">
+			<div class="headerBlock">
+				<div class="support_info">
+					Техническая поддержка
+				</div>
+				<div class="support_info">
+					8 800 333-99-73
+				</div>
+							</div>
+		</div>
+				</div>
+		<br class="clear">
+	</div><!-- header -->
+	<div class="commonContent clearfix">
+	<div class="mainMenu last">
+	<div id="sidebar">
+				<div class="myProfile">
+			<div id="welcome-user">
+				<div class="drop-menu-main">
+					<span class="drop-down">s.kosobutskiy<span class="arrow">▼</span></span>
+					<div class="drop-menu-main-sub">
+						<span class="title"></span>
+						<a href="/user/1">Личная страница</a>
+						<a href="/user/ChangeCompany">Сменить компанию</a>
+						<a href="/admin">Настройки</a>						<a href="/auth/logout">Выйти</a>
+					</div>
+				</div>
+			</div>
+			<div class="typeUser">
+			брокер			</div>
+			<script>
+				$(document).ready(function () {
+					function hideallDropdowns() {
+						$(".dropped .drop-menu-main-sub").hide();
+						$(".dropped").removeClass('dropped');
+						$(".dropped .drop-menu-main-sub .title").unbind("click");
+					}
+					function showDropdown(el) {
+						var el_li;
+						if($(el).parent().hasClass('dropped')) {
+							el_li = $(el).parent().removeClass('dropped');
+							el_li.find('.drop-menu-main-sub').hide();
+						}
+						else {
+							el_li = $(el).parent().addClass('dropped');
+							el_li.find('.title').click(function () {
+								hideallDropdowns();
+							}).html($(el).html());
+							el_li.find('.drop-menu-main-sub').show();
+						}
+					}
+					$(".drop-down").click(function(){
+						showDropdown(this);
+					});
+					$(document).mouseup(function () {
+						hideallDropdowns();
+					});
+				});
+			</script>
+		</div>
+	<ul class="operations" id="yw1">
+<li id="CardListItem" class="active"><a href="/card/index">Список заявок</a>
+<ul class="sub-tab sub-tab-list">
+<li class="active"><a href="/card/index">Заявки БГ</a></li>
+<li><a href="/credit/index">Заявки на кредит</a></li>
+<li><a href="/account/list">Заявки Р/С</a></li>
+</ul>
+</li>
+<li id="BrokerListItem"><a href="/broker/1">Кабинет агента</a>
+<ul class="sub-tab">
+<li><a href="/broker/1">Кабинет агента</a></li>
+<li><a href="/user/index?active=0">Список пользователей</a></li>
+<li><a href="/broker/ReportPartner">Отчеты</a></li>
+</ul>
+</li>
+<li id="ClientListItem"><a href="/client/index">Создать заявку</a>
+<ul class="sub-tab">
+<li><a href="/client/index?partner=2">Поиск</a></li>
+<li><a href="/client/index?partner=1">Мои клиенты</a></li>
+</ul>
+</li>
+<li id="RevizorItem"><a target="_blank" href="/site/revizor">Ревизор</a></li>
+<li id="SettingSystemItem"><a href="/admin">Настройка системы</a></li>
+<li id="SettingSystemItem"><a href="/Report/ReportList">Отчёт</a></li>
+<li id="ExitListItem"><a href="/auth/logout">Выход</a></li>
+</ul>		</div>
+</div>
+<div class="mainContent">
+	<div id="content" class="clearfix">
+						<div class="tableBlocks">
+	<div class="flat-tab">
+			<ul>
+					<li>
+				<a href="/card/index?status=999" class="">
+					Все заявки				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=0" class="active">
+					Активные <em class="countUnreads">49</em>				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=-5" class="">
+					Оплаченые				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=-1" class="">
+					Возвращенные				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=18" class="">
+					Верификация				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=27" class="">
+					В очереди				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=2" class="">
+					Отправленные клиенту				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=25" class="">
+					Скоринг				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=21" class="">
+					Отправленные в банк <em class="countUnreads">2</em>				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=1" class="">
+					На рассмотрении <em class="countUnreads">3</em>				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=12" class="">
+					Готовятся проекты <em class="countUnreads">46</em>				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=3" class="">
+					Есть предложение				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=6" class="">
+					Согласование текста БГ				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=20" class="">
+					Согласование комиссии				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=5" class="">
+					Ожидается скан БГ				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=23" class="">
+					Ожидается выписка из РБГ				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=8" class="">
+					Запрос банка				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=-2" class="">
+					Отклонения				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=15" class="">
+					БГ получена				</a>
+			</li>
+					<li>
+				<a href="/card/index?status=4" class="">
+					Архив				</a>
+			</li>
+				</ul>
+	</div>
+	<div id="toogleCardMenu">
+	</div>
+<script>
+	var leftMenuOpen=true;
+	function toglleLeftMenu() {
+		if (leftMenuOpen) {
+			$('.flat-tab').hide();
+		} else {
+			$('.flat-tab').show();
+		}
+		leftMenuOpen = !leftMenuOpen;
+	}
+	$('#toogleCardMenu').on('click', toglleLeftMenu);
+	$('.items .filters input').change(function(){changeTextField(this)}); // Удаляю пробелы по краям фильтров
+</script>
+<div class="cardList">
+	<div class="page-size-wrap">
+		<span>Показать:</span><select class="change-pagesize" onchange="$.fn.yiiGridView.update('main-table',{data:{pageSize:$(this).val()}});" name="pageSize" id="pageSize">
+<option value="10" selected="selected">10</option>
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select>	</div>
+		<div class="main-table scroll-container" id="main-table">
+<table class="items">
+<thead>
+<tr>
+<th id="main-table_c0"><a class="sort-link" href="/card/index?Card_sort=id">#</a></th><th id="main-table_c1">!</th><th id="main-table_c2">Наименование компании</th><th id="main-table_c3">ИНН</th><th id="main-table_c4">&nbsp;</th><th id="main-table_c5"><a class="sort-link" href="/card/index?Card_sort=status">Статус</a></th><th id="main-table_c6"><a class="sort-link" href="/card/index?Card_sort=regnumber">Реестровый номер</a></th><th id="main-table_c7">&nbsp;</th><th id="main-table_c8"><a class="sort-link" href="/card/index?Card_sort=guarantee_sum">Сумма банковской гарантии</a></th><th id="main-table_c9">Банк</th><th id="main-table_c10">&nbsp;</th><th id="main-table_c11">Брокер</th><th id="main-table_c12"><a class="sort-link" href="/card/index?Card_sort=updated">Обновлено</a></th><th class="button-column" id="main-table_c13">&nbsp;</th></tr>
+<tr class="filters">
+<td><input name="Card[id]" type="text"></td><td>&nbsp;</td><td><input name="Card[clientName]" type="text"></td><td><input name="Card[clientInn]" type="text"></td><td>&nbsp;</td><td>&nbsp;</td><td><input name="Card[regnumber]" type="text"></td><td>&nbsp;</td><td><input name="Card[guarantee_sum]" type="text"></td><td><select name="Card[bankName]">
+<option value=""></option>
+<option value="ПАО &quot;Промсвязьбанк&quot;">ПАО "Промсвязьбанк"</option>
+<option value="КБ &quot;ЛОКО-Банк&quot; (АО)">КБ "ЛОКО-Банк" (АО)</option>
+<option value="ПАО &quot;АК БАРС&quot; БАНК">ПАО "АК БАРС" БАНК</option>
+<option value="ПАО Банк «ФК Открытие»">ПАО Банк «ФК Открытие»</option>
+<option value="ПАО «РГС Банк»">ПАО «РГС Банк»</option>
+<option value="ПАО «МТС-Банк»">ПАО «МТС-Банк»</option>
+<option value="ПАО «БАНК УРАЛСИБ»">ПАО «БАНК УРАЛСИБ»</option>
+</select></td><td>&nbsp;</td><td><input name="Card[brokerName]" type="text"></td><td><input id="Card_updated" name="Card[updated]" type="text" class="hasDatepicker"></td><td>&nbsp;</td></tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td width="30">158641</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На рассмотрении</td><td style="width: 140px; overflow-x: hidden;">0130200002420001817</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>43&nbsp;548&nbsp;854,90&nbsp;р.</td><td>ПАО ТестБанкПром</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">18.10.2021, 15:13</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/158641">Просмотр</a></td></tr>
+<tr class="even">
+<td width="30">23954</td><td width="50" style="text-align:center"></td><td>ООО "ТЕНДЕРЛЭНД"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606075303</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0817200000321013326</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>2&nbsp;360&nbsp;000,00&nbsp;р.</td><td>ПАО "Промсвязьбанк"</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Росэлторг</td><td width="70">21.10.2021, 11:35</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23954">Просмотр</a></td></tr>
+<tr class="odd">
+<td width="30">23953</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0158300043421000067</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>1&nbsp;275&nbsp;800,00&nbsp;р.</td><td>&nbsp;</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">21.10.2021, 10:54</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23953">Просмотр</a></td></tr>
+<tr class="even">
+<td width="30">23952</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0158300043421000067</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>1&nbsp;275&nbsp;800,00&nbsp;р.</td><td>&nbsp;</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">21.10.2021, 10:54</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23952">Просмотр</a></td></tr>
+<tr class="odd">
+<td width="30">23951</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0158300043421000067</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>1&nbsp;275&nbsp;800,00&nbsp;р.</td><td>&nbsp;</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">21.10.2021, 10:53</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23951">Просмотр</a></td></tr>
+<tr class="even">
+<td width="30">23950</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0158300043421000067</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>1&nbsp;275&nbsp;800,00&nbsp;р.</td><td>&nbsp;</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">21.10.2021, 10:53</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23950">Просмотр</a></td></tr>
+<tr class="odd">
+<td width="30">23949</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0158300043421000067</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>1&nbsp;275&nbsp;800,00&nbsp;р.</td><td>&nbsp;</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">21.10.2021, 10:52</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23949">Просмотр</a></td></tr>
+<tr class="even">
+<td width="30">23948</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0158300043421000067</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>1&nbsp;275&nbsp;800,00&nbsp;р.</td><td>&nbsp;</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">21.10.2021, 10:52</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23948">Просмотр</a></td></tr>
+<tr class="odd">
+<td width="30">23947</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0158300043421000067</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>1&nbsp;275&nbsp;800,00&nbsp;р.</td><td>&nbsp;</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">21.10.2021, 10:51</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23947">Просмотр</a></td></tr>
+<tr class="even">
+<td width="30">23946</td><td width="50" style="text-align:center"></td><td>ООО "ТЛ-ФИН"</td><td width="90"><a target="_blank" href="/site/revizor?fns_id=1379357">7606113630</a></td><td style="text-align:center"><span class="red-text" title="Типовая форма гарантии">Т.Ф.</span></td><td>На редактировании у брокера</td><td style="width: 140px; overflow-x: hidden;">0158300043421000067</td><td style="text-align:center"><div style="color: green;" title="Открытый реестр">О.Р.</div></td><td>1&nbsp;275&nbsp;800,00&nbsp;р.</td><td>&nbsp;</td><td width="50" style="text-align:center"><img src="/images/tree_small.png"></td><td>Администратор площадки ТЛ-ФИН</td><td width="70">21.10.2021, 10:49</td><td class="button-column"><a class="viewCardLnk" title="Просмотр" href="/card/23946">Просмотр</a></td></tr>
+</tbody>
+</table><div class="summary">Элементы 1—10 из 2551.</div><div class="pager">Перейти к странице: <ul id="yw0" class="yiiPager"><li class="first hidden"><a href="/card/index">&lt;&lt; Первая</a></li>
+<li class="previous hidden"><a href="/card/index">&lt; Предыдущая</a></li>
+<li class="page selected"><a href="/card/index">1</a></li>
+<li class="page"><a href="/card/index?Card_page=2">2</a></li>
+<li class="page"><a href="/card/index?Card_page=3">3</a></li>
+<li class="page"><a href="/card/index?Card_page=4">4</a></li>
+<li class="page"><a href="/card/index?Card_page=5">5</a></li>
+<li class="page"><a href="/card/index?Card_page=6">6</a></li>
+<li class="page"><a href="/card/index?Card_page=7">7</a></li>
+<li class="page"><a href="/card/index?Card_page=8">8</a></li>
+<li class="page"><a href="/card/index?Card_page=9">9</a></li>
+<li class="page"><a href="/card/index?Card_page=10">10</a></li>
+<li class="next"><a href="/card/index?Card_page=2">Следующая &gt;</a></li>
+<li class="last"><a href="/card/index?Card_page=256">Последняя &gt;&gt;</a></li></ul></div><div class="keys" style="display:none" title="/card/index"><span>158641</span><span>23954</span><span>23953</span><span>23952</span><span>23951</span><span>23950</span><span>23949</span><span>23948</span><span>23947</span><span>23946</span></div>
+</div>	
+	<div class="page-size-wrap">
+		<span>Показать:</span><select class="change-pagesize" onchange="$.fn.yiiGridView.update('main-table',{data:{pageSize:$(this).val()}});" name="pageSize" id="pageSize">
+<option value="10" selected="selected">10</option>
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select>	</div>
+</div>
+</div>
+	</div>
+</div>
+	</div>
+	<!--<footer id="footer">
+	</footer>-->
+</div><!-- page -->
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Закрыть" class="close">X</a>
+		<p class="title">Ошибка</p>
+		<div class="content">описание ошибки</div>
+	</div>
+</div>
+<div id="questionDlg" title="" class="modalDialog">
+</div>
+<div id="site-message">
+	<div class="title"></div>
+	<div class="message"></div>
+	<a href="javascript:void(0)" id="close_site_message" title="закрыть" style="float:right"><img width="22" height="22" src="/images/close_white.png"></a>
+</div>
+<script>
+$(document).ready(function(){
+	$('#close_site_message').click(function() {
+		$('#site-message').hide(); 
+		$('#site-message').removeClass();
+		$('#site-message .title').html("");
+		$('#site-message .message').html("");
+	});
+	document.getElementById('waiting_img').style.display = 'none';
+	user_thumbprint = "";
+});
+</script>
+<script type="text/javascript" src="/assets/ca3e1e76/jui/js/jquery-ui-i18n.min.js"></script>
+<script type="text/javascript" src="/assets/b6a07c0d/gridview/jquery.yiigridview.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('#Card_updated').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['ru'],[]));
+jQuery('#main-table').yiiGridView({'ajaxUpdate':false,'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid-view-loading','filterClass':'filters','tableClass':'items','selectableRows':1,'enableHistory':false,'updateSelector':'{page}, {sort}','filterSelector':'{filter}','pageVar':'Card_page'});
+
+		$('.items .filters input').change(function() {changeTextField(this)});
+		$('.items .filters input').keydown(function(e) {if(e.keyCode === 13) changeTextField(this)});
+});
+/*]]>*/
+</script>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
