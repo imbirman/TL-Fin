@@ -74,6 +74,11 @@ public class AgentOfficeSteps extends AgentOfficePage {
         Assertions.assertThat(page.isVisibleReportsAgentOfficeMenuDownButton()).as("Отсутствует пункт 'Отчеты' в меню кабинета агента").isTrue();
     }// Проверка, что пункт 'Отчеты' в меню кабинета агента отображается
 
+    @Step ("Проверка, что блок для добавления сотрудника закрыт")
+    public void is_visible_box_content_add_employees(){
+        Assertions.assertThat(page.isVisibleBoxContentAddEmployees()).as("Блок для добавления сотрудника в отдел не закрылся").isFalse();
+    }
+
     @Step ("Проверка, что название пункта меню кабинета агента 'Кабинет агента' корректно")
     public void check_text_menu_down_agent_office(){
         Assertions.assertThat(page.getTextMenuDownAgentOfficeButton()).as("Название некорректно").isEqualTo("Кабинет агента");
@@ -100,9 +105,26 @@ public class AgentOfficeSteps extends AgentOfficePage {
                 .isEqualTo("ID: 34 - Гусев Павел Анатольевич");
     }
 
+    @Step ("Проверка, что ФИО сотрудника, который добавили, соответствует ранее введенному")
+    public void check_fio_employee(){
+        Assertions.assertThat(page.getFIOEmployee()).as("ФИО добавленного сотрудника некорректно")
+                .isEqualTo("Тестовый Сотрудник TlFin");
+    }
+
+    @Step("Проверка количества добавленных сотрудников")
+    public void check_number_adding_employees(){
+        Assertions.assertThat(page.getNumberAddingEmployees()).as("Количество добавленных сотрудников меньше или больше 2").isEqualTo(2);
+    }
+
     @Step ("Удалить последний добавленный отдел")
     public void delete_adding_department(){
         page.deleteAddingDepartment();
     }
+
+    @Step ("Нажать кнопку 'Сотрудники отдела' у последнего добавленного отдела")
+    public void click_employees_office(){
+        page.clickEmployeesOffice();
+    }
+
 
 }

@@ -18,14 +18,26 @@ public class AgentOfficePage extends PageObject{
     protected By listUsersAgentOfficeButton = By.xpath("//ul[@class='sub-tab']/li[2]"); // меню кабинета агента - "список пользователей"
     protected By reportsAgentOfficeButton = By.xpath("//ul[@class='sub-tab']/li[3]"); // меню кабинета агента - "отчеты"
     protected By tabDepartment = By.id("ui-id-6"); // Вкладка "Отделы" в кабинете агента
+
     protected By addDepartment = By.xpath("//a[text()='Добавить отдел']"); // Кнопка "Добавить отдел" в кабинете агента
+    protected By addEmployee = By.id("addStaffBtn"); // Кнопка "Добавить сотрудника"
+
     protected By saveAddDepartment = By.xpath("(//input[@name='yt0'])[2]"); // Кнопка "Сохранить" при добавлении отдела
     protected By deleteDepartment = By.xpath("//a[text()='Удалить отдел']"); // Кнопка "Удалить отдел" - любая кнопка
+    protected By deleteEmployee = By.xpath("//a[@title='Удалить']"); // Кнопка для удаления сотрудника из отдела
     protected By quitFromTabDepartment = By.xpath("//form//div//a[text()='Выйти']"); // Кнопка "Выйти" в кабинете агента
+
+    protected By closeBoxContentAddEmployees = By.id("cboxClose"); // Кнопка для закрытия окна добавления сотрудника в отдел
+
     protected By managerDepartmentByAddDepartment = By.id("BrokerDepartment_admin_id"); // Раскрывающийся список для выбора руководителя отдела при добавлении отдела
+    protected By userList = By.id("userId"); // Раскрывающийся список для выбора пользователя при добавлении сотрудника
     protected By managerDepartmentByEditDepartment = By.xpath("//table[@class='broker-table-item']//option[@selected]"); // Раскрывающийся список для выбора руководителя отдела при редактировании отдела
+
     protected By selectManagerDepartment1 = By.xpath("//option[@value='1']"); // Выбор руководителя отдела "ID: 1 - Гусев Павел Анатольевич"
     protected By selectManagerDepartment34 = By.xpath("//select[@id='BrokerDepartment_admin_id']//option[@value='34']"); // Выбор руководителя отдела "ID: 34 - Гусев Павел Анатольевич"
+    protected By selectEmployee34 = By.xpath("//form[@id='brokerStaffForm']//option[@value='34']"); // Выбор сотрудника "ID: 34 - Гусев Павел Анатольевич"
+    protected By selectEmployee3569 = By.xpath("//form[@id='brokerStaffForm']//option[@value='3569']"); // Выбор сотрудника "ID: 3569 - Тестовый Сотрудник TlFin"
+
 
 
 
@@ -33,6 +45,10 @@ public class AgentOfficePage extends PageObject{
     private By passwordField = By.id("LoginForm_password"); // Поле пароля
     private By nameDepartment = By.id("BrokerDepartment_name"); // Поле "Наименование отдела" при добавлении нового отдела
     private By nameDepartmentByEdit = By.xpath("//table[@class='broker-table-item']//input[@type='text']"); // Поле "Наименование отдела" во вкладке "Отделы"
+    private By FIOEmployee = By.xpath("(//table[@class='items']//td)[2]"); // ФИО добавленного сотрудника
+    private By AddingEmployees = By.xpath("//table[@class='items']//tr"); // Добавленный сотрудник (строка в таблице)
+    private By boxContentAddEmployees = By.id("cboxLoadedContent");
+    private By employeeOffice = By.xpath("//a[text()='Сотрудники отдела']"); // Кнопка "Сотрудники отдела" - любая
 
 
     public void waitFor(){
@@ -73,6 +89,10 @@ public class AgentOfficePage extends PageObject{
         return find(listUsersAgentOfficeButton).isDisplayed();
     } // Проверка, что пункт в меню кабинета агента "список пользователей" отображается
 
+    public boolean isVisibleBoxContentAddEmployees(){
+        return find(boxContentAddEmployees).isDisplayed();
+    } // Проверка, что блок для добавления сотрудника закрыт
+
     public boolean isVisibleReportsAgentOfficeMenuDownButton(){
         return find(reportsAgentOfficeButton).isDisplayed();
     } // Проверка, что пункт в меню кабинета агента "отчеты" отображается
@@ -98,9 +118,18 @@ public class AgentOfficePage extends PageObject{
     public String getManagerDepartmentByEditDepartment(){
 
         List<WebElementFacade> managerDepartments = findAll(managerDepartmentByEditDepartment);
-//        System.out.println(managerDepartments.get(managerDepartments.size()-1).getText());
         return managerDepartments.get(managerDepartments.size()-1).getText();
     } // Получение наименования руководителя отдела, который был добавлен
+
+    public String getFIOEmployee(){
+        return find(FIOEmployee).getText();
+    } // Получение ФИО сотрудника, который был добавлен
+
+    public Integer getNumberAddingEmployees(){
+        List<WebElementFacade> addingEmployee = findAll(AddingEmployees);
+        addingEmployee.remove(0);
+        return addingEmployee.size();
+    } // Получение количества добавленных сотрудников
 
     public AgentOfficePage setNameDepartment(String name){
          find(nameDepartment).sendKeys(name);
@@ -111,6 +140,11 @@ public class AgentOfficePage extends PageObject{
         List<WebElementFacade> deleteDepartmentButton = findAll(deleteDepartment);
         deleteDepartmentButton.get(deleteDepartmentButton.size()-1).click();
     } // Удалить последний добавленный отдел
+
+    public void clickEmployeesOffice(){
+        List<WebElementFacade> employeesOffice = findAll(employeeOffice);
+        employeesOffice.get(employeesOffice.size()-1).click();
+    }
 
 
 }

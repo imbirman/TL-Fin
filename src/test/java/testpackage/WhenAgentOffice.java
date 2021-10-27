@@ -69,11 +69,65 @@ public class WhenAgentOffice extends AgentOfficePage {
         steps.click_button(addDepartment);
         steps.set_name_department("Тестовый отдел");
         steps.click_button(managerDepartmentByAddDepartment);
-        steps.waitFor();
+        steps.wait_a_bit();
         steps.click_button(selectManagerDepartment34);
         steps.click_button(saveAddDepartment);
         steps.check_name_department();
         steps.check_manager_department();
+        steps.delete_adding_department();
+    }
+
+    @Test
+    @Title("Проверка, что ФИО сотрудника, который добавили, соответствует ранее введенному")
+    public void checkFioAddingEmployee(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(agentOfficeMenuButton);
+        steps.click_button(tabDepartment);
+        steps.click_button(addDepartment);
+        steps.set_name_department("Тестовый отдел");
+        steps.click_button(managerDepartmentByAddDepartment);
+        steps.wait_a_bit();
+        steps.click_button(selectManagerDepartment34);
+        steps.click_button(saveAddDepartment);
+        steps.click_employees_office();
+        steps.click_button(userList);
+        steps.click_button(selectEmployee3569);
+        steps.click_button(addEmployee);
+        steps.check_fio_employee();
+        steps.click_button(closeBoxContentAddEmployees);
+        steps.delete_adding_department();
+    }
+
+    @Test
+    @Title("Проверка количества добавленных сотрудников")
+    public void checkNumberAddingEmployees(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(agentOfficeMenuButton);
+        steps.click_button(tabDepartment);
+        steps.click_button(addDepartment);
+        steps.set_name_department("Тестовый отдел");
+        steps.click_button(managerDepartmentByAddDepartment);
+        steps.wait_a_bit();
+        steps.click_button(selectManagerDepartment34);
+        steps.click_button(saveAddDepartment);
+        steps.click_employees_office();
+        steps.click_button(userList);
+        steps.click_button(selectEmployee3569);
+        steps.click_button(addEmployee);
+        steps.click_button(userList);
+        steps.click_button(selectEmployee34);
+        steps.click_button(addEmployee);
+        steps.wait_a_bit();
+        steps.check_number_adding_employees();
+        steps.click_button(closeBoxContentAddEmployees);
         steps.delete_adding_department();
     }
 
