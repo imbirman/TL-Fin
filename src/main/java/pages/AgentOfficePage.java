@@ -3,9 +3,15 @@ package pages;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @DefaultUrl("http://test.tl-fin.ru/card/index")
 public class AgentOfficePage extends PageObject{
@@ -52,7 +58,7 @@ public class AgentOfficePage extends PageObject{
 
 
     public void waitFor(){
-        waitABit(1000);
+        waitABit(2000);
     } // Ожидание
 
     public AgentOfficePage mouseHover(By element){ moveTo(element);
@@ -74,6 +80,7 @@ public class AgentOfficePage extends PageObject{
     } // Ввести пароль для входа
 
     public boolean isVisibleAgentOfficeButton(){
+
         return find(agentOfficeMenuButton).isDisplayed();
     } // Проверка, что кнопка для открытия кабинета агента отображается
 
@@ -144,6 +151,39 @@ public class AgentOfficePage extends PageObject{
     public void clickEmployeesOffice(){
         List<WebElementFacade> employeesOffice = findAll(employeeOffice);
         employeesOffice.get(employeesOffice.size()-1).click();
+    }
+
+//    public boolean isAlertPresent(){
+//        boolean foundAlert = false;
+//        try {
+//            waitOnPage().until(ExpectedConditions.alertIsPresent());
+//            foundAlert = true;
+//        } catch (TimeoutException e) {
+//            foundAlert = false;
+//        }
+//        return foundAlert;
+//    }
+
+    public void acceptAlert(){
+
+
+
+
+//        setWaitForElementTimeout(5000);
+//        waitForElement();
+
+//        System.out.println("Середина проверки алерта");
+//        System.out.println("Тест алерта: " + getAlert().accept());
+//        getAlert();
+//        waitOnPage().until(ExpectedConditions.alertIsPresent());
+//        waitFor(ExpectedConditions.alertIsPresent());
+        clickButton(deleteEmployee);
+        getAlert().accept();
+        System.out.println("Начало проверки алерта");
+
+
+        System.out.println("Конец проверки алерта");
+
     }
 
 

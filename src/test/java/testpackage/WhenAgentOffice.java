@@ -131,4 +131,35 @@ public class WhenAgentOffice extends AgentOfficePage {
         steps.delete_adding_department();
     }
 
+    @Test
+    @Title("Проверка количества сотрудников после удаления одного")
+    public void checkNumberAddingEmployeesAfterDelete(){
+
+        steps.open_login_main_page();
+        steps.type_email("s.kosobutskiy");
+        steps.type_password("P5@Dst");
+        steps.click_button(signInButton);
+        steps.click_button(agentOfficeMenuButton);
+        steps.click_button(tabDepartment);
+        steps.click_button(addDepartment);
+        steps.set_name_department("Тестовый отдел");
+        steps.click_button(managerDepartmentByAddDepartment);
+        steps.wait_a_bit();
+        steps.click_button(selectManagerDepartment34);
+        steps.click_button(saveAddDepartment);
+        steps.click_employees_office();
+        steps.click_button(userList);
+        steps.click_button(selectEmployee3569);
+        steps.click_button(addEmployee);
+        steps.click_button(userList);
+        steps.click_button(selectEmployee34);
+        steps.click_button(addEmployee);
+        steps.accept_alert();
+        steps.wait_a_bit();
+        steps.check_number_adding_employees_after_delete();
+        steps.click_button(closeBoxContentAddEmployees);
+        steps.delete_adding_department();
+
+    }
+
 }
