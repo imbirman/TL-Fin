@@ -121,6 +121,11 @@ public class AgentOfficeSteps extends AgentOfficePage {
         Assertions.assertThat(page.getNumberAddingEmployees()).as("Сотрудник не был удален").isEqualTo(1);
     }
 
+    @Step("Проверка количества сотрудников после отмены удаления")
+    public void check_number_adding_employees_after_cancel_deletion(){
+        Assertions.assertThat(page.getNumberAddingEmployees()).as("Сотрудник не был удален").isEqualTo(2);
+    }
+
     @Step ("Удалить последний добавленный отдел")
     public void delete_adding_department(){
         page.deleteAddingDepartment();
@@ -134,6 +139,11 @@ public class AgentOfficeSteps extends AgentOfficePage {
     @Step("Переключится на алерт и подтвердить")
     public void accept_alert(){
         page.acceptAlert();
+    }
+
+    @Step("Переключится на алерт и отменить")
+    public void dismiss_alert(){
+        page.dismissAlert();
     }
 
 

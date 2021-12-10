@@ -153,30 +153,8 @@ public class AgentOfficePage extends PageObject{
         employeesOffice.get(employeesOffice.size()-1).click();
     }
 
-//    public boolean isAlertPresent(){
-//        boolean foundAlert = false;
-//        try {
-//            waitOnPage().until(ExpectedConditions.alertIsPresent());
-//            foundAlert = true;
-//        } catch (TimeoutException e) {
-//            foundAlert = false;
-//        }
-//        return foundAlert;
-//    }
-
     public void acceptAlert(){
 
-
-
-
-//        setWaitForElementTimeout(5000);
-//        waitForElement();
-
-//        System.out.println("Середина проверки алерта");
-//        System.out.println("Тест алерта: " + getAlert().accept());
-//        getAlert();
-//        waitOnPage().until(ExpectedConditions.alertIsPresent());
-//        waitFor(ExpectedConditions.alertIsPresent());
         clickButton(deleteEmployee);
         getAlert().accept();
         System.out.println("Начало проверки алерта");
@@ -184,7 +162,18 @@ public class AgentOfficePage extends PageObject{
 
         System.out.println("Конец проверки алерта");
 
-    }
+    } // Подтверждение удаления сотрудника
+
+    public void dismissAlert(){
+
+        clickButton(deleteEmployee);
+        getAlert().dismiss();
+        System.out.println("Начало проверки алерта");
+
+
+        System.out.println("Конец проверки алерта");
+
+    } // Подтверждение удаления сотрудника
 
 
 }
