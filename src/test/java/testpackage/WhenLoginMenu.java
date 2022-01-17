@@ -5,6 +5,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -20,8 +21,12 @@ public class WhenLoginMenu extends LoginMainPage {
     @Managed(driver = "chrome")
     WebDriver driver;
 
+    @Before
+    public void beforeMethod(){
+        driver.manage().window().maximize();
+    }
+
     @Test
-    
     @Title("Проверка корректного входа админа")
     public void checkCorrectLoginAdmin(){
 
@@ -34,7 +39,6 @@ public class WhenLoginMenu extends LoginMainPage {
     }
 
     @Test
-    
     @Title("Проверка корректного входа агента")
     public void checkCorrectLoginAgent(){
 
@@ -47,7 +51,6 @@ public class WhenLoginMenu extends LoginMainPage {
     }
 
     @Test
-    
     @Title("Проверка корректного входа клиента")
     public void checkCorrectLoginClient(){
 
@@ -59,7 +62,6 @@ public class WhenLoginMenu extends LoginMainPage {
     }
 
     @Test
-    
     @Title("Проверка корректного входа сотрудника банка")
     public void checkCorrectLoginBank(){
 
@@ -71,7 +73,6 @@ public class WhenLoginMenu extends LoginMainPage {
     }
 
     @Test
-    
     @Title("Проверка скрытия меню таблицы")
     public void checkDisabledSidebar(){
 
@@ -84,7 +85,6 @@ public class WhenLoginMenu extends LoginMainPage {
     }
 
     @Test
-    
     @Title("Проверка количества элементов таблицы по умолчанию")
     public void checkNumberRowsDefault(){
 
@@ -96,7 +96,6 @@ public class WhenLoginMenu extends LoginMainPage {
     }
 
     @Test
-    
     @Title("Проверка количества элементов таблицы при выборе 25")
     public void checkNumberRows25(){
 
@@ -110,7 +109,6 @@ public class WhenLoginMenu extends LoginMainPage {
     }
 
     @Test
-    
     @Title("Проверка количества элементов таблицы при выборе 50")
     public void checkNumberRows50(){
 
@@ -124,7 +122,6 @@ public class WhenLoginMenu extends LoginMainPage {
     }
 
     @Test
-    
     @Title("Проверка количества элементов таблицы при выборе 100")
     public void checkNumberRows100(){
 

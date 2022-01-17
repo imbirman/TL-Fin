@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="testpackage.WhenAgentOffice" skipped="0" tests="1" time="42.21" timestamp="2021-12-10 02:42:30"><testcase classname="testpackage.WhenAgentOffice" name="Проверка количества сотрудников после отмены удаления одного"/></testsuite>

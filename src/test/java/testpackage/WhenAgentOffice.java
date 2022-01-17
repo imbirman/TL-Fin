@@ -5,6 +5,7 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +25,11 @@ public class WhenAgentOffice extends AgentOfficePage {
 
     @Steps
     AgentOfficeSteps steps;
+
+    @Before
+    public void beforeMethod(){
+        driver.manage().window().maximize();
+    }
 
     @Test
     @Title("Проверка, что кнопка для открытия кабинета агента отображается")

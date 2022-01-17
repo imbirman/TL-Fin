@@ -1,0 +1,1273 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="en">
+
+	<!-- blueprint CSS framework -->
+	<link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen, projection" />
+	<![endif]-->
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/main.css?v=20211122">
+	<link rel="stylesheet" type="text/css" href="/css/grid.css?v=20200629">
+	<link rel="stylesheet" type="text/css" href="/css/form.css?_t=20210713">
+				        	<link rel="stylesheet" type="text/css" href="/css/jui2/viewCard.css?_t=20200820_2">
+<link rel="stylesheet" type="text/css" href="/js/select2/dist/css/select2.css">
+<script type="text/javascript" src="/assets/44b57a3b/jquery.js"></script>
+<script type="text/javascript" src="/assets/44b57a3b/jquery.yiiactiveform.js"></script>
+<script type="text/javascript" src="/assets/44b57a3b/jui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/jquery.yiigridview.js"></script>
+<script type="text/javascript" src="/js/jquery.ba-bbq.js"></script>
+<script type="text/javascript" src="/js/colorbox/jquery.colorbox.js"></script>
+<script type="text/javascript" src="/js/colorbox/i18n/jquery.colorbox-ru.js"></script>
+<script type="text/javascript" src="/js/BrokerProfile.js?v=202101261"></script>
+<script type="text/javascript" src="/js/select2/dist/js/select2.full.min.js"></script>
+<script type="text/javascript" src="/js/App.js?_t=20211006"></script>
+<script type="text/javascript" src="/js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="/js/inputmask.js"></script><style type="text/css">span.im-caret {
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+span.im-static {
+    color: grey;
+}
+
+div.im-colormask {
+    display: inline-block;
+    border-style: inset;
+    border-width: 2px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div.im-colormask > input {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    -webkit-appearance: caret;
+    -moz-appearance: caret;
+    appearance: caret;
+    border-style: none;
+    left: 0; /*calculated*/
+}
+
+div.im-colormask > input:focus {
+    outline: none;
+}
+
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > input::selection{
+    background: none;
+}
+div.im-colormask > input::-moz-selection{
+    background: none;
+}
+
+div.im-colormask > div {
+    color: black;
+    display: inline-block;
+    width: 100px; /*calculated*/
+}</style>
+<title>TenderLand Finance - Страница агента</title>
+</head>
+
+<body style="overflow: visible;">
+<div id="waiting_img" class="waiting_img1" style="display: none;">
+  <div class="waiting_img2"><span id="waiting">Пожалуйста, подождите</span>
+    <div id="preloader"></div>
+	<span id="cntSignedFiles">Это займет какое-то время</span>
+  </div>
+</div>
+<div class="container" id="page">
+	<div id="header" style="float:left; overflow:auto;">
+		<div id="logo">
+					<a href="https://test.tl-fin.ru/" style="display:block;float:left;"><img src="/images/logo2.png"></a>
+				</div>
+        <div style="position: fixed; top: 0px; height: 110px; left: 140px; right: 0px; overflow: hidden;">
+		<div style="float:left;">
+			<div align="center" id="free_consult">
+				<span id="contact_phone">8 800 333-99-73</span><br>
+				<span id="contact_extra">Бесплатный звонок по России</span>
+			</div>
+		</div>
+            <div style="float:left;">
+                
+                        <div class="headerBlock" style="display: flex;align-content: space-around;flex-wrap: wrap;">
+                            <div style="width: 100%;font-size: 17px;color:#13171c">
+                                <div><span style="color: #989da4; width: 75px; display: inline-flex; font-size: 15px;">куратор: </span><span id="curator_name">Ярцев Денис</span></div>
+                                                                <div>
+                                    <span style="color: #989da4; width: 75px; display: inline-flex; font-size: 15px;">тел.: </span><span style="margin-right: 15px;" id="curator_phone">223232323232</span>
+                                                                    </div>
+                                                                                            </div>
+                            <h1 style="font-size: 1.2vw;width: 100%;">
+                                Страница агента                            </h1>
+                        </div>
+
+                    
+                            </div>
+		<div style="float:right;">
+			<div class="headerBlock">
+				<div class="support_info">
+					Техническая поддержка
+				</div>
+				<div class="support_info">
+					8 800 333-99-73
+				</div>
+							</div>
+		</div>
+				</div>
+		<br class="clear">
+	</div><!-- header -->
+	<div class="commonContent clearfix">
+	<div class="mainMenu last">
+	<div id="sidebar">
+				<div class="myProfile">
+			<div id="welcome-user">
+				<div class="drop-menu-main">
+					<span class="drop-down">s.kosobutskiy<span class="arrow">▼</span></span>
+					<div class="drop-menu-main-sub">
+						<span class="title"></span>
+						<a href="/user/1">Личная страница</a>
+						<a href="/user/ChangeCompany">Сменить компанию</a>
+						<a href="/admin">Настройки</a>						<a href="/auth/logout">Выйти</a>
+					</div>
+				</div>
+			</div>
+			<div class="typeUser">
+			брокер			</div>
+			<script>
+				$(document).ready(function () {
+					function hideallDropdowns() {
+						$(".dropped .drop-menu-main-sub").hide();
+						$(".dropped").removeClass('dropped');
+						$(".dropped .drop-menu-main-sub .title").unbind("click");
+					}
+					function showDropdown(el) {
+						var el_li;
+						if($(el).parent().hasClass('dropped')) {
+							el_li = $(el).parent().removeClass('dropped');
+							el_li.find('.drop-menu-main-sub').hide();
+						}
+						else {
+							el_li = $(el).parent().addClass('dropped');
+							el_li.find('.title').click(function () {
+								hideallDropdowns();
+							}).html($(el).html());
+							el_li.find('.drop-menu-main-sub').show();
+						}
+					}
+					$(".drop-down").click(function(){
+						showDropdown(this);
+					});
+					$(document).mouseup(function () {
+						hideallDropdowns();
+					});
+				});
+			</script>
+		</div>
+	<ul class="operations" id="yw0">
+<li id="CardListItem"><a href="/card/index">Список заявок</a>
+<ul class="sub-tab sub-tab-list">
+<li><a href="/card/index">Заявки БГ</a></li>
+<li><a href="/credit/index">Заявки на кредит</a></li>
+<li><a href="/account/list">Заявки Р/С</a></li>
+</ul>
+</li>
+<li id="BrokerListItem" class="active"><a href="/broker/1">Кабинет агента</a>
+<ul class="sub-tab">
+<li class="active"><a href="/broker/1">Кабинет агента</a></li>
+<li><a href="/user/index?active=0">Список пользователей</a></li>
+<li><a href="/broker/ReportPartner">Отчеты</a></li>
+</ul>
+</li>
+<li id="ClientListItem"><a href="/client/index">Создать заявку</a>
+<ul class="sub-tab">
+<li><a href="/client/index?partner=2">Поиск</a></li>
+<li><a href="/client/index?partner=1">Мои клиенты</a></li>
+</ul>
+</li>
+<li id="RevizorItem"><a target="_blank" href="/site/revizor">Ревизор</a></li>
+<li id="SettingSystemItem"><a href="/admin">Настройка системы</a></li>
+<li id="SettingSystemItem"><a href="/Report/ReportList">Отчёт</a></li>
+<li id="ExitListItem"><a href="/auth/logout">Выход</a></li>
+</ul>		</div>
+</div>
+<div class="mainContent">
+	<div id="content" class="clearfix">
+			<div class="breadcrumbs">
+<a href="/card/index">Главная</a> » <a href="/broker">Список агетов</a> » <span>Администратор площадки ТЛ-ФИН</span></div>			<div class="view-card ui-tabs ui-corner-all ui-widget ui-widget-content" collapsible="" id="mainCardsTabs">
+<ul role="tablist" class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabSettings" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a href="#tabSettings" title="Параметры агента" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-3">Параметры агента</a></li>
+<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabRequisite" aria-labelledby="ui-id-4" aria-selected="false" aria-expanded="false"><a href="#tabRequisite" title="Реквизиты агента" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-4">Реквизиты агента</a></li>
+<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabProductCondition" aria-labelledby="ui-id-5" aria-selected="false" aria-expanded="false"><a href="#tabProductCondition" title="Продукты и условия работы" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-5">Продукты и условия работы</a></li>
+<li role="tab" tabindex="0" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" aria-controls="tabDepartments" aria-labelledby="ui-id-6" aria-selected="true" aria-expanded="true"><a href="#tabDepartments" title="Отделы" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-6">Отделы</a></li>
+</ul>
+<div id="tabSettings" aria-labelledby="ui-id-3" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;"><div class="parent-scroll-container">
+<div>
+    <a class="btn primary-btn" href="/broker/update/1">Редактировать</a></div>
+<div class="main-table scroll-container">
+    <table class="detail-table">
+        <tbody><tr>
+            <td colspan="3">
+                <p class="label">Фирменное наименование агента</p>
+                Администратор площадки ТЛ-ФИН            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p class="label">Юридическое наименование брокера</p>
+                ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ТЛ-ФИН"            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p class="label">Тип организации</p>
+                Не указан            </td>
+        </tr>
+<!--        --><!--        <tr>-->
+<!--            --><!--                <td>-->
+<!--                    <p class="label">-->
+<!--                        --><!--                    </p>-->
+<!--                    --><!--                </td>-->
+<!--                <td>-->
+<!--                    <p class="label">-->
+<!--                        --><!--                    </p>-->
+<!--                    --><!--                </td>-->
+<!--            --><!--                <td colspan=2>-->
+<!--                    <p class="label">-->
+<!--                        --><!--                    </p>-->
+<!--                    --><!--                </td>-->
+<!--            --><!--            <td>-->
+<!--                <p class="label">-->
+<!--                    --><!--                </p>-->
+<!--                --><!--            </td>-->
+<!--        </tr>-->
+<!--        -->        <tr>
+            <td>
+				<p class="label">ИНН:</p>
+				7606113630			</td>
+			<td>
+				<p class="label">ОГРН:</p>
+				1177627020306			</td>
+			<td>
+				<p class="label">КПП:</p>
+				123456789			</td>
+        </tr>
+        <tr>
+            <td colspan="1">
+				<p class="label">
+					Телефон				</p>
+				88003339973			</td>
+			<td colspan="2">
+				<p class="label">
+					Email				</p>
+				s.kosobutskii3@tenderland.ru            </td>
+        </tr>
+                    <tr>
+                <td colspan="3">
+                    <p class="label">Контакты</p>
+                </td>
+            </tr>
+                    <tr>
+            <td colspan="5">
+                <table id="broker_contact_0" class="broker-table-item">
+                                        <tbody><tr class="even">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_fio" class="required">ФИО <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_role">Роль</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_phone" class="required">Телефон <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_email">E-mail</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td class="broker-contact-td">
+                                                            1                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            1                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+            <tr>
+            <td colspan="5">
+                <table id="broker_contact_1" class="broker-table-item">
+                                        <tbody><tr class="odd">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_fio" class="required">ФИО <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_role">Роль</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_phone" class="required">Телефон <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_email">E-mail</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td class="broker-contact-td">
+                                                            Алексеев Денис Сергеевич                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            +79999999999                                                    </td>
+                        <td class="broker-contact-td">
+                                                            email@gmail.com                                                    </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+            <tr>
+            <td colspan="5">
+                <table id="broker_contact_2" class="broker-table-item">
+                                        <tbody><tr class="even">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_fio" class="required">ФИО <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_role">Роль</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_phone" class="required">Телефон <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_email">E-mail</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td class="broker-contact-td">
+                                                            Алексеев Денис Сергеевич                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            +79999999999                                                    </td>
+                        <td class="broker-contact-td">
+                                                            email@gmail.com                                                    </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+            <tr>
+            <td colspan="5">
+                <table id="broker_contact_3" class="broker-table-item">
+                                        <tbody><tr class="odd">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_fio" class="required">ФИО <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_role">Роль</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_phone" class="required">Телефон <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_email">E-mail</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td class="broker-contact-td">
+                                                            Алексеев Денис Сергеевич                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            +79999999999                                                    </td>
+                        <td class="broker-contact-td">
+                                                            email@gmail.com                                                    </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+            <tr>
+            <td colspan="5">
+                <table id="broker_contact_4" class="broker-table-item">
+                                        <tbody><tr class="even">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_fio" class="required">ФИО <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_role">Роль</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_phone" class="required">Телефон <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_email">E-mail</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td class="broker-contact-td">
+                                                            Алексеев Денис Сергеевич                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            +79999999999                                                    </td>
+                        <td class="broker-contact-td">
+                                                            email@gmail.com                                                    </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+            <tr>
+            <td colspan="5">
+                <table id="broker_contact_5" class="broker-table-item">
+                                        <tbody><tr class="odd">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_fio" class="required">ФИО <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_role">Роль</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_phone" class="required">Телефон <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_email">E-mail</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td class="broker-contact-td">
+                                                            Алексеев Денис Сергеевич                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            +79999999999                                                    </td>
+                        <td class="broker-contact-td">
+                                                            email@gmail.com                                                    </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+            <tr>
+            <td colspan="5">
+                <table id="broker_contact_6" class="broker-table-item">
+                                        <tbody><tr class="even">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_fio" class="required">ФИО <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_role">Роль</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_phone" class="required">Телефон <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_email">E-mail</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td class="broker-contact-td">
+                                                            Алексеев Денис Сергеевич                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            +79999999999                                                    </td>
+                        <td class="broker-contact-td">
+                                                            email@gmail.com                                                    </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+            <tr>
+            <td colspan="5">
+                <table id="broker_contact_7" class="broker-table-item">
+                                        <tbody><tr class="odd">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_fio" class="required">ФИО <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_role">Роль</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_phone" class="required">Телефон <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileContacts_email">E-mail</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td class="broker-contact-td">
+                                                            Алексеев Денис Сергеевич                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            +79999999999                                                    </td>
+                        <td class="broker-contact-td">
+                                                            email@gmail.com                                                    </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+                            <tr>
+            <td colspan="3">
+                <p class="label">Подписанты</p>
+            </td>
+        </tr>
+                <tr>
+            <td colspan="5">
+                <table id="broker_signer_0" class="broker-table-item">
+                                                            <tbody><tr class="even">
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileSigned_last_name" class="required">Фамилия <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileSigned_name" class="required">Имя <span class="required">*</span></label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileSigned_patronymic">Отчество</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileSigned_job">Должность</label></p>
+                        </td>
+                        <td class="broker-contact-td">
+                            <p class="label"><label for="BrokerProfileSigned_basis">Основание</label></p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td class="broker-contact-td">
+                                                            Тест                                                    </td>
+                        <td class="broker-contact-td">
+                                                            Тестов                                                    </td>
+                        <td class="broker-contact-td">
+                                                            Тестич                                                    </td>
+                        <td class="broker-contact-td">
+                                                                                                                </td>
+                        <td class="broker-contact-td">
+                                                            Не выбрано                                                    </td>
+                        <td>
+                                                    </td>
+                    </tr>
+                </tbody></table>
+            </td>
+        </tr>
+            <tr>
+            <td>
+                <p class="label">Закрепленный менеджер</p>
+                                Ярцев Денис            </td>
+            <td>
+                <p class="label">Может действовать вместо клиента</p>
+                Да            </td>
+        </tr>
+		        <tr>
+            <td colspan="3">
+                <p class="label">Код агента ПСБ</p>
+                0644            </td>
+        </tr>
+		<!--        <tr>-->
+<!--            <td>-->
+<!--                <p class="label">--><!--</p>-->
+<!--                --><!--            </td>-->
+<!--        </tr>-->
+    </tbody></table>
+</div>
+</div>
+<style>
+.broker-table-item td {border: none;}
+.broker-table-item tr.odd {background: #F8F8F8;}
+.broker-table-item tr.even {background: #E5F1F4;}
+.broker-table-item td.broker-contact-td {min-width: 200px;}
+.broker-table-item td.broker-address-td {min-width: 150px;}
+</style></div>
+<div id="tabRequisite" aria-labelledby="ui-id-4" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;"><div>
+	<a class="btn primary-btn" href="/broker/update/1?tab=1">Редактировать</a></div>
+<div class="parent-scroll-container" style="margin-top: 53px;">
+<div class="main-table scroll-container">
+    <table class="detail-table">
+                    <tbody><tr>
+                <td>
+                                            <div class="broker-view_inline borderGroup" style=""><div class="broker-view_margin-right"><p class="label">БИК банка</p> 046577993</div><div class="broker-view_margin-right"><p class="label">Номер счета</p> 55664455331234567890</div><div class="broker-view_margin-right"><p class="label">Корреспондентский счет</p> 30101810100000000992</div><div class="broker-view_margin-right"><p class="label">Наименование банка</p> ООО КБ "УРАЛФИНАНС"</div></div>                        <div class="broker-view_inline borderGroup" style=""><div class="broker-view_margin-right"><p class="label">БИК банка</p> 047888760</div><div class="broker-view_margin-right"><p class="label">Номер счета</p> 40702810502000035369</div><div class="broker-view_margin-right"><p class="label">Корреспондентский счет</p> 30101810300000000760</div><div class="broker-view_margin-right"><p class="label">Наименование банка</p> ЯРОСЛАВСКИЙ Ф-Л ПАО "ПРОМСВЯЗЬБАНК"</div></div>                        <div class="broker-view_inline borderGroup" style=""><div class="broker-view_margin-right"><p class="label">БИК банка</p> 047888760</div><div class="broker-view_margin-right"><p class="label">Номер счета</p> 40702810502000035369</div><div class="broker-view_margin-right"><p class="label">Корреспондентский счет</p> 30101810300000000760</div><div class="broker-view_margin-right"><p class="label">Наименование банка</p> ЯРОСЛАВСКИЙ Ф-Л ПАО "ПРОМСВЯЗЬБАНК"</div></div>                </td>
+            </tr>
+            </tbody></table>
+</div>
+</div></div>
+<div id="tabProductCondition" aria-labelledby="ui-id-5" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;"><div class="view-card ui-tabs ui-corner-all ui-widget ui-widget-content" collapsible="" id="mainBrokerTabs">
+<ul role="tablist" class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+<li role="tab" tabindex="0" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" aria-controls="tabBankQuarantee" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a href="#tabBankQuarantee" title="Банковские гарантии" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Банковские гарантии</a></li>
+<li role="tab" tabindex="-1" class="ui-tabs-tab ui-corner-top ui-state-default ui-tab" aria-controls="tabAccount" aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a href="#tabAccount" title="Расчетные счета" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-2">Расчетные счета</a></li>
+</ul>
+<div id="tabBankQuarantee" aria-labelledby="ui-id-1" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="false"><div>
+    <a class="btn primary-btn" href="/broker/update/1?tab=2">Редактировать</a></div>
+<br>
+<div class="main-table">
+    <table class="detail-table">
+        <thead>
+            <tr><td>Банки</td>
+            <td>Статус</td>
+            <td>Договор</td>
+            <td>Условия по Кв</td>
+                        <td>Договор</td>
+                    </tr></thead>
+        			                        <tbody><tr>
+                <td>
+                    ПАО ТестБанкПром                </td>
+                <td>
+                    Подключен                </td>
+                <td>
+                                                <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Нет                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Не выбрано                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                                                    </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									50                                </div>
+                            </div>
+							                                                            </td>
+                <td id="condition-window" style="padding-top: 6px;">
+                    <a type="submit" class="btn primary-btn btn-broker in-window-conditions-view cboxElement" style="text-align:center;" href="/broker/ViewConditions?bank_id=18&amp;broker_id=1">Условия по КВ</a>                </td>
+                                <td>
+                                    </td>
+                            </tr>
+        			                        <tr>
+                <td>
+                    ПАО "Промсвязьбанк"                </td>
+                <td>
+                    Подключен                </td>
+                <td>
+                                                <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Есть                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Заявление                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                    18.10.2021                                </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									                                </div>
+                            </div>
+							                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Нет                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Не выбрано                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                                                    </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									51                                </div>
+                            </div>
+							                                                            </td>
+                <td id="condition-window" style="padding-top: 6px;">
+                    <a type="submit" class="btn primary-btn btn-broker in-window-conditions-view cboxElement" style="text-align:center;" href="/broker/ViewConditions?bank_id=19&amp;broker_id=1">Условия по КВ</a>                </td>
+                                <td>
+                    <input type="submit" class="btn primary-btn btn-broker" style="font-size: 15px;margin-right: 0;" name="yt0" value="Сгенерировать" id="yt0">                </td>
+                            </tr>
+        			                        <tr>
+                <td>
+                    КБ "ЛОКО-Банк" (АО)                </td>
+                <td>
+                    Подключен                </td>
+                <td>
+                                                <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Нет                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Не выбрано                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                                                    </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									                                </div>
+                            </div>
+							                                                            </td>
+                <td id="condition-window" style="padding-top: 6px;">
+                    <a type="submit" class="btn primary-btn btn-broker in-window-conditions-view cboxElement" style="text-align:center;" href="/broker/ViewConditions?bank_id=20&amp;broker_id=1">Условия по КВ</a>                </td>
+                                <td>
+                                    </td>
+                            </tr>
+        			                        <tr>
+                <td>
+                    ПАО "АК БАРС" БАНК                </td>
+                <td>
+                    Подключен                </td>
+                <td>
+                                                <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Нет                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Не выбрано                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                                                    </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									                                </div>
+                            </div>
+							                                                            </td>
+                <td id="condition-window" style="padding-top: 6px;">
+                    <a type="submit" class="btn primary-btn btn-broker in-window-conditions-view cboxElement" style="text-align:center;" href="/broker/ViewConditions?bank_id=26&amp;broker_id=1">Условия по КВ</a>                </td>
+                                <td>
+                                    </td>
+                            </tr>
+        			                        <tr>
+                <td>
+                    ПАО Банк «ФК Открытие»                </td>
+                <td>
+                    Подключен                </td>
+                <td>
+                                                <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Нет                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Не выбрано                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                                                    </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									                                </div>
+                            </div>
+							                                                            </td>
+                <td id="condition-window" style="padding-top: 6px;">
+                    <a type="submit" class="btn primary-btn btn-broker in-window-conditions-view cboxElement" style="text-align:center;" href="/broker/ViewConditions?bank_id=29&amp;broker_id=1">Условия по КВ</a>                </td>
+                                <td>
+                                    </td>
+                            </tr>
+        			                        <tr>
+                <td>
+                    ПАО «РГС Банк»                </td>
+                <td>
+                    Подключен                </td>
+                <td>
+                                                <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Нет                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Не выбрано                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                                                    </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									                                </div>
+                            </div>
+							                                                            </td>
+                <td id="condition-window" style="padding-top: 6px;">
+                    <a type="submit" class="btn primary-btn btn-broker in-window-conditions-view cboxElement" style="text-align:center;" href="/broker/ViewConditions?bank_id=30&amp;broker_id=1">Условия по КВ</a>                </td>
+                                <td>
+                                    </td>
+                            </tr>
+        			                        <tr>
+                <td>
+                    ПАО «МТС-Банк»                </td>
+                <td>
+                    Подключен                </td>
+                <td>
+                                                <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Нет                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Не выбрано                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                                                    </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									                                </div>
+                            </div>
+							                                                            </td>
+                <td id="condition-window" style="padding-top: 6px;">
+                    <a type="submit" class="btn primary-btn btn-broker in-window-conditions-view cboxElement" style="text-align:center;" href="/broker/ViewConditions?bank_id=31&amp;broker_id=1">Условия по КВ</a>                </td>
+                                <td>
+                                    </td>
+                            </tr>
+        			                        <tr>
+                <td>
+                    ПАО «БАНК УРАЛСИБ»                </td>
+                <td>
+                    Подключен                </td>
+                <td>
+                                                <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p class="label" style="padding-right: 10px;">
+                                        Имеется согласие                                    </p>
+                                    Нет                                </div>
+                                                                    <div>
+                                        <p class="label" style="padding-right: 10px;">
+                                            Присоединение                                        </p>
+                                        Не выбрано                                    </div>
+                                                                <div>
+                                    <p class="label">
+                                        Дата присоединения                                    </p>
+                                                                    </div>
+                                <div>
+                                    <p class="label">
+										Превышение кв в %                                    </p>
+									                                </div>
+                            </div>
+							                                                            </td>
+                <td id="condition-window" style="padding-top: 6px;">
+                    <a type="submit" class="btn primary-btn btn-broker in-window-conditions-view cboxElement" style="text-align:center;" href="/broker/ViewConditions?bank_id=32&amp;broker_id=1">Условия по КВ</a>                </td>
+                                <td>
+                                    </td>
+                            </tr>
+            </tbody></table>
+</div></div>
+<div id="tabAccount" aria-labelledby="ui-id-2" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="true" style="display: none;"></div>
+</div>
+
+
+
+</div>
+<div id="tabDepartments" aria-labelledby="ui-id-6" role="tabpanel" class="ui-tabs-panel ui-corner-bottom ui-widget-content" aria-hidden="false"><form class="parent-scroll-container" id="brokerDepartmentsForm" action="/broker/update/1?tab=3" method="post"><div class="errorMessage" id="Broker_id_em_" style="display:none"></div><div>
+	<a class="btn primary-btn" href="/broker/1">Выйти</a>	<input class="btn primary-btn" type="submit" name="yt1" value="Сохранить">	<a class="btn primary-btn in-window cboxElement" href="/broker/addDepartment?broker_id=1">Добавить отдел</a></div>
+<div class="main-table scroll-container">
+	<table class="detail-table">
+					<tbody><tr>
+				<td>
+					<table id="broker_department_0" class="broker-table-item">
+<input type="hidden" value="1" name="BrokerDepartment[0][id]" id="BrokerDepartment_0_id"><tbody><tr class="even">
+	<td>
+		<p class="label"><label for="BrokerDepartment_name">Наименование отдела</label></p>
+	</td>
+	<td>
+		<p class="label"><label for="BrokerDepartment_admin_id" class="required">Руководитель отдела <span class="required">*</span></label></p>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr class="even">
+    <td style="width:400px">
+				<input class="max-width" type="text" value="Отдел разработки" name="BrokerDepartment[0][name]" id="BrokerDepartment_0_name">		<div id="BrokerDepartment_0_name_em_" class="errorMessage"></div>		    </td>
+    <td style="width:400px">
+				<select class="max-width" name="BrokerDepartment[0][admin_id]" id="BrokerDepartment_0_admin_id">
+<option value="">(Выбрать руководителя)</option>
+<option value="1" selected="selected">ID: 1 - Гусев Павел Анатольевич</option>
+<option value="34">ID: 34 - Гусев Павел Анатольевич</option>
+<option value="608">ID: 608 - Нет данных</option>
+<option value="3569">ID: 3569 - Тестовый Сотрудник TlFin</option>
+<option value="6507">ID: 6507 - Петров Иван Баранович</option>
+<option value="6713">ID: 6713 - Нет данных</option>
+<option value="9925">ID: 9925 - Ivanov Ivan Ivanovich</option>
+<option value="9927">ID: 9927 - Мишин Михаил Викторович</option>
+<option value="9933">ID: 9933 - Пользователь АПИ API</option>
+<option value="9938">ID: 9938 - Ярцев Денис -</option>
+<option value="9940">ID: 9940 - Агафонов Герман Батькович</option>
+<option value="9944">ID: 9944 - Мишин Михаил Викторович</option>
+<option value="9991">ID: 9991 - Бухгалтер Милый Мой</option>
+<option value="27405">ID: 27405 - Гудков Роман Андреевич</option>
+<option value="27406">ID: 27406 - Винокурова Ольга</option>
+<option value="27407">ID: 27407 - Соломенцева Елена</option>
+<option value="27408">ID: 27408 - Романова Елена</option>
+<option value="27409">ID: 27409 - Толилова Анна</option>
+<option value="27410">ID: 27410 - Бочарова Анастасия</option>
+<option value="27411">ID: 27411 - Наволочная Алена</option>
+<option value="27412">ID: 27412 - Новикова Дарья</option>
+<option value="27413">ID: 27413 - Пьянова Юлия</option>
+<option value="27459">ID: 27459 - 3342 123 123</option>
+<option value="27460">ID: 27460 - Тестов Тест Тестович</option>
+<option value="590">ID: 590 - Нет данных</option>
+</select>		<div id="BrokerDepartment_0_admin_id_em_" class="errorMessage"></div>		    </td>
+	<td>
+	<a class="btn primary-btn" href="/broker/deleteDepartment/1">Удалить отдел</a><a class="btn primary-btn in-window cboxElement" href="/broker/departmentStaffList/1?act=update">Сотрудники отдела</a>	</td>
+</tr>
+</tbody></table>
+<script>
+	$(document).ready(function() {
+		var attributes = [
+			0 + '_name',
+			0 + '_admin_id',
+		];
+		addValidators(attributes, 'brokerDepartmentsForm', 'BrokerDepartment');
+	});
+</script>
+<table id="broker_department_1" class="broker-table-item">
+<input type="hidden" value="16" name="BrokerDepartment[1][id]" id="BrokerDepartment_1_id"><tbody><tr class="odd">
+	<td>
+		<p class="label"><label for="BrokerDepartment_name">Наименование отдела</label></p>
+	</td>
+	<td>
+		<p class="label"><label for="BrokerDepartment_admin_id" class="required">Руководитель отдела <span class="required">*</span></label></p>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr class="odd">
+    <td style="width:400px">
+				<input class="max-width" type="text" value="Ntcn" name="BrokerDepartment[1][name]" id="BrokerDepartment_1_name">		<div id="BrokerDepartment_1_name_em_" class="errorMessage"></div>		    </td>
+    <td style="width:400px">
+				<select class="max-width" name="BrokerDepartment[1][admin_id]" id="BrokerDepartment_1_admin_id">
+<option value="">(Выбрать руководителя)</option>
+<option value="1" selected="selected">ID: 1 - Гусев Павел Анатольевич</option>
+<option value="34">ID: 34 - Гусев Павел Анатольевич</option>
+<option value="608">ID: 608 - Нет данных</option>
+<option value="3569">ID: 3569 - Тестовый Сотрудник TlFin</option>
+<option value="6507">ID: 6507 - Петров Иван Баранович</option>
+<option value="6713">ID: 6713 - Нет данных</option>
+<option value="9925">ID: 9925 - Ivanov Ivan Ivanovich</option>
+<option value="9927">ID: 9927 - Мишин Михаил Викторович</option>
+<option value="9933">ID: 9933 - Пользователь АПИ API</option>
+<option value="9938">ID: 9938 - Ярцев Денис -</option>
+<option value="9940">ID: 9940 - Агафонов Герман Батькович</option>
+<option value="9944">ID: 9944 - Мишин Михаил Викторович</option>
+<option value="9991">ID: 9991 - Бухгалтер Милый Мой</option>
+<option value="27405">ID: 27405 - Гудков Роман Андреевич</option>
+<option value="27406">ID: 27406 - Винокурова Ольга</option>
+<option value="27407">ID: 27407 - Соломенцева Елена</option>
+<option value="27408">ID: 27408 - Романова Елена</option>
+<option value="27409">ID: 27409 - Толилова Анна</option>
+<option value="27410">ID: 27410 - Бочарова Анастасия</option>
+<option value="27411">ID: 27411 - Наволочная Алена</option>
+<option value="27412">ID: 27412 - Новикова Дарья</option>
+<option value="27413">ID: 27413 - Пьянова Юлия</option>
+<option value="27459">ID: 27459 - 3342 123 123</option>
+<option value="27460">ID: 27460 - Тестов Тест Тестович</option>
+<option value="590">ID: 590 - Нет данных</option>
+</select>		<div id="BrokerDepartment_1_admin_id_em_" class="errorMessage"></div>		    </td>
+	<td>
+	<a class="btn primary-btn" href="/broker/deleteDepartment/16">Удалить отдел</a><a class="btn primary-btn in-window cboxElement" href="/broker/departmentStaffList/16?act=update">Сотрудники отдела</a>	</td>
+</tr>
+</tbody></table>
+<script>
+	$(document).ready(function() {
+		var attributes = [
+			1 + '_name',
+			1 + '_admin_id',
+		];
+		addValidators(attributes, 'brokerDepartmentsForm', 'BrokerDepartment');
+	});
+</script>
+<table id="broker_department_2" class="broker-table-item">
+<input type="hidden" value="123" name="BrokerDepartment[2][id]" id="BrokerDepartment_2_id"><tbody><tr class="even">
+	<td>
+		<p class="label"><label for="BrokerDepartment_name">Наименование отдела</label></p>
+	</td>
+	<td>
+		<p class="label"><label for="BrokerDepartment_admin_id" class="required">Руководитель отдела <span class="required">*</span></label></p>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr class="even">
+    <td style="width:400px">
+				<input class="max-width" type="text" value="Тестовый отдел" name="BrokerDepartment[2][name]" id="BrokerDepartment_2_name">		<div id="BrokerDepartment_2_name_em_" class="errorMessage"></div>		    </td>
+    <td style="width:400px">
+				<select class="max-width" name="BrokerDepartment[2][admin_id]" id="BrokerDepartment_2_admin_id">
+<option value="">(Выбрать руководителя)</option>
+<option value="1">ID: 1 - Гусев Павел Анатольевич</option>
+<option value="34" selected="selected">ID: 34 - Гусев Павел Анатольевич</option>
+<option value="608">ID: 608 - Нет данных</option>
+<option value="3569">ID: 3569 - Тестовый Сотрудник TlFin</option>
+<option value="6507">ID: 6507 - Петров Иван Баранович</option>
+<option value="6713">ID: 6713 - Нет данных</option>
+<option value="9925">ID: 9925 - Ivanov Ivan Ivanovich</option>
+<option value="9927">ID: 9927 - Мишин Михаил Викторович</option>
+<option value="9933">ID: 9933 - Пользователь АПИ API</option>
+<option value="9938">ID: 9938 - Ярцев Денис -</option>
+<option value="9940">ID: 9940 - Агафонов Герман Батькович</option>
+<option value="9944">ID: 9944 - Мишин Михаил Викторович</option>
+<option value="9991">ID: 9991 - Бухгалтер Милый Мой</option>
+<option value="27405">ID: 27405 - Гудков Роман Андреевич</option>
+<option value="27406">ID: 27406 - Винокурова Ольга</option>
+<option value="27407">ID: 27407 - Соломенцева Елена</option>
+<option value="27408">ID: 27408 - Романова Елена</option>
+<option value="27409">ID: 27409 - Толилова Анна</option>
+<option value="27410">ID: 27410 - Бочарова Анастасия</option>
+<option value="27411">ID: 27411 - Наволочная Алена</option>
+<option value="27412">ID: 27412 - Новикова Дарья</option>
+<option value="27413">ID: 27413 - Пьянова Юлия</option>
+<option value="27459">ID: 27459 - 3342 123 123</option>
+<option value="27460">ID: 27460 - Тестов Тест Тестович</option>
+<option value="590">ID: 590 - Нет данных</option>
+</select>		<div id="BrokerDepartment_2_admin_id_em_" class="errorMessage"></div>		    </td>
+	<td>
+	<a class="btn primary-btn" href="/broker/deleteDepartment/123">Удалить отдел</a><a class="btn primary-btn in-window cboxElement" href="/broker/departmentStaffList/123?act=update">Сотрудники отдела</a>	</td>
+</tr>
+</tbody></table>
+<script>
+	$(document).ready(function() {
+		var attributes = [
+			2 + '_name',
+			2 + '_admin_id',
+		];
+		addValidators(attributes, 'brokerDepartmentsForm', 'BrokerDepartment');
+	});
+</script>
+				</td>
+			</tr>
+			</tbody></table>
+</div>
+</form><style>
+.broker-table-item td {border: none;}
+.broker-table-item tr.odd {background: #F8F8F8;}
+.broker-table-item tr.even {background: #E5F1F4;}
+.broker-table-item td.broker-contact-td {min-width: 200px;}
+.broker-table-item td.broker-address-td {min-width: 150px;}
+</style></div>
+</div>
+
+
+
+	</div>
+</div>
+	</div>
+	<!--<footer id="footer">
+	</footer>-->
+</div><!-- page -->
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Закрыть" class="close">X</a>
+		<p class="title">Ошибка</p>
+		<div class="content">описание ошибки</div>
+	</div>
+</div>
+<div id="questionDlg" title="" class="modalDialog">
+</div>
+<div id="site-message">
+	<div class="title"></div>
+	<div class="message"></div>
+	<a href="javascript:void(0)" id="close_site_message" title="закрыть" style="float:right"><img width="22" height="22" src="/images/close_white.png"></a>
+</div>
+<script>
+$(document).ready(function(){
+	$('#close_site_message').click(function() {
+		$('#site-message').hide(); 
+		$('#site-message').removeClass();
+		$('#site-message .title').html("");
+		$('#site-message .message').html("");
+	});
+	document.getElementById('waiting_img').style.display = 'none';
+	user_thumbprint = "";
+});
+</script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+$(".in-window-conditions-view").colorbox({close:"X",className:"colorBoxStyle",scrolling:true,width:$(window).width() - 450,height:$(window).height() - 250,onComplete:function(){
+        var height = document.getElementById("colorbox-height-0").scrollHeight + 60;
+        $(".in-window-condition").colorbox.resize({width:$(window).width() - 450, height:height});
+    }});
+jQuery('#yt0').on('click', function(){jQuery.ajax({'type':'POST','success':function(data) {
+                                                    var data = $.parseJSON(data);
+                                                    if(data.status == 1) {
+                                                        showSuccessMsg("Отчет успешно сгенерирован", 500); 
+                                                        var type = "docx";
+                                                        location = "/file/DownloadBrokerReportEdoWord"+"/file_name/Договор.zip/broker_id/"+1;
+                                                    } else {
+                                                        showErrorMsg(data["errors"], 500);
+                                                        setTimeout(function(){
+                                                            $("#site-message").hide();
+                                                        },3000);
+                                                    }
+                                                },'error':function(data) {
+                                                    var data = $.parseJSON(data);
+                                                    showErrorMsg(error["errors"], 500);
+                                                    setTimeout(function(){
+                                                        $("#site-message").hide();
+                                                    },3000);
+                                                },'url':'\x2Ffile\x2FgenerateContract\x3Fbroker_id\x3D1','cache':false,'data':jQuery(this).parents("form").serialize()});return false;});
+jQuery('#mainBrokerTabs').tabs({'selected':0});
+jQuery('#brokerDepartmentsForm').yiiactiveform({'validateOnSubmit':true,'validateOnChange':false,'beforeValidate':function() {showWaiting(); return true;},'afterValidate':function(form, data, hasError) {return afterValidateFunc(form, data, hasError);},'attributes':[{'id':'Broker_id','inputID':'Broker_id','errorID':'Broker_id_em_','model':'Broker','name':'id','enableAjaxValidation':true,'status':1}],'errorCss':'error'});
+jQuery('#mainCardsTabs').tabs({'selected':0,'active':'3'});
+$(".in-window").colorbox({close:"X",className:"colorBoxStyle",scrolling:false,width:"500px",height:"500px"});
+});
+/*]]>*/
+</script>
+
+
+<div id="cboxOverlay" class="colorBoxStyle" style="opacity: 0.9; cursor: pointer; visibility: visible;"></div><div id="colorbox" class="colorBoxStyle" role="dialog" tabindex="-1" style="display: block; visibility: visible; top: 194px; left: 215px; position: absolute; width: 500px; height: 500px;"><div id="cboxWrapper" style="height: 500px; width: 500px;"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left; width: 500px;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left; height: 500px;"></div><div id="cboxContent" style="float: left; width: 500px; height: 500px;"><div id="cboxLoadedContent" style="width: 500px; overflow: hidden; height: 500px;"><script type="text/javascript">
+/*<![CDATA[*/
+jQuery(document).off('click', '#staffList a.delete');
+/*]]>*/
+</script>
+<link rel="stylesheet" type="text/css" href="/assets/a20eca55/gridview/styles.css">
+<link rel="stylesheet" type="text/css" href="/assets/84404645/pager.css">
+<div class="indent-1">
+<form id="brokerStaffForm" action="/broker/addStaff?dep_id=123&amp;broker_id=1" method="post"><select name="userId" id="userId">
+<option value="1">ID: 1 - Гусев Павел Анатольевич</option>
+<option value="34">ID: 34 - Гусев Павел Анатольевич</option>
+<option value="608">ID: 608 - Нет данных</option>
+<option value="3569">ID: 3569 - Тестовый Сотрудник TlFin</option>
+<option value="6507">ID: 6507 - Петров Иван Баранович</option>
+<option value="6713">ID: 6713 - Нет данных</option>
+<option value="9925">ID: 9925 - Ivanov Ivan Ivanovich</option>
+<option value="9927">ID: 9927 - Мишин Михаил Викторович</option>
+<option value="9933">ID: 9933 - Пользователь АПИ API</option>
+<option value="9938">ID: 9938 - Ярцев Денис -</option>
+<option value="9940">ID: 9940 - Агафонов Герман Батькович</option>
+<option value="9944">ID: 9944 - Мишин Михаил Викторович</option>
+<option value="9991">ID: 9991 - Бухгалтер Милый Мой</option>
+<option value="27405">ID: 27405 - Гудков Роман Андреевич</option>
+<option value="27406">ID: 27406 - Винокурова Ольга</option>
+<option value="27407">ID: 27407 - Соломенцева Елена</option>
+<option value="27408">ID: 27408 - Романова Елена</option>
+<option value="27409">ID: 27409 - Толилова Анна</option>
+<option value="27410">ID: 27410 - Бочарова Анастасия</option>
+<option value="27411">ID: 27411 - Наволочная Алена</option>
+<option value="27412">ID: 27412 - Новикова Дарья</option>
+<option value="27413">ID: 27413 - Пьянова Юлия</option>
+<option value="27459">ID: 27459 - 3342 123 123</option>
+<option value="27460">ID: 27460 - Тестов Тест Тестович</option>
+<option value="590">ID: 590 - Нет данных</option>
+</select><input type="submit" id="addStaffBtn" name="yt0" value="Добавить сотрудника"></form><br>
+<br>
+<div class="main-table" id="staffList">
+<div class="summary">Элементы 1—2 из 2.</div>
+<table class="items">
+<thead>
+<tr>
+<th id="staffList_c0">Id</th><th id="staffList_c1">ФИО</th><th class="button-column" id="staffList_c2">&nbsp;</th></tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>34</td><td>Гусев Павел Анатольевич</td><td class="button-column"><a class="delete" title="Удалить" href="/broker/removeFromDepartment/12"><img src="/assets/a20eca55/gridview/delete.png" alt="Удалить"></a></td></tr>
+<tr class="even">
+<td>3569</td><td>Тестовый Сотрудник TlFin</td><td class="button-column"><a class="delete" title="Удалить" href="/broker/removeFromDepartment/3753"><img src="/assets/a20eca55/gridview/delete.png" alt="Удалить"></a></td></tr>
+</tbody>
+</table>
+<div class="keys" style="display:none" title="/broker/departmentStaffList/123?act=update&amp;ajax=staffList"><span>12</span><span>3753</span></div>
+</div></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery('#addStaffBtn').on('click', function(){jQuery.ajax({'dataType':'json','type':'POST','beforeSend':function() {showWaiting();},'success':function(data) {
+			if(data.status == 1) {
+				$.fn.yiiGridView.update("staffList");
+			} else {
+				showErrorMsg(data.errors, 500);
+			}
+			hideWaiting();
+		},'error':function(error) {
+			showErrorMsg(error.responseText, 500);
+		},'url':'\x2Fbroker\x2FaddStaff\x3Fdep_id\x3D123\x26broker_id\x3D1','cache':false,'data':jQuery(this).parents("form").serialize()});return false;});
+jQuery(document).on('click','#staffList a.delete',function() {
+	if(!confirm('\u0412\u044B\x20\u0443\u0432\u0435\u0440\u0435\u043D\u044B,\x20\u0447\u0442\u043E\x20\u0445\u043E\u0442\u0438\u0442\u0435\x20\u0443\u0434\u0430\u043B\u0438\u0442\u044C\x20\u0434\u0430\u043D\u043D\u044B\u0439\x20\u044D\u043B\u0435\u043C\u0435\u043D\u0442\x3F')) return false;
+	var th = this,
+		afterDelete = function(){};
+	jQuery('#staffList').yiiGridView('update', {
+		type: 'POST',
+		url: jQuery(this).attr('href'),
+		success: function(data) {
+			jQuery('#staffList').yiiGridView('update');
+			afterDelete(th, true, data);
+		},
+		error: function(XHR) {
+			return afterDelete(th, false, XHR);
+		}
+	});
+	return false;
+});
+jQuery('#staffList').yiiGridView({'ajaxUpdate':['staffList'],'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid\x2Dview\x2Dloading','filterClass':'filters','tableClass':'items','selectableRows':1,'enableHistory':false,'updateSelector':'\x7Bpage\x7D,\x20\x7Bsort\x7D','filterSelector':'\x7Bfilter\x7D','pageVar':'Membership_page'});
+/*]]>*/
+</script>
+</div><div id="cboxTitle" style="float: left; display: block;"></div><div id="cboxCurrent" style="float: left; display: none;"></div><button type="button" id="cboxPrevious" style="display: none;"></button><button type="button" id="cboxNext" style="display: none;"></button><button id="cboxSlideshow" style="display: none;"></button><div id="cboxLoadingOverlay" style="float: left; display: none;"></div><div id="cboxLoadingGraphic" style="float: left; display: none;"></div><button type="button" id="cboxClose">X</button></div><div id="cboxMiddleRight" style="float: left; height: 500px;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left; width: 500px;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; max-width: none; display: none;"></div></div></body></html>

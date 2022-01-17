@@ -80,7 +80,6 @@ public class AgentOfficePage extends PageObject{
     } // Ввести пароль для входа
 
     public boolean isVisibleAgentOfficeButton(){
-
         return find(agentOfficeMenuButton).isDisplayed();
     } // Проверка, что кнопка для открытия кабинета агента отображается
 

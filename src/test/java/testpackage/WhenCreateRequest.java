@@ -5,6 +5,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,11 @@ public class WhenCreateRequest  extends CreateRequestPage {
 
     @Managed(driver = "chrome")
     WebDriver driver;
+
+    @Before
+    public void beforeMethod(){
+        driver.manage().window().maximize();
+    }
 
     @Test
     @Title("Проверка создания заявки (Участие в конкурсе / Контракт)")

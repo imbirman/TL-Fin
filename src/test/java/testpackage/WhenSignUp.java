@@ -5,6 +5,7 @@ import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -25,16 +26,12 @@ public class WhenSignUp {
     WebDriver driver;
 
 
-//    @Before
-//    public void setUp(){
-//        System.setProperty("webdriver.chrome.driver", "C:\\Users\\prog\\Desktop\\test.tl-fin\\drivers\\chromedriver.exe");
-//        driver = new ChromeDriver();
-//        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-//        driver.get("http://test.tl-fin.ru/auth/login");
-//    }
+    @Before
+    public void beforeMethod(){
+        driver.manage().window().maximize();
+    }
 
     @Test
-    
     @Title("Проверка появления ошибки при пустом поле 'Логин'")
     public void checkErrorEmptyLogin(){
         steps.open_signup_page();
@@ -49,7 +46,6 @@ public class WhenSignUp {
     }
 
     @Test
-    
     @Title("Проверка появления ошибки при пустом поле 'Пароль'")
     public void checkErrorEmptyPassword(){
         steps.open_signup_page();
@@ -62,7 +58,6 @@ public class WhenSignUp {
     }
 
     @Test
-    
     @Title("Проверка появления ошибки при попытке входа с некорректными логин/пароль")
     public void checkInvalidSignIn(){
         steps.open_signup_page();
@@ -75,7 +70,6 @@ public class WhenSignUp {
     }
 
     @Test
-    
     @Title("Проверка текста ошибки при пустом поле 'Логин'")
     public void checkTextEmptyLogin(){
         steps.open_signup_page();
@@ -88,7 +82,6 @@ public class WhenSignUp {
     }
 
     @Test
-    
     @Title("Проверка текста ошибки при пустом поле 'Пароль'")
     public void checkTextEmptyPassword(){
         steps.open_signup_page();
@@ -101,7 +94,6 @@ public class WhenSignUp {
     }
 
     @Test
-    
     @Title("Проверка текста ошибки при попытке входа с некорректными логин/пароль")
     public void checkTextInvalidSignIn(){
         steps.open_signup_page();
